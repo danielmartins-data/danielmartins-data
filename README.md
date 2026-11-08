@@ -25,6 +25,7 @@ Agora, usando dados para fazer isso em escala.
 | [📊 Análise de Vendas 2025](./analise-vendas) | Limpeza de dados, KPIs, sazonalidade e recomendações comerciais | Python, SQL |
 | [🔁 Análise de Churn de Clientes](./analise-churn-clientes) | Fatores de saída de clientes e score de risco explicável | Python |
 | [🏦 Inadimplência de Crédito](./analise-inadimplencia-sql) | SQL analítico: CTEs, funções de janela e análise por safra | SQL, Python |
+| [📈 Painel Comercial: Meta x Realizado](./painel-comercial-excel-powerbi) | Painel interativo em Excel e modelo de dados, medidas DAX e roteiro de Power BI | Excel, Power BI, DAX |
 
 *Todos usam dados sintéticos (fictícios), explicitado em cada README.*
 
@@ -80,7 +81,7 @@ Repositórios focados em problemas práticos, com README explicando o problema, 
 
 ### 🗺️ Próximos projetos (em construção)
 
-- [ ] Dashboard de **performance comercial** (meta x realizado, funil e ticket médio)
+- [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI
 - [ ] **Segmentação de clientes** (RFM) com Python
 
 ## 🎓 Formação e certificações

@@ -1,0 +1,55 @@
+// Medidas DAX do painel comercial (Power BI).
+// Tabela de medidas sugerida: crie uma tabela vazia chamada "_Medidas" e guarde todas nela.
+// Modelo: fato_vendas[Mes] -> dim_calendario[Data] | fato_vendas[Gerente] -> dim_gerente[Gerente]
+//         fato_vendas[Produto] -> dim_produto[Produto]  (todas muitos-para-um, filtro de dimensão para fato)
+
+// ---------- Básicas ----------
+Meta Total = SUM ( fato_vendas[Meta] )
+
+Realizado Total = SUM ( fato_vendas[Realizado] )
+
+% Atingimento = DIVIDE ( [Realizado Total], [Meta Total] )
+
+Gap vs Meta = [Realizado Total] - [Meta Total]
+
+// ---------- Inteligência de tempo (exige dim_calendario marcada como tabela de datas) ----------
+Realizado Mês Anterior =
+CALCULATE ( [Realizado Total], DATEADD ( dim_calendario[Data], -1, MONTH ) )
+
+Variação MoM % =
+DIVIDE ( [Realizado Total] - [Realizado Mês Anterior], [Realizado Mês Anterior] )
+
+Realizado Acumulado (YTD) = TOTALYTD ( [Realizado Total], dim_calendario[Data] )
+
+Meta Acumulada (YTD) = TOTALYTD ( [Meta Total], dim_calendario[Data] )
+
+% Atingimento YTD = DIVIDE ( [Realizado Acumulado (YTD)], [Meta Acumulada (YTD)] )
+
+// ---------- Equipe ----------
+Gerentes na Meta =
+COUNTROWS ( FILTER ( VALUES ( dim_gerente[Gerente] ), [% Atingimento] >= 1 ) )
+
+Total de Gerentes =
+CALCULATE ( DISTINCTCOUNT ( dim_gerente[Gerente] ), ALL ( dim_gerente ) )
+
+Gerentes na Meta (texto) = [Gerentes na Meta] & " de " & [Total de Gerentes]
+
+Ranking Gerente =
+RANKX ( ALL ( dim_gerente[Gerente] ), [% Atingimento], , DESC, DENSE )
+
+// ---------- Status e cor (para formatação condicional) ----------
+Status =
+SWITCH (
+    TRUE (),
+    [% Atingimento] >= 1, "Atingiu",
+    [% Atingimento] >= 0.9, "Quase lá",
+    "Abaixo"
+)
+
+Cor do Status =
+SWITCH (
+    TRUE (),
+    [% Atingimento] >= 1, "#2E7D32",
+    [% Atingimento] >= 0.9, "#F9A825",
+    "#C62828"
+)
