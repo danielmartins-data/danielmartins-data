@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Resultados de carreira">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14508C"/><stop offset="1" stop-color="#0B1F3A"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0FA3B1"/><stop offset="1" stop-color="#0B6E77"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2994A"/><stop offset="1" stop-color="#D9622B"/></linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7B61C9"/><stop offset="1" stop-color="#4B3A93"/></linearGradient>
+  </defs>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#FFFFFF">
+    <rect x="0"   y="0" width="285" height="150" rx="16" fill="url(#g1)"/>
+    <text x="142" y="74" font-size="52" font-weight="700">24 anos</text>
+    <text x="142" y="110" font-size="19" fill-opacity="0.9">no mercado financeiro</text>
+
+    <rect x="305" y="0" width="285" height="150" rx="16" fill="url(#g2)"/>
+    <text x="447" y="74" font-size="52" font-weight="700">185%</text>
+    <text x="447" y="110" font-size="19" fill-opacity="0.9">de meta por 5 meses seguidos</text>
+
+    <rect x="610" y="0" width="285" height="150" rx="16" fill="url(#g3)"/>
+    <text x="752" y="74" font-size="52" font-weight="700">750</text>
+    <text x="752" y="110" font-size="19" fill-opacity="0.9">clientes em carteira</text>
+
+    <rect x="915" y="0" width="285" height="150" rx="16" fill="url(#g4)"/>
+    <text x="1057" y="74" font-size="52" font-weight="700">4</text>
+    <text x="1057" y="110" font-size="19" fill-opacity="0.9">graduações + ADS em curso</text>
+  </g>
+</svg>
