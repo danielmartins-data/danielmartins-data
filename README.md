@@ -62,6 +62,10 @@ Repositórios focados em problemas práticos, com README explicando o problema, 
 - 🔎 Consultas SQL aplicadas a cenários reais
 - 📊 Análise exploratória e dashboards em Power BI
 
+### ⭐ Projeto em destaque
+
+**[📊 Análise de Vendas 2025](./analise-vendas)**: limpeza de dados, consultas SQL, gráficos e recomendações de negócio com Python e SQL (dados sintéticos).
+
 ### 🗺️ Próximos projetos (em construção)
 
 - [ ] Análise de **churn e retenção de clientes** (dados públicos de varejo bancário)
