@@ -14,13 +14,19 @@ Agora, usando dados para fazer isso em escala.
 
 ---
 
-## ⭐ Projeto em destaque
+## ⭐ Projetos em destaque
 
 <a href="./analise-vendas">
   <img src="./analise-vendas/graficos/receita_mensal.png" alt="Receita mensal 2025" width="520">
 </a>
 
-**[📊 Análise de Vendas 2025 (Python + SQL)](./analise-vendas)**: limpeza de dados, consultas SQL, gráficos e recomendações de negócio. Receita de R$ 4,1 mi analisada por mês, região, produto e canal (dados sintéticos).
+| Projeto | O que mostra | Ferramentas |
+|---|---|---|
+| [📊 Análise de Vendas 2025](./analise-vendas) | Limpeza de dados, KPIs, sazonalidade e recomendações comerciais | Python, SQL |
+| [🔁 Análise de Churn de Clientes](./analise-churn-clientes) | Fatores de saída de clientes e score de risco explicável | Python |
+| [🏦 Inadimplência de Crédito](./analise-inadimplencia-sql) | SQL analítico: CTEs, funções de janela e análise por safra | SQL, Python |
+
+*Todos usam dados sintéticos (fictícios), explicitado em cada README.*
 
 ---
 
@@ -74,10 +80,8 @@ Repositórios focados em problemas práticos, com README explicando o problema, 
 
 ### 🗺️ Próximos projetos (em construção)
 
-- [ ] Análise de **churn e retenção de clientes** (dados públicos de varejo bancário)
 - [ ] Dashboard de **performance comercial** (meta x realizado, funil e ticket médio)
 - [ ] **Segmentação de clientes** (RFM) com Python
-- [ ] Análise de **crédito e inadimplência** com SQL
 
 ## 🎓 Formação e certificações
 

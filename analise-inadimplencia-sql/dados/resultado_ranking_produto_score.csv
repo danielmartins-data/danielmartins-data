@@ -1,0 +1,17 @@
+produto,faixa_score,contratos,inad_pct,ranking
+Cartão,D (baixo),88,36.36,1
+Cartão,C,245,23.67,2
+Cartão,B,282,9.93,3
+Cartão,A (alto),194,1.55,4
+Consignado,D (baixo),168,8.93,1
+Consignado,C,390,5.38,2
+Consignado,B,506,1.78,3
+Consignado,A (alto),352,1.7,4
+Crédito Pessoal,D (baixo),149,31.54,1
+Crédito Pessoal,C,340,20.29,2
+Crédito Pessoal,B,431,6.26,3
+Crédito Pessoal,A (alto),301,3.99,4
+Financiamento Veículo,D (baixo),61,27.87,1
+Financiamento Veículo,C,139,7.91,2
+Financiamento Veículo,B,192,3.65,3
+Financiamento Veículo,A (alto),162,2.47,4
