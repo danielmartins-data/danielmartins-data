@@ -14,6 +14,16 @@ Agora, usando dados para fazer isso em escala.
 
 ---
 
+## ⭐ Projeto em destaque
+
+<a href="./analise-vendas">
+  <img src="./analise-vendas/graficos/receita_mensal.png" alt="Receita mensal 2025" width="520">
+</a>
+
+**[📊 Análise de Vendas 2025 (Python + SQL)](./analise-vendas)**: limpeza de dados, consultas SQL, gráficos e recomendações de negócio. Receita de R$ 4,1 mi analisada por mês, região, produto e canal (dados sintéticos).
+
+---
+
 ## 👋 Quem sou
 
 Analista de Dados com uma combinação pouco comum: **vivência real de negócio** (Bradesco e Cielo) e **formação técnica em dados e sistemas**. Conheço o outro lado da planilha: sei quais perguntas o gestor comercial precisa responder, quais indicadores movem meta e como transformar uma análise em ação.
@@ -61,10 +71,6 @@ Repositórios focados em problemas práticos, com README explicando o problema, 
 - 🧹 Limpeza, tratamento e modelagem de dados (ETL)
 - 🔎 Consultas SQL aplicadas a cenários reais
 - 📊 Análise exploratória e dashboards em Power BI
-
-### ⭐ Projeto em destaque
-
-**[📊 Análise de Vendas 2025](./analise-vendas)**: limpeza de dados, consultas SQL, gráficos e recomendações de negócio com Python e SQL (dados sintéticos).
 
 ### 🗺️ Próximos projetos (em construção)
 
