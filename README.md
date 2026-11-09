@@ -102,7 +102,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 ## 🗺️ Próximos projetos
 
 - [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI (2 páginas: painel e carteira de clientes)
-- [ ] **Segmentação de clientes** (RFM) com Python
+- [ ] **Segmentação de clientes (RFM) em R e Tableau**: script e bases em [`segmentacao-rfm-r-tableau`](./segmentacao-rfm-r-tableau), falta publicar o dashboard no Tableau Public
 
 ---
 

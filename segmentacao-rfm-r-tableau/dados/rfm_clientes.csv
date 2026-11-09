@@ -1,0 +1,300 @@
+id_cliente,Cliente,Segmento_Cliente,Porte,Regiao,UF,Gerente,Ultima_Compra,Recencia_Dias,Frequencia,Valor_Total,Ticket_Medio,R,F,M,Score_RFM,Segmento_RFM
+1,Cliente 001,Saúde,Média,Sudeste,MG,Ana Souza,2025-10-03,89,8,252804.01,31600.5,2,5,5,255,Grandes Valores em Risco
+2,Cliente 002,Educação,MEI,Sudeste,SP,Ana Souza,2025-08-16,137,3,72438.53,24146.18,1,2,3,123,Hibernando
+3,Cliente 003,Alimentação,Média,Sudeste,ES,Ana Souza,2025-09-16,106,5,125408.24,25081.65,2,4,4,244,Grandes Valores em Risco
+4,Cliente 004,Varejo,Média,Sudeste,SP,Ana Souza,2025-11-25,36,3,77892.65,25964.22,3,2,3,323,Precisam de Atenção
+5,Cliente 005,Educação,Pequena,Sudeste,ES,Ana Souza,2025-11-27,34,5,142951.17,28590.23,4,4,4,444,Campeões
+6,Cliente 006,Alimentação,MEI,Sudeste,MG,Ana Souza,2025-12-07,24,9,258466.73,28718.53,4,5,5,455,Campeões
+7,Cliente 007,Alimentação,Pequena,Sudeste,RJ,Não identificado,,,0,0,,,,,,Sem compras em 2025
+8,Cliente 008,Saúde,Pequena,Sudeste,MG,Ana Souza,2025-11-06,55,2,88805.2,44402.6,3,2,3,323,Precisam de Atenção
+9,Cliente 009,Indústria,Pequena,Sudeste,MG,Ana Souza,2025-12-12,19,5,176886.76,35377.35,4,4,4,444,Campeões
+10,Cliente 010,Saúde,Média,Sudeste,RJ,Ana Souza,2025-12-16,15,2,79406.92,39703.46,4,2,3,423,Novos e Promissores
+11,Cliente 011,Alimentação,MEI,Sudeste,ES,Não identificado,,,0,0,,,,,,Sem compras em 2025
+12,Cliente 012,Saúde,MEI,Sudeste,RJ,Ana Souza,2025-12-13,18,4,87530.04,21882.51,4,3,3,433,Precisam de Atenção
+13,Cliente 013,Varejo,Pequena,Sudeste,ES,Ana Souza,2025-10-20,72,6,169841.81,28306.97,3,4,4,344,Fiéis
+14,Cliente 014,Serviços,Média,Sudeste,ES,Ana Souza,2025-09-13,109,5,71893.2,14378.64,2,4,3,243,Em Risco
+15,Cliente 015,Saúde,Pequena,Sudeste,RJ,Não identificado,,,0,0,,,,,,Sem compras em 2025
+16,Cliente 016,Serviços,MEI,Sudeste,ES,Ana Souza,2025-10-20,72,3,43366.24,14455.41,3,2,2,322,Precisam de Atenção
+17,Cliente 017,Varejo,MEI,Sudeste,ES,Ana Souza,2025-04-01,274,2,64280.17,32140.08,1,2,2,122,Hibernando
+18,Cliente 018,Educação,MEI,Sudeste,MG,Ana Souza,2025-12-10,21,3,127223.14,42407.71,4,2,4,424,Novos e Promissores
+19,Cliente 019,Serviços,MEI,Sudeste,MG,Não identificado,,,0,0,,,,,,Sem compras em 2025
+20,Cliente 020,Educação,MEI,Sudeste,MG,Ana Souza,2025-09-25,97,4,72250.91,18062.73,2,3,3,233,Em Risco
+21,Cliente 021,Alimentação,Média,Sudeste,SP,Ana Souza,2025-11-30,31,5,141183.25,28236.65,4,4,4,444,Campeões
+22,Cliente 022,Saúde,Média,Sudeste,MG,Ana Souza,2025-11-02,59,2,40252.86,20126.43,3,2,2,322,Precisam de Atenção
+23,Cliente 023,Saúde,Pequena,Sudeste,RJ,Ana Souza,2025-03-26,280,1,69743.14,69743.14,1,1,2,112,Hibernando
+24,Cliente 024,Varejo,Pequena,Sudeste,MG,Ana Souza,2025-11-26,35,3,102293.24,34097.75,4,2,3,423,Novos e Promissores
+25,Cliente 025,Saúde,Média,Sudeste,MG,Ana Souza,2025-05-29,216,3,56833.51,18944.5,1,2,2,122,Hibernando
+26,Cliente 026,Serviços,Pequena,Sudeste,SP,Não identificado,,,0,0,,,,,,Sem compras em 2025
+27,Cliente 027,Varejo,MEI,Sudeste,MG,Ana Souza,2025-12-10,21,3,52941.15,17647.05,4,2,2,422,Novos e Promissores
+28,Cliente 028,Alimentação,MEI,Sudeste,RJ,Ana Souza,2025-12-09,22,4,75810.94,18952.74,4,3,3,433,Precisam de Atenção
+29,Cliente 029,Educação,MEI,Sudeste,MG,Ana Souza,2025-08-21,132,3,104691.68,34897.23,1,2,3,123,Hibernando
+30,Cliente 030,Indústria,Pequena,Sudeste,RJ,Ana Souza,2025-12-28,3,14,489412.04,34958,5,5,5,555,Campeões
+31,Cliente 031,Saúde,Pequena,Sudeste,MG,Ana Souza,2025-12-29,2,14,389474.09,27819.58,5,5,5,555,Campeões
+32,Cliente 032,Educação,MEI,Sudeste,MG,Ana Souza,2025-04-23,252,2,27194.07,13597.04,1,2,1,121,Hibernando
+33,Cliente 033,Serviços,MEI,Sudeste,SP,Ana Souza,2025-04-18,257,2,85950.78,42975.39,1,2,3,123,Hibernando
+34,Cliente 034,Serviços,MEI,Sudeste,RJ,Ana Souza,2025-12-28,3,10,315717.67,31571.77,5,5,5,555,Campeões
+35,Cliente 035,Indústria,MEI,Sudeste,SP,Ana Souza,2025-12-16,15,4,120686.79,30171.7,4,3,4,434,Precisam de Atenção
+36,Cliente 036,Educação,MEI,Sudeste,RJ,Ana Souza,2025-10-04,88,4,106391.18,26597.8,2,3,3,233,Em Risco
+37,Cliente 037,Indústria,Pequena,Sudeste,MG,Ana Souza,2025-11-05,56,10,236879.88,23687.99,3,5,5,355,Fiéis
+38,Cliente 038,Varejo,Média,Sudeste,RJ,Ana Souza,2025-12-23,8,22,463888.21,21085.83,5,5,5,555,Campeões
+39,Cliente 039,Indústria,Média,Sudeste,ES,Ana Souza,2025-12-31,0,4,71833.6,17958.4,5,3,2,532,Precisam de Atenção
+40,Cliente 040,Saúde,MEI,Sudeste,MG,Ana Souza,2025-09-18,104,2,52532.99,26266.5,2,2,2,222,Hibernando
+41,Cliente 041,Alimentação,Média,Sudeste,SP,Ana Souza,2025-11-13,48,4,128243.21,32060.8,3,3,4,334,Precisam de Atenção
+42,Cliente 042,Varejo,Média,Sudeste,SP,Bruno Lima,2025-11-01,60,8,148059.33,18507.42,3,5,4,354,Fiéis
+43,Cliente 043,Indústria,Pequena,Sudeste,MG,Bruno Lima,2025-12-23,8,3,38585.54,12861.85,5,2,1,521,Novos e Promissores
+44,Cliente 044,Varejo,Pequena,Sudeste,RJ,Bruno Lima,2025-10-22,70,6,99521.92,16586.99,3,4,3,343,Fiéis
+45,Cliente 045,Alimentação,MEI,Sudeste,SP,Bruno Lima,2025-11-05,56,1,10157.47,10157.47,3,1,1,311,Precisam de Atenção
+46,Cliente 046,Indústria,Pequena,Sudeste,ES,Não identificado,,,0,0,,,,,,Sem compras em 2025
+47,Cliente 047,Educação,MEI,Sudeste,MG,Bruno Lima,2025-03-24,282,1,26401.51,26401.51,1,1,1,111,Hibernando
+48,Cliente 048,Serviços,MEI,Sudeste,ES,Bruno Lima,2025-10-14,78,4,120820.5,30205.12,2,3,4,234,Grandes Valores em Risco
+49,Cliente 049,Educação,MEI,Sudeste,RJ,Bruno Lima,2025-12-13,18,9,174512.43,19390.27,4,5,4,454,Campeões
+50,Cliente 050,Indústria,Média,Sudeste,SP,Bruno Lima,2025-12-07,24,2,26274.61,13137.3,4,2,1,421,Novos e Promissores
+51,Cliente 051,Varejo,Pequena,Sudeste,MG,Bruno Lima,2025-10-25,67,2,65725.35,32862.68,3,2,2,322,Precisam de Atenção
+52,Cliente 052,Varejo,Média,Sudeste,MG,Bruno Lima,2025-11-18,43,6,128700.52,21450.09,3,4,4,344,Fiéis
+53,Cliente 053,Educação,Pequena,Sudeste,RJ,Bruno Lima,2025-09-28,94,2,21334.65,10667.32,2,2,1,221,Hibernando
+54,Cliente 054,Alimentação,MEI,Sudeste,MG,Não identificado,,,0,0,,,,,,Sem compras em 2025
+55,Cliente 055,Indústria,Pequena,Sudeste,MG,Bruno Lima,2025-09-15,107,11,198588.39,18053.49,2,5,5,255,Grandes Valores em Risco
+56,Cliente 056,Educação,MEI,Sudeste,ES,Bruno Lima,2025-10-02,90,4,53172.45,13293.11,2,3,2,232,Em Risco
+57,Cliente 057,Serviços,MEI,Sudeste,ES,Bruno Lima,2025-12-01,30,5,76116.02,15223.2,4,4,3,443,Fiéis
+58,Cliente 058,Saúde,Média,Sudeste,ES,Bruno Lima,2025-12-19,12,2,63595.98,31797.99,5,2,2,522,Novos e Promissores
+59,Cliente 059,Saúde,Pequena,Sudeste,SP,Bruno Lima,2025-11-20,41,12,158015.37,13167.95,3,5,4,354,Fiéis
+60,Cliente 060,Indústria,MEI,Sudeste,ES,Bruno Lima,2025-08-13,140,3,81386.72,27128.91,1,2,3,123,Hibernando
+61,Cliente 061,Indústria,Pequena,Sudeste,MG,Bruno Lima,2025-12-16,15,13,264655.28,20358.1,4,5,5,455,Campeões
+62,Cliente 062,Indústria,Pequena,Sudeste,MG,Bruno Lima,2025-10-21,71,2,19404.43,9702.22,3,2,1,321,Precisam de Atenção
+63,Cliente 063,Alimentação,MEI,Sudeste,SP,Bruno Lima,2025-07-13,171,3,56429.87,18809.96,1,2,2,122,Hibernando
+64,Cliente 064,Indústria,MEI,Sudeste,RJ,Bruno Lima,2025-08-02,151,5,65827.57,13165.51,1,4,2,142,Em Risco
+65,Cliente 065,Serviços,Média,Sudeste,RJ,Bruno Lima,2025-02-24,310,1,21833.24,21833.24,1,1,1,111,Hibernando
+66,Cliente 066,Indústria,MEI,Sudeste,MG,Bruno Lima,2025-11-29,32,6,224362.89,37393.82,4,4,5,445,Campeões
+67,Cliente 067,Varejo,Média,Sudeste,RJ,Bruno Lima,2025-11-21,40,8,260754.27,32594.28,3,5,5,355,Fiéis
+68,Cliente 068,Alimentação,Média,Sudeste,RJ,Bruno Lima,2025-12-05,26,1,18455.13,18455.13,4,1,1,411,Novos e Promissores
+69,Cliente 069,Varejo,Pequena,Sudeste,MG,Bruno Lima,2025-09-25,97,3,45978.89,15326.3,2,2,2,222,Hibernando
+70,Cliente 070,Indústria,Pequena,Sudeste,ES,Bruno Lima,2025-05-20,225,2,38553.05,19276.53,1,2,1,121,Hibernando
+71,Cliente 071,Saúde,Pequena,Sudeste,MG,Bruno Lima,2025-07-12,172,4,64424.89,16106.22,1,3,2,132,Em Risco
+72,Cliente 072,Indústria,Pequena,Sudeste,ES,Bruno Lima,2025-10-23,69,2,24281.81,12140.9,3,2,1,321,Precisam de Atenção
+73,Cliente 073,Educação,MEI,Sudeste,ES,Bruno Lima,2025-10-11,81,1,4502.68,4502.68,2,1,1,211,Hibernando
+74,Cliente 074,Alimentação,Pequena,Sudeste,RJ,Bruno Lima,2025-12-02,29,12,351487.76,29290.65,4,5,5,455,Campeões
+75,Cliente 075,Saúde,MEI,Sudeste,ES,Bruno Lima,2025-12-28,3,27,723829.34,26808.49,5,5,5,555,Campeões
+76,Cliente 076,Educação,Pequena,Sudeste,ES,Bruno Lima,2025-12-27,4,25,570272.48,22810.9,5,5,5,555,Campeões
+77,Cliente 077,Alimentação,Pequena,Sudeste,MG,Bruno Lima,2025-11-15,46,3,81548.24,27182.75,3,2,3,323,Precisam de Atenção
+78,Cliente 078,Indústria,MEI,Sudeste,ES,Bruno Lima,2025-12-09,22,5,72282.74,14456.55,4,4,3,443,Fiéis
+79,Cliente 079,Saúde,MEI,Sudeste,RJ,Bruno Lima,2025-12-10,21,10,183546.68,18354.67,4,5,5,455,Campeões
+80,Cliente 080,Varejo,MEI,Sul,PR,Carla Mendes,2025-12-05,26,2,26344.41,13172.2,4,2,1,421,Novos e Promissores
+81,Cliente 081,Indústria,Média,Sul,SC,Carla Mendes,2025-03-28,278,2,42900.56,21450.28,1,2,2,122,Hibernando
+82,Cliente 082,Varejo,Pequena,Sul,RS,Carla Mendes,2025-06-07,207,5,120621.19,24124.24,1,4,4,144,Grandes Valores em Risco
+83,Cliente 083,Serviços,Pequena,Sul,SC,Carla Mendes,2025-12-08,23,7,162272.09,23181.73,4,4,4,444,Campeões
+84,Cliente 084,Saúde,MEI,Sul,PR,Carla Mendes,2025-10-22,70,1,16536.99,16536.99,3,1,1,311,Precisam de Atenção
+85,Cliente 085,Indústria,Pequena,Sul,PR,Carla Mendes,2025-01-26,339,1,10197.57,10197.57,1,1,1,111,Hibernando
+86,Cliente 086,Saúde,Pequena,Sul,PR,Carla Mendes,2025-12-27,4,3,85639.99,28546.66,5,2,3,523,Novos e Promissores
+87,Cliente 087,Alimentação,MEI,Sul,RS,Carla Mendes,2025-08-26,127,4,141306.03,35326.51,2,3,4,234,Grandes Valores em Risco
+88,Cliente 088,Serviços,Pequena,Sul,RS,Não identificado,,,0,0,,,,,,Sem compras em 2025
+89,Cliente 089,Educação,Pequena,Sul,RS,Carla Mendes,2025-12-30,1,3,91665.59,30555.2,5,2,3,523,Novos e Promissores
+90,Cliente 090,Varejo,Média,Sul,RS,Carla Mendes,2025-10-27,65,8,177489.13,22186.14,3,5,4,354,Fiéis
+91,Cliente 091,Educação,Média,Sul,RS,Carla Mendes,2025-12-16,15,6,185943.81,30990.64,4,4,5,445,Campeões
+92,Cliente 092,Saúde,Média,Sul,PR,Carla Mendes,2025-12-17,14,4,116771.48,29192.87,4,3,4,434,Precisam de Atenção
+93,Cliente 093,Varejo,MEI,Sul,SC,Carla Mendes,2025-10-17,75,8,136988.68,17123.58,2,5,4,254,Grandes Valores em Risco
+94,Cliente 094,Varejo,MEI,Sul,RS,Carla Mendes,2025-09-30,92,3,66660.09,22220.03,2,2,2,222,Hibernando
+95,Cliente 095,Alimentação,MEI,Sul,RS,Carla Mendes,2025-11-19,42,1,48825.52,48825.52,3,1,2,312,Precisam de Atenção
+96,Cliente 096,Saúde,MEI,Sul,PR,Não identificado,,,0,0,,,,,,Sem compras em 2025
+97,Cliente 097,Saúde,MEI,Sul,PR,Carla Mendes,2025-12-04,27,11,270562.51,24596.59,4,5,5,455,Campeões
+98,Cliente 098,Educação,MEI,Sul,SC,Carla Mendes,2025-09-09,113,5,162067.57,32413.51,2,4,4,244,Grandes Valores em Risco
+99,Cliente 099,Alimentação,Média,Sul,RS,Carla Mendes,2025-08-21,132,2,35581.39,17790.7,1,2,1,121,Hibernando
+100,Cliente 100,Saúde,Média,Sul,SC,Carla Mendes,2025-12-19,12,5,119035.71,23807.14,5,4,4,544,Campeões
+101,Cliente 101,Saúde,Pequena,Sul,PR,Carla Mendes,2025-02-12,322,1,12058.76,12058.76,1,1,1,111,Hibernando
+102,Cliente 102,Alimentação,Pequena,Sul,SC,Carla Mendes,2025-12-26,5,7,169770.98,24253,5,4,4,544,Campeões
+103,Cliente 103,Varejo,Média,Sul,SC,Não identificado,,,0,0,,,,,,Sem compras em 2025
+104,Cliente 104,Indústria,Média,Sul,PR,Carla Mendes,2025-04-26,249,2,41464.81,20732.4,1,2,2,122,Hibernando
+105,Cliente 105,Varejo,MEI,Sul,RS,Carla Mendes,2025-01-13,352,1,20495.31,20495.31,1,1,1,111,Hibernando
+106,Cliente 106,Alimentação,MEI,Sul,PR,Carla Mendes,2025-12-31,0,37,952697.59,25748.58,5,5,5,555,Campeões
+107,Cliente 107,Saúde,Pequena,Sul,PR,Carla Mendes,2025-11-26,35,14,313257.21,22375.52,4,5,5,455,Campeões
+108,Cliente 108,Alimentação,Média,Sul,SC,Carla Mendes,2025-12-21,10,4,89144.79,22286.2,5,3,3,533,Precisam de Atenção
+109,Cliente 109,Educação,MEI,Sul,RS,Carla Mendes,2025-11-15,46,4,58823.75,14705.94,3,3,2,332,Precisam de Atenção
+110,Cliente 110,Educação,Média,Sul,SC,Carla Mendes,2025-11-24,37,20,491409.19,24570.46,3,5,5,355,Fiéis
+111,Cliente 111,Alimentação,Pequena,Sul,SC,Carla Mendes,2025-10-13,79,4,112318.84,28079.71,2,3,3,233,Em Risco
+112,Cliente 112,Saúde,Pequena,Sul,RS,Carla Mendes,2025-06-19,195,2,62612.52,31306.26,1,2,2,122,Hibernando
+113,Cliente 113,Varejo,Pequena,Sul,PR,Carla Mendes,2025-12-12,19,10,260955.48,26095.55,4,5,5,455,Campeões
+114,Cliente 114,Saúde,Média,Sul,RS,Carla Mendes,2025-12-21,10,7,132380.46,18911.49,5,4,4,544,Campeões
+115,Cliente 115,Serviços,Pequena,Sul,PR,Diego Rocha,2025-12-28,3,11,246520.94,22410.99,5,5,5,555,Campeões
+116,Cliente 116,Alimentação,Média,Sul,RS,Diego Rocha,2025-12-20,11,5,89246.7,17849.34,5,4,3,543,Fiéis
+117,Cliente 117,Varejo,MEI,Sul,PR,Diego Rocha,2025-12-18,13,22,382733.69,17396.99,5,5,5,555,Campeões
+118,Cliente 118,Serviços,MEI,Sul,SC,Diego Rocha,2025-12-24,7,22,362669.65,16484.98,5,5,5,555,Campeões
+119,Cliente 119,Varejo,Média,Sul,SC,Diego Rocha,2025-12-26,5,7,209847.55,29978.22,5,4,5,545,Campeões
+120,Cliente 120,Indústria,MEI,Sul,SC,Diego Rocha,2025-11-03,58,7,153814.48,21973.5,3,4,4,344,Fiéis
+121,Cliente 121,Indústria,Pequena,Sul,SC,Não identificado,,,0,0,,,,,,Sem compras em 2025
+122,Cliente 122,Saúde,MEI,Sul,PR,Diego Rocha,2025-12-04,27,6,96164.31,16027.38,4,4,3,443,Fiéis
+123,Cliente 123,Indústria,Pequena,Sul,PR,Diego Rocha,2025-10-26,66,5,97941.76,19588.35,3,4,3,343,Fiéis
+124,Cliente 124,Educação,MEI,Sul,RS,Diego Rocha,2025-07-03,181,5,102097.47,20419.49,1,4,3,143,Em Risco
+125,Cliente 125,Alimentação,Pequena,Sul,SC,Diego Rocha,2025-10-14,78,6,86190.76,14365.13,2,4,3,243,Em Risco
+126,Cliente 126,Alimentação,MEI,Sul,PR,Diego Rocha,2025-12-22,9,2,43242.24,21621.12,5,2,2,522,Novos e Promissores
+127,Cliente 127,Alimentação,Pequena,Sul,PR,Não identificado,,,0,0,,,,,,Sem compras em 2025
+128,Cliente 128,Saúde,Pequena,Sul,PR,Diego Rocha,2025-12-11,20,6,148609.77,24768.3,4,4,4,444,Campeões
+129,Cliente 129,Educação,MEI,Sul,SC,Diego Rocha,2025-05-10,235,1,14073.12,14073.12,1,1,1,111,Hibernando
+130,Cliente 130,Varejo,Pequena,Sul,PR,Diego Rocha,2025-08-18,135,4,91962.5,22990.62,1,3,3,133,Em Risco
+131,Cliente 131,Indústria,MEI,Sul,PR,Diego Rocha,2025-12-25,6,3,56687.17,18895.72,5,2,2,522,Novos e Promissores
+132,Cliente 132,Indústria,MEI,Sul,PR,Diego Rocha,2025-06-19,195,3,48317.59,16105.86,1,2,2,122,Hibernando
+133,Cliente 133,Educação,MEI,Sul,RS,Diego Rocha,2025-05-28,217,1,52676.6,52676.6,1,1,2,112,Hibernando
+134,Cliente 134,Indústria,Média,Sul,PR,Diego Rocha,2025-12-30,1,11,177804.47,16164.04,5,5,4,554,Campeões
+135,Cliente 135,Serviços,MEI,Sul,SC,Diego Rocha,2025-10-07,85,6,77518,12919.67,2,4,3,243,Em Risco
+136,Cliente 136,Varejo,Média,Sul,SC,Diego Rocha,2025-11-22,39,8,167066.04,20883.26,3,5,4,354,Fiéis
+137,Cliente 137,Indústria,Pequena,Sul,SC,Diego Rocha,2025-12-04,27,25,460562.73,18422.51,4,5,5,455,Campeões
+138,Cliente 138,Serviços,Pequena,Sul,PR,Diego Rocha,2025-06-29,185,2,26292.51,13146.26,1,2,1,121,Hibernando
+139,Cliente 139,Varejo,Média,Sul,RS,Não identificado,,,0,0,,,,,,Sem compras em 2025
+140,Cliente 140,Indústria,MEI,Sul,RS,Diego Rocha,2025-10-27,65,2,36040.7,18020.35,3,2,1,321,Precisam de Atenção
+141,Cliente 141,Educação,Pequena,Sul,PR,Diego Rocha,2025-06-27,187,1,36872.95,36872.95,1,1,1,111,Hibernando
+142,Cliente 142,Indústria,MEI,Sul,RS,Diego Rocha,2025-03-13,293,2,72470.69,36235.34,1,2,3,123,Hibernando
+143,Cliente 143,Alimentação,Pequena,Sul,PR,Diego Rocha,2025-12-07,24,2,49928.73,24964.36,4,2,2,422,Novos e Promissores
+144,Cliente 144,Alimentação,Média,Sul,RS,Não identificado,,,0,0,,,,,,Sem compras em 2025
+145,Cliente 145,Saúde,MEI,Sul,PR,Diego Rocha,2025-12-06,25,9,206263.24,22918.14,4,5,5,455,Campeões
+146,Cliente 146,Varejo,Pequena,Sul,RS,Diego Rocha,2025-10-06,86,2,35885.23,17942.62,2,2,1,221,Hibernando
+147,Cliente 147,Varejo,Média,Sul,RS,Diego Rocha,2025-11-05,56,6,140252.29,23375.38,3,4,4,344,Fiéis
+148,Cliente 148,Saúde,Média,Sul,RS,Diego Rocha,2025-12-10,21,6,89995.15,14999.19,4,4,3,443,Fiéis
+149,Cliente 149,Varejo,MEI,Sul,RS,Diego Rocha,2025-04-13,262,1,81710.4,81710.4,1,1,3,113,Hibernando
+150,Cliente 150,Alimentação,MEI,Sul,SC,Diego Rocha,2025-12-22,9,2,128983.79,64491.9,5,2,4,524,Novos e Promissores
+151,Cliente 151,Indústria,Pequena,Sul,RS,Diego Rocha,2025-10-26,66,4,77586.65,19396.66,3,3,3,333,Precisam de Atenção
+152,Cliente 152,Alimentação,Pequena,Sul,RS,Diego Rocha,2025-02-27,307,1,6142.45,6142.45,1,1,1,111,Hibernando
+153,Cliente 153,Varejo,Pequena,Sul,SC,Não identificado,,,0,0,,,,,,Sem compras em 2025
+154,Cliente 154,Serviços,Média,Sul,PR,Diego Rocha,2025-12-02,29,1,12827.68,12827.68,4,1,1,411,Novos e Promissores
+155,Cliente 155,Saúde,MEI,Nordeste,RN,Elisa Prado,2025-11-25,36,16,442230.83,27639.43,3,5,5,355,Fiéis
+156,Cliente 156,Saúde,Pequena,Nordeste,RN,Elisa Prado,2025-12-26,5,11,336337.82,30576.17,5,5,5,555,Campeões
+157,Cliente 157,Serviços,Média,Nordeste,PE,Elisa Prado,2025-12-22,9,6,230182.57,38363.76,5,4,5,545,Campeões
+158,Cliente 158,Indústria,MEI,Nordeste,RN,Elisa Prado,2025-12-01,30,6,165158.15,27526.36,4,4,4,444,Campeões
+159,Cliente 159,Varejo,Pequena,Nordeste,RN,Elisa Prado,2025-10-17,75,4,68263.23,17065.81,2,3,2,232,Em Risco
+160,Cliente 160,Indústria,MEI,Nordeste,PE,Elisa Prado,2025-12-21,10,13,581226.88,44709.76,5,5,5,555,Campeões
+161,Cliente 161,Educação,Média,Nordeste,PE,Elisa Prado,2025-04-19,256,1,3282.37,3282.37,1,1,1,111,Hibernando
+162,Cliente 162,Indústria,MEI,Nordeste,PE,Elisa Prado,2025-10-14,78,3,43571.17,14523.72,2,2,2,222,Hibernando
+163,Cliente 163,Varejo,Média,Nordeste,BA,Elisa Prado,2025-12-12,19,4,133879.32,33469.83,4,3,4,434,Precisam de Atenção
+164,Cliente 164,Varejo,MEI,Nordeste,CE,Elisa Prado,2025-12-17,14,3,69437.08,23145.69,4,2,2,422,Novos e Promissores
+165,Cliente 165,Saúde,Pequena,Nordeste,RN,Elisa Prado,2025-10-24,68,3,36176.38,12058.79,3,2,1,321,Precisam de Atenção
+166,Cliente 166,Educação,MEI,Nordeste,PE,Elisa Prado,2025-08-31,122,2,108160.22,54080.11,2,2,3,223,Hibernando
+167,Cliente 167,Indústria,MEI,Nordeste,RN,Elisa Prado,2025-03-28,278,1,11421.29,11421.29,1,1,1,111,Hibernando
+168,Cliente 168,Educação,MEI,Nordeste,PE,Elisa Prado,2025-05-04,241,3,114621.76,38207.25,1,2,4,124,Grandes Valores em Risco
+169,Cliente 169,Serviços,MEI,Nordeste,BA,Elisa Prado,2025-12-27,4,30,702430.99,23414.37,5,5,5,555,Campeões
+170,Cliente 170,Alimentação,MEI,Nordeste,PE,Elisa Prado,2025-07-25,159,3,42985.59,14328.53,1,2,2,122,Hibernando
+171,Cliente 171,Educação,Pequena,Nordeste,CE,Elisa Prado,2025-11-14,47,3,41686.6,13895.53,3,2,2,322,Precisam de Atenção
+172,Cliente 172,Varejo,Média,Nordeste,PE,Elisa Prado,2025-12-28,3,5,85089.31,17017.86,5,4,3,543,Fiéis
+173,Cliente 173,Indústria,Média,Nordeste,CE,Elisa Prado,2025-07-17,167,4,69950.74,17487.69,1,3,2,132,Em Risco
+174,Cliente 174,Alimentação,MEI,Nordeste,CE,Não identificado,,,0,0,,,,,,Sem compras em 2025
+175,Cliente 175,Alimentação,MEI,Nordeste,PE,Elisa Prado,2025-12-07,24,2,61539.54,30769.77,4,2,2,422,Novos e Promissores
+176,Cliente 176,Varejo,Pequena,Nordeste,RN,Elisa Prado,2025-11-17,44,7,199823.32,28546.19,3,4,5,345,Fiéis
+177,Cliente 177,Varejo,MEI,Nordeste,CE,Elisa Prado,2025-08-14,139,4,174339.75,43584.94,1,3,4,134,Grandes Valores em Risco
+178,Cliente 178,Indústria,Pequena,Nordeste,RN,Elisa Prado,2025-11-06,55,4,45051.71,11262.93,3,3,2,332,Precisam de Atenção
+179,Cliente 179,Alimentação,Pequena,Nordeste,RN,Elisa Prado,2025-11-21,40,8,127592.48,15949.06,3,5,4,354,Fiéis
+180,Cliente 180,Alimentação,Pequena,Nordeste,RN,Elisa Prado,2025-12-22,9,1,28408.41,28408.41,5,1,1,511,Novos e Promissores
+181,Cliente 181,Alimentação,Pequena,Nordeste,CE,Elisa Prado,2025-11-28,33,6,199093.25,33182.21,4,4,5,445,Campeões
+182,Cliente 182,Saúde,Pequena,Nordeste,RN,Elisa Prado,2025-09-23,99,3,56494.66,18831.55,2,2,2,222,Hibernando
+183,Cliente 183,Serviços,Pequena,Nordeste,BA,Elisa Prado,2025-12-24,7,9,176599.26,19622.14,5,5,4,554,Campeões
+184,Cliente 184,Indústria,MEI,Nordeste,PE,Não identificado,,,0,0,,,,,,Sem compras em 2025
+185,Cliente 185,Varejo,MEI,Nordeste,CE,Elisa Prado,2025-10-26,66,3,42433.36,14144.45,3,2,2,322,Precisam de Atenção
+186,Cliente 186,Indústria,Média,Nordeste,BA,Elisa Prado,2025-09-30,92,1,5438.66,5438.66,2,1,1,211,Hibernando
+187,Cliente 187,Alimentação,Média,Nordeste,RN,Elisa Prado,2025-10-27,65,8,258862.26,32357.78,3,5,5,355,Fiéis
+188,Cliente 188,Alimentação,Pequena,Nordeste,PE,Elisa Prado,2025-08-30,123,4,71705.8,17926.45,2,3,2,232,Em Risco
+189,Cliente 189,Serviços,Média,Nordeste,RN,Elisa Prado,2025-10-19,73,14,257667.67,18404.83,2,5,5,255,Grandes Valores em Risco
+190,Cliente 190,Varejo,MEI,Nordeste,PE,Elisa Prado,2025-06-04,210,1,39090.88,39090.88,1,1,1,111,Hibernando
+191,Cliente 191,Saúde,MEI,Nordeste,CE,Elisa Prado,2025-12-31,0,5,177866.69,35573.34,5,4,4,544,Campeões
+192,Cliente 192,Indústria,Média,Nordeste,PE,Fábio Torres,2025-11-10,51,4,117186.8,29296.7,3,3,4,334,Precisam de Atenção
+193,Cliente 193,Varejo,Média,Nordeste,RN,Fábio Torres,2025-12-26,5,6,108895.68,18149.28,5,4,3,543,Fiéis
+194,Cliente 194,Indústria,Pequena,Nordeste,RN,Fábio Torres,2025-11-30,31,7,101450.34,14492.91,4,4,3,443,Fiéis
+195,Cliente 195,Alimentação,Pequena,Nordeste,RN,Fábio Torres,2025-07-21,163,3,59497.75,19832.58,1,2,2,122,Hibernando
+196,Cliente 196,Indústria,MEI,Nordeste,CE,Fábio Torres,2025-10-13,79,1,35965.39,35965.39,2,1,1,211,Hibernando
+197,Cliente 197,Alimentação,Pequena,Nordeste,BA,Fábio Torres,2025-11-29,32,5,39709.49,7941.9,4,4,1,441,Fiéis
+198,Cliente 198,Educação,Média,Nordeste,BA,Fábio Torres,2025-11-27,34,2,41251.39,20625.7,4,2,2,422,Novos e Promissores
+199,Cliente 199,Indústria,MEI,Nordeste,CE,Fábio Torres,2025-11-02,59,3,41090.51,13696.84,3,2,2,322,Precisam de Atenção
+200,Cliente 200,Indústria,MEI,Nordeste,RN,Fábio Torres,2025-10-27,65,5,84259.06,16851.81,3,4,3,343,Fiéis
+201,Cliente 201,Alimentação,MEI,Nordeste,CE,Fábio Torres,2025-09-06,116,4,118315.69,29578.92,2,3,4,234,Grandes Valores em Risco
+202,Cliente 202,Alimentação,Pequena,Nordeste,RN,Fábio Torres,2025-12-31,0,23,620299.97,26969.56,5,5,5,555,Campeões
+203,Cliente 203,Serviços,MEI,Nordeste,RN,Fábio Torres,2025-12-28,3,5,147983.48,29596.7,5,4,4,544,Campeões
+204,Cliente 204,Saúde,Pequena,Nordeste,RN,Fábio Torres,2025-09-09,113,1,22041.05,22041.05,2,1,1,211,Hibernando
+205,Cliente 205,Educação,Média,Nordeste,CE,Fábio Torres,2025-10-23,69,4,52341.7,13085.42,3,3,2,332,Precisam de Atenção
+206,Cliente 206,Alimentação,Pequena,Nordeste,PE,Fábio Torres,2025-03-16,290,1,52370.65,52370.65,1,1,2,112,Hibernando
+207,Cliente 207,Varejo,Média,Nordeste,CE,Fábio Torres,2025-09-03,119,1,10228.67,10228.67,2,1,1,211,Hibernando
+208,Cliente 208,Educação,Pequena,Nordeste,PE,Fábio Torres,2025-09-20,102,5,215127.12,43025.42,2,4,5,245,Grandes Valores em Risco
+209,Cliente 209,Serviços,Pequena,Nordeste,BA,Fábio Torres,2025-09-10,112,3,107131.37,35710.46,2,2,3,223,Hibernando
+210,Cliente 210,Saúde,MEI,Nordeste,RN,Não identificado,,,0,0,,,,,,Sem compras em 2025
+211,Cliente 211,Educação,MEI,Nordeste,CE,Fábio Torres,2025-09-14,108,3,74678.57,24892.86,2,2,3,223,Hibernando
+212,Cliente 212,Saúde,Pequena,Nordeste,RN,Fábio Torres,2025-11-26,35,5,75898.4,15179.68,4,4,3,443,Fiéis
+213,Cliente 213,Serviços,Pequena,Nordeste,PE,Fábio Torres,2025-12-30,1,5,106901.83,21380.37,5,4,3,543,Fiéis
+214,Cliente 214,Saúde,Pequena,Nordeste,CE,Fábio Torres,2025-10-06,86,5,129149.31,25829.86,2,4,4,244,Grandes Valores em Risco
+215,Cliente 215,Indústria,Pequena,Nordeste,BA,Fábio Torres,2025-12-08,23,4,139267.64,34816.91,4,3,4,434,Precisam de Atenção
+216,Cliente 216,Serviços,Média,Nordeste,CE,Fábio Torres,2025-08-21,132,5,244425.48,48885.1,1,4,5,145,Grandes Valores em Risco
+217,Cliente 217,Saúde,Pequena,Nordeste,BA,Fábio Torres,2025-12-29,2,17,383440.07,22555.3,5,5,5,555,Campeões
+218,Cliente 218,Varejo,Pequena,Nordeste,CE,Fábio Torres,2025-11-04,57,6,200185.84,33364.31,3,4,5,345,Fiéis
+219,Cliente 219,Educação,Pequena,Nordeste,BA,Fábio Torres,2025-12-12,19,4,51976.33,12994.08,4,3,2,432,Precisam de Atenção
+220,Cliente 220,Alimentação,MEI,Nordeste,BA,Fábio Torres,2025-09-18,104,4,82027.91,20506.98,2,3,3,233,Em Risco
+221,Cliente 221,Alimentação,MEI,Nordeste,RN,Fábio Torres,2025-10-05,87,2,87822.12,43911.06,2,2,3,223,Hibernando
+222,Cliente 222,Educação,Pequena,Nordeste,PE,Fábio Torres,2025-11-01,60,3,58809.31,19603.1,3,2,2,322,Precisam de Atenção
+223,Cliente 223,Indústria,Pequena,Nordeste,CE,Fábio Torres,2025-10-27,65,4,47678.7,11919.68,3,3,2,332,Precisam de Atenção
+224,Cliente 224,Serviços,Pequena,Nordeste,RN,Fábio Torres,2025-12-21,10,3,97802.92,32600.97,5,2,3,523,Novos e Promissores
+225,Cliente 225,Educação,Média,Nordeste,CE,Fábio Torres,2025-11-27,34,1,20025.47,20025.47,4,1,1,411,Novos e Promissores
+226,Cliente 226,Serviços,Pequena,Nordeste,CE,Fábio Torres,2025-12-31,0,24,493663.99,20569.33,5,5,5,555,Campeões
+227,Cliente 227,Serviços,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-05-20,225,5,194922.18,38984.44,1,4,5,145,Grandes Valores em Risco
+228,Cliente 228,Serviços,Pequena,Centro-Oeste,MT,Gabriela Nunes,2025-02-07,327,1,19175.82,19175.82,1,1,1,111,Hibernando
+229,Cliente 229,Serviços,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-12-24,7,2,35954.99,17977.5,5,2,1,521,Novos e Promissores
+230,Cliente 230,Educação,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-05-21,224,1,22900.17,22900.17,1,1,1,111,Hibernando
+231,Cliente 231,Serviços,Média,Centro-Oeste,MT,Gabriela Nunes,2025-11-19,42,6,159015.88,26502.65,3,4,4,344,Fiéis
+232,Cliente 232,Serviços,Média,Centro-Oeste,GO,Não identificado,,,0,0,,,,,,Sem compras em 2025
+233,Cliente 233,Educação,Pequena,Centro-Oeste,MT,Gabriela Nunes,2025-09-08,114,5,70633.85,14126.77,2,4,2,242,Em Risco
+234,Cliente 234,Educação,MEI,Centro-Oeste,MT,Gabriela Nunes,2025-12-13,18,2,35742.12,17871.06,4,2,1,421,Novos e Promissores
+235,Cliente 235,Serviços,Média,Centro-Oeste,GO,Gabriela Nunes,2025-09-15,107,9,226242.32,25138.04,2,5,5,255,Grandes Valores em Risco
+236,Cliente 236,Saúde,Pequena,Centro-Oeste,MT,Gabriela Nunes,2025-08-03,150,1,36202.41,36202.41,1,1,1,111,Hibernando
+237,Cliente 237,Saúde,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-10-18,74,4,95628.18,23907.04,2,3,3,233,Em Risco
+238,Cliente 238,Saúde,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-12-15,16,10,275537.13,27553.71,4,5,5,455,Campeões
+239,Cliente 239,Alimentação,MEI,Centro-Oeste,DF,Gabriela Nunes,2025-12-30,1,58,1528160.12,26347.59,5,5,5,555,Campeões
+240,Cliente 240,Alimentação,Pequena,Centro-Oeste,DF,Gabriela Nunes,2025-08-04,149,1,35360.62,35360.62,1,1,1,111,Hibernando
+241,Cliente 241,Indústria,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-09-06,116,4,103309.3,25827.32,2,3,3,233,Em Risco
+242,Cliente 242,Serviços,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-12-21,10,1,17215.75,17215.75,5,1,1,511,Novos e Promissores
+243,Cliente 243,Saúde,Média,Centro-Oeste,GO,Gabriela Nunes,2025-11-20,41,10,239699.01,23969.9,3,5,5,355,Fiéis
+244,Cliente 244,Indústria,MEI,Centro-Oeste,DF,Não identificado,,,0,0,,,,,,Sem compras em 2025
+245,Cliente 245,Alimentação,Média,Centro-Oeste,GO,Gabriela Nunes,2025-09-19,103,3,116383.66,38794.55,2,2,4,224,Grandes Valores em Risco
+246,Cliente 246,Serviços,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-12-15,16,5,131477.31,26295.46,4,4,4,444,Campeões
+247,Cliente 247,Varejo,Média,Centro-Oeste,GO,Gabriela Nunes,2025-06-17,197,1,23522.71,23522.71,1,1,1,111,Hibernando
+248,Cliente 248,Alimentação,Pequena,Centro-Oeste,GO,Não identificado,,,0,0,,,,,,Sem compras em 2025
+249,Cliente 249,Alimentação,Pequena,Centro-Oeste,GO,Gabriela Nunes,2025-11-16,45,6,175843.42,29307.24,3,4,4,344,Fiéis
+250,Cliente 250,Educação,Média,Centro-Oeste,GO,Não identificado,,,0,0,,,,,,Sem compras em 2025
+251,Cliente 251,Serviços,Pequena,Centro-Oeste,MT,Não identificado,,,0,0,,,,,,Sem compras em 2025
+252,Cliente 252,Serviços,MEI,Centro-Oeste,DF,Gabriela Nunes,2025-12-17,14,5,137325.39,27465.08,4,4,4,444,Campeões
+253,Cliente 253,Saúde,MEI,Centro-Oeste,DF,Gabriela Nunes,2025-12-14,17,4,63542.93,15885.73,4,3,2,432,Precisam de Atenção
+254,Cliente 254,Alimentação,Pequena,Centro-Oeste,MT,Gabriela Nunes,2025-09-06,116,2,18571.51,9285.75,2,2,1,221,Hibernando
+255,Cliente 255,Educação,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-09-15,107,1,24829.63,24829.63,2,1,1,211,Hibernando
+256,Cliente 256,Educação,Média,Centro-Oeste,DF,Gabriela Nunes,2025-05-18,227,2,98640.06,49320.03,1,2,3,123,Hibernando
+257,Cliente 257,Serviços,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-09-08,114,9,261130.2,29014.47,2,5,5,255,Grandes Valores em Risco
+258,Cliente 258,Educação,MEI,Centro-Oeste,DF,Gabriela Nunes,2025-11-21,40,10,223533.16,22353.32,3,5,5,355,Fiéis
+259,Cliente 259,Saúde,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-11-14,47,4,90167.12,22541.78,3,3,3,333,Precisam de Atenção
+260,Cliente 260,Saúde,MEI,Centro-Oeste,GO,Não identificado,,,0,0,,,,,,Sem compras em 2025
+261,Cliente 261,Serviços,Pequena,Centro-Oeste,MT,Gabriela Nunes,2025-10-10,82,7,167962.18,23994.6,2,4,4,244,Grandes Valores em Risco
+262,Cliente 262,Saúde,MEI,Centro-Oeste,GO,Gabriela Nunes,2025-11-24,37,3,53131.5,17710.5,3,2,2,322,Precisam de Atenção
+263,Cliente 263,Indústria,MEI,Centro-Oeste,MT,Gabriela Nunes,2025-11-27,34,1,55439.37,55439.37,4,1,2,412,Novos e Promissores
+264,Cliente 264,Alimentação,MEI,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+265,Cliente 265,Saúde,Pequena,Norte,PA,Heitor Alves,2025-12-31,0,6,158126.83,26354.47,5,4,4,544,Campeões
+266,Cliente 266,Serviços,MEI,Norte,AM,Heitor Alves,2025-09-08,114,3,59313.41,19771.14,2,2,2,222,Hibernando
+267,Cliente 267,Varejo,MEI,Norte,PA,Heitor Alves,2025-12-22,9,5,52020.17,10404.03,5,4,2,542,Fiéis
+268,Cliente 268,Educação,Pequena,Norte,AM,Heitor Alves,2025-06-14,200,2,23303.15,11651.58,1,2,1,121,Hibernando
+269,Cliente 269,Educação,Pequena,Norte,AM,Heitor Alves,2025-11-01,60,7,130629.92,18661.42,3,4,4,344,Fiéis
+270,Cliente 270,Saúde,Pequena,Norte,AM,Heitor Alves,2025-08-29,124,2,87915.94,43957.97,2,2,3,223,Hibernando
+271,Cliente 271,Serviços,MEI,Norte,AM,Heitor Alves,2025-10-01,91,1,8968.84,8968.84,2,1,1,211,Hibernando
+272,Cliente 272,Alimentação,Pequena,Norte,PA,Heitor Alves,2025-12-28,3,32,866757.04,27086.16,5,5,5,555,Campeões
+273,Cliente 273,Varejo,MEI,Norte,PA,Heitor Alves,2025-12-12,19,7,119337.58,17048.23,4,4,4,444,Campeões
+274,Cliente 274,Serviços,Pequena,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+275,Cliente 275,Serviços,MEI,Norte,PA,Heitor Alves,2025-05-21,224,2,71461.03,35730.52,1,2,2,122,Hibernando
+276,Cliente 276,Serviços,MEI,Norte,PA,Heitor Alves,2025-09-16,106,3,27634.6,9211.53,2,2,1,221,Hibernando
+277,Cliente 277,Indústria,MEI,Norte,AM,Heitor Alves,2025-12-31,0,8,144213.09,18026.64,5,5,4,554,Campeões
+278,Cliente 278,Varejo,MEI,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+279,Cliente 279,Indústria,MEI,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+280,Cliente 280,Varejo,MEI,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+281,Cliente 281,Varejo,Pequena,Norte,PA,Heitor Alves,2025-11-23,38,2,54642.99,27321.5,3,2,2,322,Precisam de Atenção
+282,Cliente 282,Saúde,Pequena,Norte,PA,Não identificado,,,0,0,,,,,,Sem compras em 2025
+283,Cliente 283,Varejo,Pequena,Norte,PA,Heitor Alves,2025-11-23,38,3,93763.67,31254.56,3,2,3,323,Precisam de Atenção
+284,Cliente 284,Serviços,MEI,Norte,AM,Heitor Alves,2025-10-07,85,5,135946.95,27189.39,2,4,4,244,Grandes Valores em Risco
+285,Cliente 285,Saúde,Média,Norte,AM,Heitor Alves,2025-11-06,55,6,206910.75,34485.12,3,4,5,345,Fiéis
+286,Cliente 286,Saúde,MEI,Norte,AM,Não identificado,,,0,0,,,,,,Sem compras em 2025
+287,Cliente 287,Varejo,Pequena,Norte,AM,Heitor Alves,2025-12-25,6,4,74370.98,18592.74,5,3,3,533,Precisam de Atenção
+288,Cliente 288,Serviços,MEI,Norte,AM,Heitor Alves,2025-12-23,8,22,634070.14,28821.37,5,5,5,555,Campeões
+289,Cliente 289,Varejo,Média,Norte,AM,Heitor Alves,2025-11-07,54,4,98907.83,24726.96,3,3,3,333,Precisam de Atenção
+290,Cliente 290,Varejo,MEI,Norte,PA,Heitor Alves,2025-12-13,18,1,16327.39,16327.39,4,1,1,411,Novos e Promissores
+291,Cliente 291,Alimentação,Média,Norte,PA,Heitor Alves,2025-10-08,84,6,113909.06,18984.84,2,4,3,243,Em Risco
+292,Cliente 292,Educação,Média,Norte,AM,Heitor Alves,2025-12-31,0,13,394720.39,30363.11,5,5,5,555,Campeões
+293,Cliente 293,Serviços,Pequena,Norte,AM,Heitor Alves,2025-02-08,326,1,34230.82,34230.82,1,1,1,111,Hibernando
+294,Cliente 294,Educação,Pequena,Norte,AM,Heitor Alves,2025-12-18,13,4,118196.9,29549.22,5,3,4,534,Precisam de Atenção
+295,Cliente 295,Alimentação,Pequena,Norte,AM,Heitor Alves,2025-09-20,102,3,38366.3,12788.77,2,2,1,221,Hibernando
+296,Cliente 296,Educação,Pequena,Norte,PA,Heitor Alves,2025-10-26,66,8,274454.22,34306.78,3,5,5,355,Fiéis
+297,Cliente 297,Alimentação,Pequena,Norte,PA,Heitor Alves,2025-06-04,210,2,67768.78,33884.39,1,2,2,122,Hibernando
+298,Cliente 298,Alimentação,Pequena,Norte,AM,Heitor Alves,2025-12-26,5,6,175028.75,29171.46,5,4,4,544,Campeões
+299,Cliente 299,Educação,Pequena,Norte,AM,Heitor Alves,2025-03-22,284,1,21602.48,21602.48,1,1,1,111,Hibernando
