@@ -103,6 +103,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 
 - [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI
 - [ ] **Segmentação de clientes** (RFM) com Python
+- [ ] Dashboard **Power BI de Análise de Vendas e Metas**: base, DAX e roteiro em [`powerbi-analise-vendas`](./powerbi-analise-vendas), falta publicar o .pbix e os prints
 
 ---
 
