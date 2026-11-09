@@ -6,6 +6,10 @@ Quem são os clientes que mais valem, quais estão esfriando e onde agir primeir
 
 **Status:** script em R e bases prontos · dashboard no Tableau Public em construção.
 
+![Valor por segmento RFM](imagens/segmentos_valor.svg)
+
+<sub>Prévia montada com os valores de `dados/resumo_segmentos.csv`.</sub>
+
 ## 🎯 Perguntas respondidas
 
 1. Quais clientes sustentam a receita e quais estão sem comprar há muito tempo?
@@ -90,7 +94,7 @@ segmentacao-rfm-r-tableau/
 │   ├── rfm_clientes.csv    # saída: 1 linha por cliente (base do Tableau)
 │   └── resumo_segmentos.csv# saída: 1 linha por segmento
 ├── tableau/roteiro.md      # passo a passo do dashboard
-└── imagens/                # prints do dashboard
+└── imagens/                # prévia dos segmentos e, depois, prints do dashboard
 ```
 
 ---

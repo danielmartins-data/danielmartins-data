@@ -19,6 +19,18 @@ Vivência real de negócio no mercado financeiro, agora aplicada em análise de 
 
 <br>
 
+## 🔎 Em 30 segundos (para recrutadores)
+
+| | |
+|---|---|
+| 🎯 **Busco** | Vagas de **Analista de Dados Júnior** e BI, com foco em negócios, vendas e finanças |
+| 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente, não só a ferramenta |
+| 🧰 **Ferramentas** | SQL · Python (pandas) · Power BI e DAX · Excel · R · Git |
+| 📂 **Provas** | 5 projetos, cada um com perguntas de negócio, resultados e recomendações (a seguir) |
+| 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
+
+---
+
 ## ⭐ Projetos em destaque
 
 <table>
@@ -50,9 +62,33 @@ Vivência real de negócio no mercado financeiro, agora aplicada em análise de 
       <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=sqlite&logoColor=white"> <img src="https://img.shields.io/badge/CTE_%2B_Window_Functions-0FA3B1?style=flat-square"> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <a href="./segmentacao-rfm-r-tableau"><img src="./segmentacao-rfm-r-tableau/imagens/segmentos_valor.svg" alt="Valor por segmento RFM: Campeões concentram 49,7% do valor" width="100%"></a>
+      <h3>🎯 Segmentação de Clientes (RFM) em R + Tableau</h3>
+      Quem são os clientes que mais valem e quais estão esfriando: notas por quintis, 7 segmentos, plano de ação e roteiro de dashboard no Tableau.<br><br>
+      <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white"> <img src="https://img.shields.io/badge/Tableau-em_andamento-E97627?style=flat-square&logo=tableau&logoColor=white"> <img src="https://img.shields.io/badge/Segmentação_RFM-0FA3B1?style=flat-square">
+    </td>
+  </tr>
 </table>
 
 <sub>Todos os projetos usam dados sintéticos (fictícios), o que está explicado no README de cada um.</sub>
+
+---
+
+## 🧩 O que cada projeto demonstra
+
+Todos seguem o mesmo caminho: **pergunta de negócio → dados → análise → insight → recomendação**.
+
+| Competência | Onde está |
+|---|---|
+| **SQL analítico** (CTEs, funções de janela, subqueries) | [Inadimplência de Crédito](./analise-inadimplencia-sql) |
+| **Limpeza e análise exploratória** com Python (pandas) | [Análise de Vendas](./analise-vendas) · [Churn](./analise-churn-clientes) |
+| **BI e modelagem de dados** (Excel, Power BI, DAX, esquema estrela com 2 fatos) | [Painel Comercial](./painel-comercial-excel-powerbi) |
+| **Segmentação e score de risco** (RFM, regras explicáveis) | [Churn](./analise-churn-clientes) · [RFM em R](./segmentacao-rfm-r-tableau) |
+| **Linguagem R** | [RFM em R](./segmentacao-rfm-r-tableau) |
+| **Metas e indicadores comerciais** (meta x realizado, concentração de carteira) | [Painel Comercial](./painel-comercial-excel-powerbi) |
+| **Dados reproduzíveis e documentação** (seed fixa, README com método e resultados) | Todos |
 
 ---
 
@@ -80,6 +116,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 ## 🧰 Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)

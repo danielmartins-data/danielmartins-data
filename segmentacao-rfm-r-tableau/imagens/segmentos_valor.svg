@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="418" viewBox="0 0 1200 418" role="img" aria-label="Percentual do valor transacionado por segmento RFM">
+<rect x="1" y="1" width="1198" height="416" rx="16" fill="#F6F8FB" stroke="#D0D7DE"/>
+<g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<text x="40" y="54" font-size="26" font-weight="700" fill="#0B1F3A">Onde está o valor da carteira? Segmentação RFM</text>
+<text x="40" y="84" font-size="15" fill="#57606A">% do valor transacionado em 2025 por segmento · 299 clientes · dados sintéticos</text>
+<text x="40" y="138" font-size="16" fill="#0B1F3A">Campeões</text>
+<rect x="300" y="121" width="596.4" height="24" rx="4" fill="#1B7F3B"/>
+<text x="908.4" y="138" font-size="14" fill="#24292F"><tspan font-weight="700">49,7%</tspan> do valor · 55 clientes</text>
+<text x="40" y="172" font-size="16" fill="#0B1F3A">Fiéis</text>
+<rect x="300" y="155" width="199.2" height="24" rx="4" fill="#14508C"/>
+<text x="511.2" y="172" font-size="14" fill="#24292F"><tspan font-weight="700">16,6%</tspan> do valor · 38 clientes</text>
+<text x="40" y="206" font-size="16" fill="#0B1F3A">Grandes Valores em Risco</text>
+<rect x="300" y="189" width="117.6" height="24" rx="4" fill="#C62828"/>
+<text x="429.6" y="206" font-size="14" fill="#24292F"><tspan font-weight="700">9,8%</tspan> do valor · 21 clientes</text>
+<text x="40" y="240" font-size="16" fill="#0B1F3A">Hibernando</text>
+<rect x="300" y="223" width="96.0" height="24" rx="4" fill="#8A94A6"/>
+<text x="408.0" y="240" font-size="14" fill="#24292F"><tspan font-weight="700">8,0%</tspan> do valor · 67 clientes</text>
+<text x="40" y="274" font-size="16" fill="#0B1F3A">Precisam de Atenção</text>
+<rect x="300" y="257" width="91.2" height="24" rx="4" fill="#E0A800"/>
+<text x="403.2" y="274" font-size="14" fill="#24292F"><tspan font-weight="700">7,6%</tspan> do valor · 41 clientes</text>
+<text x="40" y="308" font-size="16" fill="#0B1F3A">Em Risco</text>
+<rect x="300" y="291" width="51.6" height="24" rx="4" fill="#F2994A"/>
+<text x="363.6" y="308" font-size="14" fill="#24292F"><tspan font-weight="700">4,3%</tspan> do valor · 19 clientes</text>
+<text x="40" y="342" font-size="16" fill="#0B1F3A">Novos e Promissores</text>
+<rect x="300" y="325" width="48.0" height="24" rx="4" fill="#0FA3B1"/>
+<text x="360.0" y="342" font-size="14" fill="#24292F"><tspan font-weight="700">4,0%</tspan> do valor · 27 clientes</text>
+<text x="40" y="386" font-size="14" fill="#57606A">Fora do gráfico: 31 clientes (10,4%) não compraram em 2025.</text>
+</g>
+</svg>
