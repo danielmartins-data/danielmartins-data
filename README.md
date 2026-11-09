@@ -26,7 +26,7 @@ Vivência real de negócio no mercado financeiro, agora aplicada em análise de 
     <td width="50%" valign="top">
       <a href="./painel-comercial-excel-powerbi"><img src="./painel-comercial-excel-powerbi/imagens/painel_excel.png" alt="Painel comercial em Excel" width="100%"></a>
       <h3>📈 Painel Comercial: Meta x Realizado</h3>
-      Painel interativo em Excel (filtro por produto, formatação condicional) e modelo de dados, medidas DAX e roteiro de Power BI.<br><br>
+      Painel interativo em Excel (filtro por produto, formatação condicional) e Power BI com modelo estrela, medidas DAX, carteira de clientes e roteiro.<br><br>
       <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white"> <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"> <img src="https://img.shields.io/badge/DAX-0078D4?style=flat-square">
     </td>
     <td width="50%" valign="top">
@@ -101,9 +101,8 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 
 ## 🗺️ Próximos projetos
 
-- [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI
+- [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI (2 páginas: painel e carteira de clientes)
 - [ ] **Segmentação de clientes** (RFM) com Python
-- [ ] Dashboard **Power BI de Análise de Vendas e Metas**: base, DAX e roteiro em [`powerbi-analise-vendas`](./powerbi-analise-vendas), falta publicar o .pbix e os prints
 
 ---
 

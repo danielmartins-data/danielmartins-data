@@ -2,6 +2,8 @@
 // Tabela de medidas sugerida: crie uma tabela vazia chamada "_Medidas" e guarde todas nela.
 // Modelo: fato_vendas[Mes] -> dim_calendario[Data] | fato_vendas[Gerente] -> dim_gerente[Gerente]
 //         fato_vendas[Produto] -> dim_produto[Produto]  (todas muitos-para-um, filtro de dimensão para fato)
+// Carteira: fato_transacoes[Data] -> dim_calendario[Data] | fato_transacoes[Gerente] -> dim_gerente[Gerente]
+//           fato_transacoes[Produto] -> dim_produto[Produto] | fato_transacoes[id_cliente] -> dim_cliente[id_cliente]
 
 // ---------- Básicas ----------
 Meta Total = SUM ( fato_vendas[Meta] )
@@ -53,3 +55,40 @@ SWITCH (
     [% Atingimento] >= 0.9, "#F9A825",
     "#C62828"
 )
+
+// =====================================================================
+// ---------- Carteira de clientes (fato_transacoes) ----------
+// As transações detalham o Realizado: a soma por mês/gerente/produto é igual a [Realizado Total].
+// =====================================================================
+Valor Transacionado = SUM ( fato_transacoes[Valor] )
+
+Qtd Transações = COUNTROWS ( fato_transacoes )
+
+Ticket Médio = DIVIDE ( [Valor Transacionado], [Qtd Transações] )
+
+Clientes Ativos = DISTINCTCOUNT ( fato_transacoes[id_cliente] )
+
+Total de Clientes na Carteira =
+CALCULATE ( DISTINCTCOUNT ( dim_cliente[id_cliente] ), ALL ( dim_cliente ) )
+
+% Clientes Ativos = DIVIDE ( [Clientes Ativos], [Total de Clientes na Carteira] )
+
+Valor por Cliente Ativo = DIVIDE ( [Valor Transacionado], [Clientes Ativos] )
+
+% do Total =
+DIVIDE ( [Valor Transacionado], CALCULATE ( [Valor Transacionado], ALL ( dim_cliente ) ) )
+
+// ---------- Concentração ----------
+Valor Top 10 Clientes =
+CALCULATE (
+    [Valor Transacionado],
+    TOPN ( 10, ALL ( dim_cliente[id_cliente] ), [Valor Transacionado] )
+)
+
+% Concentração Top 10 = DIVIDE ( [Valor Top 10 Clientes], [Valor Transacionado] )
+
+Ranking Cliente =
+RANKX ( ALL ( dim_cliente[id_cliente] ), [Valor Transacionado], , DESC, DENSE )
+
+// ---------- Conferência do modelo (deve ser 0 ao filtrar por mês, gerente ou produto) ----------
+Diferença vs Realizado = [Valor Transacionado] - [Realizado Total]
