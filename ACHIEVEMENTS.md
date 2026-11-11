@@ -6,8 +6,8 @@ deste repositório é perseguir os que reforçam o perfil técnico.
 
 | Medalha | Critério (público) | Status | Próximo passo |
 |---|---|---|---|
-| **Pull Shark** | abrir pull requests que foram mesclados | 🟦 1 (bronze) | abrir uma branch + PR a cada melhoria (fluxo já documentado em `CONTRIBUTING.md`) |
-| **YOLO** | mesclar um pull request sem revisão | ⏳ | mesclar o PR #1 (feito sozinho, o que é o caso real deste repositório) |
+| **Pull Shark** | abrir pull requests que foram mesclados | 🟦 **1 mesclado** | abrir uma branch + PR a cada melhoria (fluxo documentado em `CONTRIBUTING.md`) |
+| **YOLO** | mesclar um pull request sem revisão | 🟦 **conquistado** (PR #1) | — |
 | **Pair Extraordinaire** | co-autorar commits em PR mesclado | ⏳ | possível com dois colaboradores |
 | **Quickdraw** | fechar uma issue ou PR em até 5 minutos | ⏳ | não tem valor técnico — deixar por último |
 | **Public Sponsor** | patrocinar um projeto open source | ⏳ | opcional (ex.: `pandas`, `matplotlib`) |
@@ -16,9 +16,9 @@ deste repositório é perseguir os que reforçam o perfil técnico.
 
 ## O que realmente pesa em processo seletivo (e já está aqui)
 
-- CI verde com **21 testes automatizados** e badge no README
+- CI verde com **21 testes automatizados** (Python 3.10, 3.11 e 3.12) e badge no README
 - `CONTRIBUTING.md` com fluxo de branch e commit convencional
-- template de Pull Request e de issue
+- template de Pull Request e de issue, 3 issues de roadmap abertas
 - `LICENSE` MIT (seu código pode ser usado como referência)
 - repositório de perfil com o **mesmo nome do usuário** (`danielmartins-data`), que aparece como vitrine
 - README com roteiro de 5 minutos para recrutador
