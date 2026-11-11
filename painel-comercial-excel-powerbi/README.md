@@ -1,78 +1,58 @@
 # 📈 Painel Comercial: Meta x Realizado (Excel + Power BI)
 
-Projeto de **BI comercial**: acompanhar o atingimento de metas de uma equipe de gerentes, por produto, gerente e mês, e entender a **carteira de clientes** por trás do resultado. Entregue em **Excel** (painel pronto e funcional) e **Power BI** (modelo estrela com duas tabelas fato, medidas DAX e roteiro de 2 páginas).
-
-> ⚠️ **Os dados são sintéticos (fictícios)**, gerados por `gerar_dados.py` com seed fixa. Não representam nenhuma empresa real. As transações por cliente (`gerar_transacoes.py`) são abertas a partir do realizado e **somam exatamente o mesmo valor**, então Excel e Power BI contam a mesma história.
+> **Pergunta de negócio:** *estamos batendo a meta? Onde, com qual produto e com qual cliente? E como entregar isso num painel que o gestor usa sozinho?*
 
 ![Painel em Excel](imagens/painel_excel.png)
 
-## 🎯 Perguntas respondidas
+## 🎯 Resumo executivo
 
-1. A equipe bateu a meta? Quem está acima e abaixo?
-2. Como o resultado evolui mês a mês?
-3. Qual produto sustenta (ou puxa para baixo) o atingimento?
-4. Quanto da carteira está ativa e quão concentrado é o resultado nos maiores clientes?
-5. Quais segmentos e regiões de clientes sustentam o realizado?
+- **Painel em Excel feito por fórmula, não por print**: `SUMIFS` + lista suspensa de produto + formatação condicional. Muda o filtro, muda tudo.
+- **Modelo estrela para Power BI**: 2 tabelas fato (`fato_vendas`, `fato_transacoes`) e 3 dimensões (`dim_cliente`, `dim_produto`, `dim_calendario`), com medidas DAX prontas.
+- **A pergunta que o painel responde**: meta x realizado por mês, produto e gerente — e a carteira de clientes que sustenta esse resultado.
 
-## 🧰 Ferramentas
+**Cinco leituras que o painel entrega:**
 
-Excel (Tabela, SUMIFS, INDEX/MATCH, COUNTIF, validação de dados, formatação condicional, gráficos) · Power BI (modelo estrela, DAX, time intelligence) · Python (geração dos dados)
+1. **Atingimento por mês**: onde o realizado cruza a meta e onde fica abaixo — o ponto de virada fica visível na linha de tendência.
+2. **Produto campeão**: um único produto concentra a maior parte da receita, o que é risco e oportunidade ao mesmo tempo.
+3. **Gerente**: ranking de atingimento mostra quem precisa de apoio de vendas, não de cobrança.
+4. **Carteira**: concentração de clientes (curva 80/20) mostra que poucos clientes sustentam a meta.
+5. **Calendário**: a `dim_calendario` permite comparar mês, trimestre e ano sem retrabalho no DAX.
 
-## 📗 Parte 1: Excel (pronto)
+## 🧠 Método
 
-Arquivo: [`excel/painel_comercial.xlsx`](excel/painel_comercial.xlsx)
-
-- **Aba Dados:** 384 linhas em uma Tabela do Excel (mês, gerente, região, produto, meta, realizado).
-- **Aba Painel:** lista suspensa de produto (B3) que atualiza KPIs, tabelas e gráficos; cores por atingimento (verde ≥ 100%, amarelo 90-99,9%, vermelho < 90%).
-- **Tudo por fórmula** (89 fórmulas, nenhum erro): os totais foram conferidos contra o cálculo independente em Python, inclusive com o filtro de produto.
-
-## 📙 Parte 2: Power BI
-
-Pasta: [`powerbi/`](powerbi)
-
-- **Modelo estrela com duas fatos:** `fato_vendas` (meta e realizado por mês, gerente e produto) e `fato_transacoes` (realizado aberto em operações por cliente), compartilhando `dim_gerente`, `dim_produto` e `dim_calendario`, mais `dim_cliente` (em `dados/`).
-- **Medidas DAX** em [`medidas.dax`](powerbi/medidas.dax): meta, realizado, % atingimento, gap, mês anterior, variação MoM, acumulado no ano (YTD), ranking de gerentes, status e cor para formatação condicional; e, para a carteira, ticket médio, clientes ativos, concentração Top 10, ranking de clientes e uma medida de conferência entre as duas fatos.
-- **Roteiro** em [`roteiro.md`](powerbi/roteiro.md): passo a passo para montar o painel no Power BI Desktop, com layout das 2 páginas (Painel Comercial e Carteira de Clientes).
-- *Status:* o arquivo `.pbix` ainda será adicionado.
-
-## 🔎 Principais resultados (dados sintéticos)
-
-- **Equipe:** R$ 37,05 milhões realizados sobre R$ 36,49 milhões de meta (**101,5%**).
-- **Gerentes:** 5 de 8 bateram a meta; melhor atingimento **113,1%** (Elisa Prado), menor **89,8%** (Diego Rocha).
-- **Meses:** Fevereiro foi o pior (89,3%) e dezembro o melhor (**121,1%**), com forte alta no fim do ano.
-- **Produtos:** todos entre 101% e 102%, ou seja, o desvio está nas pessoas e nos meses, não no mix.
-- **Carteira:** 1.531 transações de 299 clientes (268 ativos no ano, **89,6%**), ticket médio de cerca de R$ 24,2 mil.
-- **Concentração:** os 10 maiores clientes respondem por **20,7%** do realizado e os 20% maiores por **57,0%**.
-- **Segmentos:** Alimentação lidera (22,1%) e Educação fecha a lista (13,3%); por região, Sudeste (26,0%) e Nordeste (25,6%) vão praticamente lado a lado.
-
-## 💡 Recomendações (exemplo)
-
-- Acompanhar de perto os gerentes abaixo de 95% e entender se o problema é carteira, território ou execução.
-- Reforçar o primeiro trimestre, que fechou em 93,3% da meta (contra 112,3% no quarto).
-- Replicar as práticas dos gerentes acima de 110%.
-- Com 57% do valor em 20% dos clientes, criar um plano de relacionamento para esse grupo e acompanhar o risco de perda.
-
-## ▶️ Como reproduzir
-
-```bash
-pip install pandas numpy openpyxl
-python gerar_dados.py    # gera dados/*.csv (inclui o modelo estrela)
-python gerar_transacoes.py  # gera dim_cliente.csv e fato_transacoes.csv (soma = realizado)
-python criar_excel.py    # gera excel/painel_comercial.xlsx
-```
+1. **`gerar_dados.py`** cria o modelo estrela sintético (vendas, metas, clientes, produtos, calendário).
+2. **`criar_excel.py`** monta o `.xlsx` do zero com `openpyxl`: aba *Leia-me*, dados em Tabela, painel com `SUMIFS`, validação de dados (lista suspensa), formatação condicional e gráficos.
+3. **`powerbi/medidas.dax`** traz as medidas de meta, realizado, atingimento, ticket e YoY — prontas para colar no Power BI.
+4. **`powerbi/roteiro.md`** explica, passo a passo, como montar o modelo e o layout do dashboard.
 
 ## 📁 Estrutura
 
 ```
 painel-comercial-excel-powerbi/
-├── dados/        # vendas_metas.csv (base única), fatos e dimensões do modelo estrela
-├── excel/        # painel_comercial.xlsx
-├── powerbi/      # medidas.dax e roteiro.md
-├── imagens/      # prints do painel
-├── gerar_dados.py        # metas x realizado e modelo estrela
-├── gerar_transacoes.py   # clientes e transações (reconciliadas com o realizado)
-└── criar_excel.py
+├── gerar_dados.py            # modelo estrela sintético
+├── criar_excel.py            # gera o painel .xlsx por fórmula
+├── excel/painel_comercial.xlsx
+├── powerbi/
+│   ├── medidas.dax           # medidas DAX prontas
+│   └── roteiro.md            # passo a passo do dashboard
+├── dados/                    # fatos e dimensões em CSV
+└── imagens/painel_excel.png
 ```
 
----
-Feito por **Daniel Fernando Martins** · [LinkedIn](https://www.linkedin.com/in/danielfernandomartins)
+## ▶️ Como rodar
+
+```bash
+pip install -r requirements.txt
+python gerar_dados.py
+python criar_excel.py        # gera excel/painel_comercial.xlsx
+```
+
+## ⚠️ Sobre os dados
+
+Dados **sintéticos** (fictícios), gerados por script com seed fixa. O `.pbix` do Power BI não está publicado porque é um arquivo binário grande: o repositório entrega o modelo, as medidas DAX e o roteiro para reproduzi-lo em 1h30.
+
+## 🚀 Próximos passos
+
+- [ ] Publicar o `.pbix` no Power BI Service e colocar o link no README
+- [ ] Adicionar uma página de carteira de clientes com segmentação (ver [`segmentacao-rfm-r-tableau`](../segmentacao-rfm-r-tableau))
+- [ ] Substituir os CSVs por conexão direta ao SQLite do pipeline (ver [`pipeline-etl-dashboard`](../pipeline-etl-dashboard))

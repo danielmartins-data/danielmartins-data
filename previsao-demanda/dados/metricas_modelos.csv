@@ -1,0 +1,3 @@
+,MAE,RMSE,MAPE_pct,WAPE_pct,parametros
+baseline_sazonal,55.83,64.52,14.93,15.61,-
+holt_winters,67.01,71.92,19.85,18.73,alpha=0.3 beta=0.05 gamma=0.2

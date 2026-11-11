@@ -1,65 +1,64 @@
-# 📊 Análise de Vendas 2025 (Python + SQL)
+# 📊 Análise de Vendas 2025 — do CSV bruto à recomendação comercial
 
-Projeto básico de análise de dados, do dado bruto ao insight: **limpeza → consultas SQL → gráficos → conclusões**.
+> **Pergunta de negócio:** *onde a receita está crescendo, qual região e produto sustentam o resultado e o que fazer com os 10% de pedidos sem região?*
 
-> ⚠️ **Os dados são sintéticos (fictícios)**, gerados por `gerar_dados.py` com seed fixa. Foram criados só para demonstrar o método e não representam nenhuma empresa real.
+![Receita mensal](graficos/receita_mensal.png)
 
-## 🎯 Perguntas respondidas
+## 🎯 Resumo executivo
 
-1. Quanto a empresa faturou e qual o ticket médio?
-2. Como a receita se comporta ao longo do ano?
-3. Quais regiões, produtos e canais mais contribuem?
-
-## 🧰 Ferramentas
-
-Python (pandas, matplotlib) · SQL (SQLite) · CSV
-
-## 🔄 Etapas
-
-| Etapa | O que foi feito |
+| Indicador | Resultado |
 |---|---|
-| Limpeza | Remoção de 15 pedidos duplicados e tratamento de 25 regiões vazias ("Não informada") |
-| Feature | Criação da coluna `receita = quantidade × preço unitário` |
-| SQL | 5 consultas com `GROUP BY`, funções de agregação e subquery (ver `consultas.sql`) |
-| Visualização | 3 gráficos em `graficos/` |
+| Pedidos analisados | 2.119 (após remover duplicatas) |
+| Receita total | R$ 4,10 milhões |
+| Ticket médio | R$ 1.932 |
+| Maior canal | Online (R$ 1,78 mi, 1.049 pedidos) |
+| Maior ticket | Televendas (R$ 2.180 por pedido) |
+| Maior região | Sudeste (36,1% da receita) |
+| Dado ausente tratado | 25 pedidos sem região → "Não informada" (mantidos, não descartados) |
 
-## 🔎 Principais resultados
+**Três leituras para a reunião comercial:**
 
-- **Receita total:** R$ 4,10 milhões em 2.119 pedidos, com **ticket médio de R$ 1.933**.
-- **Concentração de produto:** Notebooks respondem por cerca de **61% da receita** (R$ 2,49 mi), embora representem só 711 das 6.247 unidades vendidas.
-- **Região:** Sudeste lidera com **36%** da receita; Norte é a menor, com **5,6%**.
-- **Sazonalidade:** novembro e dezembro somam **21%** do faturamento do ano.
-- **Canais:** o Online tem mais pedidos (1.049), mas o **menor ticket médio** (R$ 1.696). Loja física e Televendas ficam acima de R$ 2.150.
+1. **Canal define o ticket.** O Online vende mais (1.049 pedidos) mas com o menor ticket (R$ 1.696); Televendas e Loja física vendem menos e com ticket 27% maior. Ou seja: o digital traz volume, o atendimento humano traz valor — os dois precisam de metas diferentes.
+2. **A receita é pulverizada, mas o Sudeste lidera.** Sudeste (36,1%), Nordeste (22,8%) e Sul (20,6%) formam 80% da receita; Norte tem só 5,6% com o mesmo esforço comercial. O Norte tem o menor ticket (R$ 1.653) e o Centro-Oeste, poucos pedidos (258) mas ticket alto (R$ 2.193): ali o ganho está em aumentar volume, não em mudar o preço.
+3. **Qualidade de dado é decisão de negócio.** Em vez de excluir os 25 pedidos sem região, o tratamento preservou o faturamento e isolou o problema numa categoria explícita ("Não informada") — decisão documentada no código, do tipo que se explica em entrevista.
 
-## 💡 Recomendações (exemplo)
+## 🧠 Método
 
-- Reduzir a dependência de Notebooks com campanhas de acessórios (combos).
-- Testar ofertas de maior valor no canal Online para elevar o ticket.
-- Planejar estoque e equipe antes de novembro e dezembro.
-
-## ▶️ Como executar
-
-```bash
-pip install -r requirements.txt
-python gerar_dados.py   # gera dados/vendas_bruto.csv
-python analise.py       # limpa, consulta e gera os gráficos
-```
+1. **Limpeza auditável**: remove duplicatas por `id_pedido`, trata região vazia como "Não informada" e recalcula `receita = quantidade × preço unitário`.
+2. **Análise em SQL** (SQLite, na memória): receita por mês, por região (com participação %), por produto e por canal, usando `GROUP BY` e subquery de total.
+3. **Análise de sazonalidade** na série mensal e **gráficos** comparando as dimensões.
+4. **Recomendações** escritas a partir dos números, não de opinião.
 
 ## 📁 Estrutura
 
 ```
 analise-vendas/
-├── dados/            # vendas_bruto.csv e vendas_limpo.csv
-├── graficos/         # PNGs gerados
-├── consultas.sql     # consultas SQL
-├── gerar_dados.py    # geração dos dados sintéticos
-├── analise.py        # limpeza, SQL e gráficos
-└── requirements.txt
+├── gerar_dados.py        # cria dados/vendas_bruto.csv (dados fictícios, com erros)
+├── analise.py            # limpeza + SQL + gráficos
+├── consultas.sql         # as mesmas consultas, para consulta rápida
+├── dados/
+│   ├── vendas_bruto.csv  # entrada "suja"
+│   └── vendas_limpo.csv  # saída tratada
+└── graficos/
+    ├── receita_mensal.png
+    ├── receita_produto.png
+    └── receita_regiao.png
 ```
 
-## 📈 Imagem
+## ▶️ Como rodar
 
-![Receita mensal](graficos/receita_mensal.png)
+```bash
+pip install -r requirements.txt
+python gerar_dados.py
+python analise.py
+```
 
----
-Feito por **Daniel Fernando Martins** · [LinkedIn](https://www.linkedin.com/in/danielfernandomartins)
+## ⚠️ Sobre os dados
+
+Dados **sintéticos** (fictícios), gerados por script com seed fixa, incluindo duplicatas e campos vazios de propósito. Nenhuma empresa real foi usada.
+
+## 🚀 Próximos passos
+
+- [ ] Teste A/B de campanha por canal (ver [`analise-teste-ab`](../analise-teste-ab))
+- [ ] Previsão de receita mensal com intervalo de confiança (ver [`previsao-demanda`](../previsao-demanda))
+- [ ] Painel de acompanhamento no Power BI

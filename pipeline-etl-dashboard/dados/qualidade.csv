@@ -1,0 +1,8 @@
+regra,aprovada
+id_pedido único,True
+quantidade > 0,True
+preco_unitario > 0,True
+data dentro de 2025,True
+receita não negativa,True
+produto sempre preenchido,True
+toda venda tem meta de região,True

@@ -1,0 +1,4 @@
+# O script oficial é em R (R base, sem pacotes).
+# A versão equivalente em Python usada nos testes precisa de:
+pandas
+numpy

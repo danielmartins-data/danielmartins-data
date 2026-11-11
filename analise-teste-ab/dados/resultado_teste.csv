@@ -1,0 +1,2 @@
+grupo_controle,grupo_teste,visitantes_A,visitantes_B,conversao_A_pct,conversao_B_pct,lift_absoluto_pct,lift_relativo_pct,z,p_valor,ic95_lift_pct,significante_5pct,amostra_necessaria_por_grupo,ganho_estimado_receita_ano,visitantes_por_ano_projetados
+A,B,22663,23772,6.22,7.34,1.13,18.1,4.826,0.0,[0.67; 1.58],sim,7805,1865171.98,807084

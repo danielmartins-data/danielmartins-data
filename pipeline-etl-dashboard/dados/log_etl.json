@@ -1,0 +1,60 @@
+{
+  "log": [
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "datas convertidas (0 inválidas removidas)",
+      "linhas_antes": 4290,
+      "linhas_depois": 4290,
+      "linhas_afetadas": 0
+    },
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "linhas sem quantidade ou preço removidas",
+      "linhas_antes": 4290,
+      "linhas_depois": 4050,
+      "linhas_afetadas": 240
+    },
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "devoluções identificadas (quantidade negativa)",
+      "linhas_antes": 4050,
+      "linhas_depois": 4050,
+      "linhas_afetadas": 0
+    },
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "pedidos duplicados removidos",
+      "linhas_antes": 4050,
+      "linhas_depois": 3966,
+      "linhas_afetadas": 84
+    },
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "nomes de produto padronizados (8 -> 5 distintos)",
+      "linhas_antes": 8,
+      "linhas_depois": 5,
+      "linhas_afetadas": 3
+    },
+    {
+      "etapa": "TRANSFORM",
+      "descricao": "cadastro de clientes deduplicado",
+      "linhas_antes": 940,
+      "linhas_depois": 900,
+      "linhas_afetadas": 40
+    }
+  ],
+  "kpis": {
+    "linhas_brutas": 4290,
+    "linhas_limpas": 3966,
+    "pedidos_unicos": 3966,
+    "receita_total": 9807018.8,
+    "receita_liquida": 9783579.2,
+    "ticket_medio": 2472.77,
+    "clientes_unicos": 891,
+    "produtos": 5,
+    "taxa_devolucao_pct": 0.63,
+    "meta_total": 8960402.85,
+    "atingimento_meta_pct": 109.4,
+    "percentual_linhas_descartadas": 7.55
+  }
+}

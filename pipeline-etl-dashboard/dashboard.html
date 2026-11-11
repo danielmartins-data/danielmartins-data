@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Comercial 2025 · dados sintéticos</title>
+<style>
+  :root { --azul:#1f4e79; --fundo:#f5f8fb; --texto:#22323f; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background:var(--fundo); color:var(--texto); }
+  header { background:var(--azul); color:#fff; padding:22px 28px; }
+  header h1 { margin:0; font-size:22px; }
+  header p { margin:6px 0 0; font-size:13px; opacity:.85; }
+  main { max-width:1080px; margin:0 auto; padding:22px; }
+  .aviso { background:#fff4e5; border-left:4px solid #f0a000; padding:10px 14px; font-size:13px; border-radius:4px; margin-bottom:18px; }
+  .cartoes { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:14px; margin-bottom:18px; }
+  .cartao { background:#fff; border-radius:10px; padding:16px 18px; box-shadow:0 1px 3px rgba(16,42,67,.08); }
+  .cartao .rotulo { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:#6b7c8f; }
+  .cartao .valor { font-size:26px; font-weight:700; margin:6px 0 2px; color:var(--azul); }
+  .cartao .nota { font-size:12px; color:#6b7c8f; }
+  section { background:#fff; border-radius:10px; padding:18px; margin-bottom:18px; box-shadow:0 1px 3px rgba(16,42,67,.08); }
+  section h2 { margin:0 0 12px; font-size:16px; }
+  .legenda { font-size:12px; color:#6b7c8f; margin-bottom:8px; }
+  .legenda span { display:inline-block; margin-right:16px; }
+  .legenda i { display:inline-block; width:18px; height:3px; vertical-align:middle; margin-right:6px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid #eef2f6; }
+  th { color:#6b7c8f; font-weight:600; }
+  footer { text-align:center; font-size:12px; color:#6b7c8f; padding:18px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dashboard Comercial 2025</h1>
+  <p>Pipeline ETL em Python + dashboard gerado como HTML/SVG · Daniel Fernando Martins</p>
+</header>
+<main>
+  <div class="aviso"><strong>Dados sintéticos.</strong> Todas as informações desta página foram geradas por script para demonstração. Não representam nenhuma empresa real.</div>
+
+  <div class="cartoes">
+    <div class="cartao"><div class="rotulo">Receita 2025</div><div class="valor">R$ 9.807.019</div><div class="nota">após limpeza de 7,6% das linhas</div></div><div class="cartao"><div class="rotulo">Atingimento de meta</div><div class="valor">109.4%</div><div class="nota">receita x metas por região</div></div><div class="cartao"><div class="rotulo">Ticket médio</div><div class="valor">R$ 2.473</div><div class="nota">3966 pedidos únicos</div></div><div class="cartao"><div class="rotulo">Taxa de devolução</div><div class="valor">0.63%</div><div class="nota">pedidos com devolução</div></div>
+  </div>
+
+  <section>
+    <h2>Receita mensal x meta</h2>
+    <div class="legenda"><span><i style="background:#1f4e79"></i>Receita realizada</span><span><i style="background:#c9d6e3"></i>Meta</span></div>
+    <svg viewBox="0 0 760 260" role="img" aria-label="Receita mensal x meta"><line x1="70" y1="220.0" x2="740" y2="220.0" stroke="#e8eef4"/><text x="62" y="224.0" font-size="10" fill="#6b7c8f" text-anchor="end">0.0M</text><line x1="70" y1="170.0" x2="740" y2="170.0" stroke="#e8eef4"/><text x="62" y="174.0" font-size="10" fill="#6b7c8f" text-anchor="end">0.3M</text><line x1="70" y1="120.0" x2="740" y2="120.0" stroke="#e8eef4"/><text x="62" y="124.0" font-size="10" fill="#6b7c8f" text-anchor="end">0.5M</text><line x1="70" y1="70.0" x2="740" y2="70.0" stroke="#e8eef4"/><text x="62" y="74.0" font-size="10" fill="#6b7c8f" text-anchor="end">0.8M</text><line x1="70" y1="20.0" x2="740" y2="20.0" stroke="#e8eef4"/><text x="62" y="24.0" font-size="10" fill="#6b7c8f" text-anchor="end">1.1M</text><polyline points="70.0,189.6 130.9,193.9 191.8,193.1 252.7,189.5 313.6,nan 374.5,190.7 435.5,192.0 496.4,190.2 557.3,191.5 618.2,192.9 679.1,195.4 740.0,192.2" fill="none" stroke="#c9d6e3" stroke-width="2" stroke-dasharray="6 4"/><polyline points="70.0,58.9 130.9,67.4 191.8,89.7 252.7,68.4 313.6,78.1 374.5,63.8 435.5,57.1 496.4,51.2 557.3,46.1 618.2,72.9 679.1,81.9 740.0,71.2" fill="none" stroke="#1f4e79" stroke-width="2.5"/><circle cx="70.0" cy="58.9" r="3.5" fill="#1f4e79"/><text x="70.0" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">01</text><circle cx="130.9" cy="67.4" r="3.5" fill="#1f4e79"/><circle cx="191.8" cy="89.7" r="3.5" fill="#1f4e79"/><text x="191.8" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">03</text><circle cx="252.7" cy="68.4" r="3.5" fill="#1f4e79"/><circle cx="313.6" cy="78.1" r="3.5" fill="#1f4e79"/><text x="313.6" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">05</text><circle cx="374.5" cy="63.8" r="3.5" fill="#1f4e79"/><circle cx="435.5" cy="57.1" r="3.5" fill="#1f4e79"/><text x="435.5" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">07</text><circle cx="496.4" cy="51.2" r="3.5" fill="#1f4e79"/><circle cx="557.3" cy="46.1" r="3.5" fill="#1f4e79"/><text x="557.3" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">09</text><circle cx="618.2" cy="72.9" r="3.5" fill="#1f4e79"/><circle cx="679.1" cy="81.9" r="3.5" fill="#1f4e79"/><text x="679.1" y="246" font-size="10" fill="#6b7c8f" text-anchor="middle">11</text><circle cx="740.0" cy="71.2" r="3.5" fill="#1f4e79"/></svg>
+  </section>
+
+  <section>
+    <h2>Receita por região</h2>
+    <svg viewBox="0 0 760 214" role="img" aria-label="Receita por categoria"><text x="0" y="22" font-size="12" fill="#33475b">Sudeste</text><rect x="190" y="10" width="500.0" height="18" rx="3" fill="#4a90c2"/><text x="698.0" y="24" font-size="11" fill="#6b7c8f">R$ 3.108.398</text><text x="0" y="56" font-size="12" fill="#33475b">Sul</text><rect x="190" y="44" width="360.4" height="18" rx="3" fill="#4a90c2"/><text x="558.4" y="58" font-size="11" fill="#6b7c8f">R$ 2.240.647</text><text x="0" y="90" font-size="12" fill="#33475b">Nordeste</text><rect x="190" y="78" width="293.8" height="18" rx="3" fill="#4a90c2"/><text x="491.8" y="92" font-size="11" fill="#6b7c8f">R$ 1.826.416</text><text x="0" y="124" font-size="12" fill="#33475b">Centro-Oeste</text><rect x="190" y="112" width="176.3" height="18" rx="3" fill="#4a90c2"/><text x="374.3" y="126" font-size="11" fill="#6b7c8f">R$ 1.096.229</text><text x="0" y="158" font-size="12" fill="#33475b">Norte</text><rect x="190" y="146" width="149.2" height="18" rx="3" fill="#4a90c2"/><text x="347.2" y="160" font-size="11" fill="#6b7c8f">R$ 927.406</text><text x="0" y="192" font-size="12" fill="#33475b">Não informada</text><rect x="190" y="180" width="97.8" height="18" rx="3" fill="#4a90c2"/><text x="295.8" y="194" font-size="11" fill="#6b7c8f">R$ 607.922</text></svg>
+  </section>
+
+  <section>
+    <h2>Receita por produto</h2>
+    <svg viewBox="0 0 760 180" role="img" aria-label="Receita por categoria"><text x="0" y="22" font-size="12" fill="#33475b">Notebook Pro 14</text><rect x="190" y="10" width="500.0" height="18" rx="3" fill="#4a90c2"/><text x="698.0" y="24" font-size="11" fill="#6b7c8f">R$ 5.901.986</text><text x="0" y="56" font-size="12" fill="#33475b">Monitor 27&quot;</text><rect x="190" y="44" width="174.7" height="18" rx="3" fill="#4a90c2"/><text x="372.7" y="58" font-size="11" fill="#6b7c8f">R$ 2.061.721</text><text x="0" y="90" font-size="12" fill="#33475b">Cadeira Ergonômica</text><rect x="190" y="78" width="128.2" height="18" rx="3" fill="#4a90c2"/><text x="326.2" y="92" font-size="11" fill="#6b7c8f">R$ 1.512.976</text><text x="0" y="124" font-size="12" fill="#33475b">Teclado Mecânico</text><rect x="190" y="112" width="20.1" height="18" rx="3" fill="#4a90c2"/><text x="218.1" y="126" font-size="11" fill="#6b7c8f">R$ 236.823</text><text x="0" y="158" font-size="12" fill="#33475b">Mouse Sem Fio</text><rect x="190" y="146" width="7.9" height="18" rx="3" fill="#4a90c2"/><text x="205.9" y="160" font-size="11" fill="#6b7c8f">R$ 93.512</text></svg>
+  </section>
+
+  <section>
+    <h2>10 maiores clientes</h2>
+    <table>
+      <thead><tr><th>#</th><th>Cliente</th><th>Receita</th></tr></thead>
+      <tbody><tr><td>1</td><td>Cliente 353</td><td>R$ 37.626</td></tr><tr><td>2</td><td>Cliente 373</td><td>R$ 35.501</td></tr><tr><td>3</td><td>Cliente 132</td><td>R$ 35.008</td></tr><tr><td>4</td><td>Cliente 055</td><td>R$ 34.691</td></tr><tr><td>5</td><td>Cliente 549</td><td>R$ 34.379</td></tr><tr><td>6</td><td>Cliente 507</td><td>R$ 34.277</td></tr><tr><td>7</td><td>Cliente 856</td><td>R$ 32.250</td></tr><tr><td>8</td><td>Cliente 516</td><td>R$ 31.722</td></tr><tr><td>9</td><td>Cliente 070</td><td>R$ 31.499</td></tr><tr><td>10</td><td>Cliente 606</td><td>R$ 31.238</td></tr></tbody>
+    </table>
+  </section>
+</main>
+<footer>Gerado automaticamente por <code>src/gerar_dashboard.py</code> a partir de <code>dados/vendas_limpo.csv</code>.</footer>
+</body>
+</html>
