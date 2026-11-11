@@ -4,6 +4,9 @@
 
 <br>
 
+[![CI](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml)
+[![Testes](https://img.shields.io/badge/testes-4_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![E-mail](https://img.shields.io/badge/E--mail-Falar_comigo-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dfm21031983@gmail.com)
 ![Status](https://img.shields.io/badge/Status-Aberto_a_oportunidades-2EA043?style=for-the-badge)
@@ -82,6 +85,16 @@ Vivência real de negócio no mercado financeiro, agora aplicada em análise de 
 
 Todos seguem o mesmo caminho: **pergunta de negócio → dados → análise → insight → recomendação**.
 
+### ▶️ Como rodar e testar
+
+```bash
+pip install -r requirements.txt          # dependências de todos os projetos
+cd analise-vendas && python analise.py   # cada projeto roda na sua própria pasta
+cd .. && pytest -q                       # roda as 4 análises e valida as saídas
+```
+
+O badge **CI** no topo mostra o resultado da última execução no GitHub Actions.
+
 | Competência | Onde está |
 |---|---|
 | **SQL analítico** (CTEs, funções de janela, subqueries) | [Inadimplência de Crédito](./analise-inadimplencia-sql) |
@@ -91,6 +104,7 @@ Todos seguem o mesmo caminho: **pergunta de negócio → dados → análise → 
 | **Linguagem R** | [RFM em R](./segmentacao-rfm-r-tableau) |
 | **Metas e indicadores comerciais** (meta x realizado, concentração de carteira) | [Painel Comercial](./painel-comercial-excel-powerbi) |
 | **Dados reproduzíveis e documentação** (seed fixa, README com método e resultados) | Todos |
+| **Qualidade de código** (testes automatizados com pytest e CI no GitHub Actions a cada push) | [`testes/`](./testes) · [`.github/workflows/ci.yml`](./.github/workflows/ci.yml) |
 
 ---
 
@@ -143,6 +157,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 
 - [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI (2 páginas: painel e carteira de clientes)
 - [ ] **Segmentação de clientes (RFM) em R e Tableau**: script e bases em [`segmentacao-rfm-r-tableau`](./segmentacao-rfm-r-tableau), falta publicar o dashboard no Tableau Public
+- [ ] **Teste automatizado da segmentação RFM** (roda com `Rscript` no CI) para cobrir o projeto em R também
 
 ---
 
