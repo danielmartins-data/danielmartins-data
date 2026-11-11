@@ -11,6 +11,8 @@
 **Transformo dados em decisão comercial.**
 Vivência real de negócio no mercado financeiro, agora aplicada em análise de dados e BI.
 
+<sub>🇬🇧 *Data Analyst with 24 years in financial services. I apply SQL, Python, Power BI, Excel and R to sales, credit and customer analytics. Advanced English.*</sub>
+
 <br>
 
 <img src="./assets/kpis.svg" alt="24 anos de mercado financeiro, 185% de meta por 5 meses seguidos, 750 clientes em carteira, 4 graduações" width="100%">
@@ -133,6 +135,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 | 🎓 **Graduação** | Análise e Desenvolvimento de Sistemas, Universidade São Judas (em andamento) |
 | ☁️ **Microsoft** | Azure AI Fundamentals (AI-900) |
 | 📊 **Dados e BI** | Power BI, análise de dados e data science (Senai); Modelagem e Visualização de Dados com Power BI e Excel Avançado |
+| 🧠 **Trilha de dados e programação** | 19 cursos da Escola Virtual da Fundação Bradesco (169 h, 2024–2025): Python, bancos de dados, modelagem de dados, Power BI, Excel avançado, IA e programação orientada a objetos |
 | ⚙️ **Automação** | Power Automate / RPA (DIO) |
 | 💼 **Mercado financeiro** | ANBIMA CEA, CPA-20 e CPA-10 |
 
