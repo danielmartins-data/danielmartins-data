@@ -27,6 +27,7 @@ Vaga de **Analista de Dados Júnior / BI**, com foco em negócios, vendas e fina
 | [Retenção de assinantes (coorte)](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-cohort-retencao) | Matriz de coorte, churn mensal e LTV por plano e canal | SQL, Python |
 | [Teste A/B de conversão](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-teste-ab) | Teste z, intervalo de confiança, poder estatístico e impacto em receita | Python |
 | [Previsão de demanda](https://github.com/danielmartins-data/danielmartins-data/tree/main/previsao-demanda) | Holt-Winters vs baseline, validação temporal, MAE/MAPE/WAPE | Python |
+| [Score de risco de churn](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-risco-credito) | Regressão logística do zero, validação cruzada, AUC/KS e ganho acumulado | Python, estatística |
 | [Churn de clientes](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-churn-clientes) | Análise exploratória e score de risco explicável | Python |
 | [Inadimplência de crédito](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-inadimplencia-sql) | CTEs, window functions, safra e concentração de risco | SQL |
 | [Análise de vendas](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-vendas) | Limpeza, KPIs, sazonalidade e recomendação comercial | Python, SQL |

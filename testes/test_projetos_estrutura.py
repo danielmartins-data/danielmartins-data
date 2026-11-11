@@ -16,6 +16,7 @@ PROJETOS = [
     "analise-cohort-retencao",
     "analise-inadimplencia-sql",
     "analise-teste-ab",
+    "analise-risco-credito",
     "analise-vendas",
     "painel-comercial-excel-powerbi",
     "pipeline-etl-dashboard",

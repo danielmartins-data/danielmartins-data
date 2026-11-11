@@ -16,7 +16,7 @@ deste repositório é perseguir os que reforçam o perfil técnico.
 
 ## O que realmente pesa em processo seletivo (e já está aqui)
 
-- CI verde com **21 testes automatizados** (Python 3.10, 3.11 e 3.12) e badge no README
+- CI verde com **23 testes automatizados** (Python 3.10, 3.11 e 3.12) e badge no README
 - `CONTRIBUTING.md` com fluxo de branch e commit convencional
 - template de Pull Request e de issue, 3 issues de roadmap abertas
 - `LICENSE` MIT (seu código pode ser usado como referência)

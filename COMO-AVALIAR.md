@@ -8,7 +8,7 @@ Olá! Este repositório foi organizado para que você não precise procurar: cad
 
 | Tempo | O que abrir | O que você vai ver |
 |---|---|---|
-| 1 min | [README principal](README.md) | quem sou, stack e os 9 projetos com resultado em uma linha |
+| 1 min | [README principal](README.md) | quem sou, stack e os 10 projetos com resultado em uma linha |
 | 1 min | [Pipeline ETL + Dashboard](pipeline-etl-dashboard/dashboard.html) | um painel real gerado por código, aberto direto no navegador |
 | 1 min | [Teste A/B](analise-teste-ab/README.md) | decisão de negócio com p-valor, intervalo de confiança e impacto em R$ |
 | 1 min | [Retenção (coorte)](analise-cohort-retencao/README.md) | matriz de coorte, churn e LTV por segmento |
@@ -16,9 +16,9 @@ Olá! Este repositório foi organizado para que você não precise procurar: cad
 
 ## ✅ O que está garantido por teste automatizado
 
-Não é só "código que roda na minha máquina": o GitHub Actions executa, a cada push, os 9 projetos e valida as saídas.
+Não é só "código que roda na minha máquina": o GitHub Actions executa, a cada push, os 10 projetos e valida as saídas.
 
-- os 9 projetos executam de ponta a ponta;
+- os 10 projetos executam de ponta a ponta;
 - as regras de qualidade do pipeline ETL passam (7 de 7);
 - o teste A/B tem p-valor coerente com a decisão tomada;
 - a previsão tem 30 dias com intervalo de confiança consistente;

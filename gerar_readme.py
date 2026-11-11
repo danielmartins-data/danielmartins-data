@@ -39,6 +39,10 @@ projetos = [
          resumo="Holt-Winters contra baseline sazonal, validação temporal e MAE, MAPE e WAPE — inclusive quando o modelo simples ganha.",
          destaque=f"WAPE de {pct(prev.loc['baseline_sazonal','WAPE_pct'])} · 30 dias à frente",
          tags=["Série temporal", "Python"], img="previsao-demanda/graficos/previsao_30dias.png"),
+    dict(emoji="🧮", titulo="Score de risco de churn (modelo)", pasta="analise-risco-credito",
+         resumo="Regressão logística implementada do zero, validação cruzada 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.",
+         destaque="AUC 0,744 · 44% de acerto no top 20% da base",
+         tags=["Machine learning", "Estatística"], img="analise-risco-credito/graficos/curva_roc.png"),
     dict(emoji="🔁", titulo="Churn de clientes", pasta="analise-churn-clientes",
          resumo="Análise exploratória de fatores de churn e um score de risco explicável, com a lista de prioridade para o comercial.",
          destaque="Score separa 5,5% de 52,8% de churn",
@@ -130,7 +134,7 @@ readme = f"""<div align="center">
 
 [![CI](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml)
 [![Testes](https://img.shields.io/badge/testes-11_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
-[![Projetos](https://img.shields.io/badge/portfólio-9_projetos-1f4e79?style=flat-square)](./COMO-AVALIAR.md)
+[![Projetos](https://img.shields.io/badge/portfólio-10_projetos-1f4e79?style=flat-square)](./COMO-AVALIAR.md)
 [![Status](https://img.shields.io/badge/Status-Aberto_a_oportunidades-2EA043?style=flat-square)](https://www.linkedin.com/in/danielfernandomartins)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-1f4e79?style=flat-square)](./LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10_|_3.11_|_3.12-3776AB?style=flat-square&logo=python&logoColor=white)](./.github/workflows/ci.yml)
@@ -153,6 +157,17 @@ readme = f"""<div align="center">
 
 **👉 Recrutador com 5 minutos?** Comece pelo [roteiro de avaliação](./COMO-AVALIAR.md) — ou abra direto o [dashboard gerado por código](./pipeline-etl-dashboard/dashboard.html).
 
+<br>
+
+<table>
+<tr>
+<td align="center" width="25%"><b>10</b><br><sub>projetos completos</sub></td>
+<td align="center" width="25%"><b>23</b><br><sub>testes automatizados</sub></td>
+<td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
+<td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
+</tr>
+</table>
+
 </div>
 
 <br>
@@ -164,9 +179,38 @@ readme = f"""<div align="center">
 | 🎯 **Busco** | Vaga de **Analista de Dados Júnior** ou BI, com foco em negócios, vendas e finanças |
 | 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
 | 🧰 **Ferramentas** | SQL · Python (pandas) · Power BI e DAX · Excel · R · Git/GitHub · GitHub Actions |
-| 📂 **Provas** | **9 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
+| 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
 | ✅ **Qualidade** | **11 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
+
+---
+
+## 🧭 Para quem está avaliando
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Se você é recrutador(a) ou RH**
+
+- Comece pelo [roteiro de 5 minutos](./COMO-AVALIAR.md) — tem o que abrir e em qual ordem.
+- [Currículo em uma página](./CURRICULO.md), com contato e stack.
+- Toda competência citada tem um link que prova: código, base, resultado e teste.
+- Os dados são **sintéticos** e isso está avisado em todos os projetos.
+
+</td>
+<td width="50%" valign="top">
+
+**Se você é gestor(a) de dados ou tech lead**
+
+- [Guia de entrevista](./docs/GUIA-ENTREVISTA.md): a narrativa, as perguntas difíceis e o que eu assumo como ponto fraco.
+- Cada projeto tem teste que valida **as saídas**, não só "se rodou".
+- [Como contribuir](./CONTRIBUTING.md): padrão de projeto, convenção de commit e fluxo de PR.
+- Modelos e métricas feitos do zero (teste z, regressão logística) para mostrar conceito, não `import`.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -187,6 +231,7 @@ Todos seguem o mesmo caminho: **pergunta de negócio → dados → análise → 
 | **SQL analítico** (CTEs, funções de janela, subqueries, safra) | [Inadimplência de Crédito](./analise-inadimplencia-sql) · [Coorte](./analise-cohort-retencao) · [Pipeline](./pipeline-etl-dashboard/src/kpis.sql) |
 | **Engenharia de dados e qualidade** (ETL com log, regras de validação) | [Pipeline ETL + Dashboard](./pipeline-etl-dashboard) |
 | **Estatística aplicada** (teste z, IC 95%, poder estatístico) | [Teste A/B](./analise-teste-ab) |
+| **Machine learning** (regressão logística do zero, AUC, KS, ganho acumulado) | [Score de risco de churn](./analise-risco-credito) |
 | **Séries temporais** (Holt-Winters, baseline, validação temporal) | [Previsão de Demanda](./previsao-demanda) |
 | **Limpeza e análise exploratória** (pandas) | [Vendas](./analise-vendas) · [Churn](./analise-churn-clientes) |
 | **BI e modelagem** (modelo estrela, DAX, Excel por fórmula) | [Painel Comercial](./painel-comercial-excel-powerbi) |
@@ -195,13 +240,14 @@ Todos seguem o mesmo caminho: **pergunta de negócio → dados → análise → 
 | **Qualidade de código e CI** (pytest + GitHub Actions) | [`testes/`](./testes) · [`.github/workflows/ci.yml`](./.github/workflows/ci.yml) |
 | **Documentação para recrutador** | [Como avaliar em 5 minutos](./COMO-AVALIAR.md) · [Contribuição](./CONTRIBUTING.md) · [Currículo](./CURRICULO.md) |
 | **Organização de repositório** (licença, template de PR, política de segurança) | [`LICENSE`](./LICENSE) · [`.github/`](./.github) · [`SECURITY.md`](./SECURITY.md) |
+| **Preparação para entrevista** (narrativa, perguntas difíceis, checklist) | [Guia de entrevista](./docs/GUIA-ENTREVISTA.md) |
 
 ### ▶️ Como rodar e testar
 
 ```bash
 pip install -r requirements.txt          # dependências de todos os projetos
 cd analise-vendas && python analise.py   # cada projeto roda na sua própria pasta
-cd .. && pytest -q                       # executa os 9 projetos e valida as saídas
+cd .. && pytest -q                       # executa os 10 projetos e valida as saídas
 ```
 
 O badge **CI** no topo mostra o resultado da última execução no GitHub Actions.
@@ -275,6 +321,22 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 - [ ] Publicar o dashboard RFM no **Tableau Public** e colocar o link no projeto
 - [ ] Teste automatizado da segmentação RFM executando o **R** no CI (hoje roda a versão Python equivalente)
 - [ ] Modelo de propensão a churn com curva ROC comparado ao score de regras
+
+---
+
+---
+
+## 🏁 Por que me contratar como Analista de Dados Júnior
+
+| O que você ganha | Como isso aparece aqui |
+|---|---|
+| **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
+| **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
+| **Hábito de qualidade** | 23 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
+| **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
+| **Autonomia para aprender rápido** | 10 projetos construídos do zero, com método documentado e reproduzível |
+
+> *"Não tenho 5 anos de experiência em dados. Tenho 24 anos resolvendo problema de negócio com número — e agora sei programar, modelar e testar esse número. O que você vê neste repositório é o meu jeito de trabalhar, não uma vitrine de curso."*
 
 ---
 
