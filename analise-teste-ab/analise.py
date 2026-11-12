@@ -46,7 +46,7 @@ p_a, p_b = x_a / n_a, x_b / n_b
 p_pool = (x_a + x_b) / (n_a + n_b)
 erro_padrao = math.sqrt(p_pool * (1 - p_pool) * (1 / n_a + 1 / n_b))
 z = (p_b - p_a) / erro_padrao
-p_valor = 2 * (1 - 0.5 * (1 + math.erf(abs(z) / math.sqrt(2))))   # cauda normal
+p_valor = math.erfc(abs(z) / math.sqrt(2))  # cauda normal bilateral, sem cancelamento numérico
 
 lift_abs = p_b - p_a
 lift_rel = lift_abs / p_a
