@@ -6,17 +6,9 @@
 
 ## 🎯 Resumo executivo
 
-| Modelo | AUC | KS | Precisão (top 20%) | Recall (top 20%) | F1 |
-|---|---|---|---|---|---|
-| Score de regras (0 a 3 pontos) | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado |
-| **Regressão logística (5 variáveis)** | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado | consultar CSV gerado |
+As métricas são recalculadas na execução e ficam disponíveis em `dados/comparacao_modelos.csv`. O corte de priorização seleciona exatamente 20% da base; empates são resolvidos de forma estável pela ordem original dos registros.
 
-- **O modelo ordena melhor** () e, no mesmo esforço de 20% da base, .
-- **A regra ainda tem valor**: com o corte em 2 pontos ela liga para 1.240 clientes e captura 427 churns — mais churn em número absoluto, gastando o dobro de ligações. A escolha é de **custo por contato**, não de estatística.
-- **Faixas ilustrativas de risco do modelo (recalculadas a cada execução):** baixo **5,2%** de churn, moderado 13,4%, alto 28,5%, muito alto 43,7% e crítico **59,0%** — o dobro de separação entre a primeira e a última faixa.
-- **Associações estimadas pelo modelo** (odds ratio; não implicam causalidade): não usar o app **1,76×**, reclamação no ano **1,56×**, ter 1–2 produtos **1,55×**, ser cliente novo **1,25×**; saldo alto **reduz** o risco (0,86×).
-
-**Recomendação didática:** comparar a ordenação do modelo e a regra simples. Como os dados são sintéticos, os resultados não justificam uso operacional nem contato real com clientes. Ligando para os 20% de maior risco, 4 em cada 10 contatos estão realmente em risco — 27% melhor que a regra atual.
+**Leitura:** compare AUC e KS para avaliar ordenação; precisão e recall no top 20% mostram o resultado sob capacidade limitada de contato. Como a base é sintética, esses indicadores servem apenas para demonstrar o método.
 
 ## 🧠 Método
 
