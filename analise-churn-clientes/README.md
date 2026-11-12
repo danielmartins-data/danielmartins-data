@@ -14,7 +14,7 @@
 - **Segmento** tem efeito pequeno (Varejo 18,5%, Prime 15,2%, Exclusive 15,7%): o problema não é "cliente de segmento X", é comportamento.
 - **Score de priorização (0 a 3 pontos):** 0 ponto → **5,5%** de churn; 1 → 13,9%; 2 → 26,7%; 3 → **52,8%**. Uma regra de três linhas separa um grupo com 10x o risco do outro — é isso que a área comercial recebe, não um modelo caixa-preta.
 
-**Recomendação:** priorizar contato nos clientes com 2+ pontos (poucos produtos, sem app e com reclamação), começando pelos de maior saldo. Para cada 100 clientes nesse grupo, ~53 sairiam sem ação.
+**Recomendação:** priorizar contato nos clientes com 2+ pontos (poucos produtos, sem app e com reclamação), começando pelos de maior saldo. Na base sintética, cerca de 53 em cada 100 clientes desse grupo têm churn observado. Isso não estima quantos seriam retidos por uma ação comercial.
 
 ## 🧮 Score de risco (regra simples)
 
