@@ -6,9 +6,11 @@
 
 ## 🎯 Resumo executivo
 
-As métricas são recalculadas na execução e ficam disponíveis em `dados/comparacao_modelos.csv`. O corte de priorização seleciona exatamente 20% da base; empates são resolvidos de forma estável pela ordem original dos registros.
+O script compara um score de regras com uma regressão logística por validação cruzada estratificada em cinco folds. A padronização é aprendida apenas no conjunto de treino de cada fold, evitando vazamento de informação.
 
-**Leitura:** compare AUC e KS para avaliar ordenação; precisão e recall no top 20% mostram o resultado sob capacidade limitada de contato. Como a base é sintética, esses indicadores servem apenas para demonstrar o método.
+As métricas AUC, KS, precisão, recall e F1 são recalculadas a cada execução e salvas em `dados/comparacao_modelos.csv`. O corte operacional do exercício seleciona exatamente 20% dos registros, com desempate estável.
+
+**Leitura didática:** AUC/KS avaliam a capacidade de ordenação; precisão/recall no top 20% representam o compromisso entre contatos disponíveis e casos identificados. Como o conjunto é sintético, não se deve usar o score para priorizar clientes reais.
 
 ## 🧠 Método
 
