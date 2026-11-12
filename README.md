@@ -50,7 +50,7 @@
 |---|---|
 | 🎯 **Busco** | Vaga de **Analista de Dados Júnior** ou BI, com foco em negócios, vendas e finanças |
 | 💡 **Diferencial** | 24 anos de experiência no mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
-| 🧰 **Ferramentas** | SQL (SQLite) · Python (pandas) · Excel · Power BI/DAX (modelagem e medidas documentadas) · R · Git/GitHub |
+| 🧰 **Ferramentas** | SQL (SQLite) · Python (pandas) · Excel · Power BI/DAX documentados (.pbix pendente) · R · Git/GitHub; Tableau em roteiro
 | 📂 **Provas** | **10 projetos demonstrativos**, com pergunta de negócio, método, documentação e instruções de execução |
 | ✅ **Qualidade** | Suite pytest e CI configurado para Python 3.10–3.12; quantidade e status atuais devem ser conferidos no Actions |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
@@ -146,7 +146,7 @@ Holt-Winters contra baseline sazonal, validação temporal e MAE, MAPE e WAPE �
 
 Regressão logística implementada do zero, validação cruzada 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.
 
-**AUC 0,744 · 44% de concentração no top 20% da base**
+**Comparação por validação cruzada; métricas recalculadas na execução**
 
 <img src="https://img.shields.io/badge/Machine_learning-1f4e79?style=flat-square&labelColor=1f4e79" alt="Machine learning"> <img src="https://img.shields.io/badge/Estatística-1f4e79?style=flat-square&labelColor=1f4e79" alt="Estatística">
 
@@ -317,7 +317,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 | O que você ganha | Como isso aparece aqui |
 |---|---|
 | **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
-| **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
+| **Base técnica verificável** | SQL analítico em SQLite, pandas, estatística aplicada, modelo de classificação, Excel e documentação de Power BI/DAX |
 | **Hábito de qualidade** | suite de testes automatizados e CI configurado para 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
 | **Autonomia para aprender rápido** | 10 projetos demonstrativos construídos, com método documentado e reproduzível |
@@ -337,6 +337,6 @@ Aberto a oportunidades em **Análise de Dados, BI e áreas que unam negócio e d
 
 <sub>Repositório organizado com testes automatizados, CI e documentação — porque portfólio de dados também precisa de qualidade de dado.</sub>
 
-<sub>Licença MIT · dados 100% sintéticos · feito com Python, SQL, Excel, Power BI, R e GitHub Actions</sub>
+<sub>Licença MIT · dados 100% sintéticos · projetos em Python, SQL, Excel, DAX documentado, R e GitHub Actions</sub>
 
 </div>
