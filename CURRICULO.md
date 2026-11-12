@@ -14,8 +14,8 @@ Vaga de **Analista de Dados Júnior / BI**, com foco em negócios, vendas e fina
 
 | Área | Ferramentas |
 |---|---|
-| Linguagens | Python (pandas, numpy, matplotlib) · SQL (SQLite, MySQL, PostgreSQL) · R (base) |
-| BI e visualização | Power BI (modelo estrela, DAX) · Excel avançado · Tableau · HTML/SVG |
+| Linguagens | Python (pandas, numpy, matplotlib) · SQL (SQLite demonstrado nos projetos; MySQL e PostgreSQL em estudo) · R (base) |
+| BI e visualização | Excel avançado · Power BI (modelo estrela e medidas DAX documentados; .pbix pendente) · Tableau (roteiro de publicação; dashboard público pendente) · HTML/SVG |
 | Dados | ETL, limpeza e validação de dados, análise exploratória, teste A/B, séries temporais, RFM/coortes |
 | Outros | Git e GitHub, GitHub Actions (CI), Power Automate/RPA, Azure AI Fundamentals (AI-900) |
 
