@@ -46,7 +46,9 @@ Portfólio completo: https://github.com/danielmartins-data
 
 ## EXPERIÊNCIA PROFISSIONAL
 
-**Bradesco | Gerente Exclusive**
+**Bradesco | 03/2000 a 08/2024 | 24 anos de atuação**
+**Cargos exercidos:** Gerente Assistente Pessoa Jurídica, Gerente Exclusive e Gerente Prime Digital.
+- Atuação em diferentes segmentos e modelos de relacionamento bancário, com experiência em carteira de pessoa jurídica, atendimento de alta renda e relacionamento digital.
 - Gestão de carteira com aproximadamente 750 clientes, com acompanhamento de metas, indicadores comerciais, relacionamento e retenção.
 - Atingimento de 185% da meta durante cinco meses consecutivos.
 - Crescimento de 35% no volume de negócios da carteira em 12 meses.
