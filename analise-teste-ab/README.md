@@ -1,6 +1,6 @@
 # 🧪 Teste A/B de Conversão: o ganho é real ou sorte?
 
-> **Pergunta de negócio:** *a nova página de checkout converte mais de verdade? Podemos publicar com segurança?*
+> **Pergunta didática:** *como comparar duas taxas de conversão e quantificar incerteza usando um experimento simulado?*
 
 ![Conversão por grupo](graficos/conversao_por_grupo.png)
 
@@ -15,18 +15,18 @@
 | p-valor (teste z bilateral) | — | — | **p < 0,0001** |
 | IC 95% do ganho | — | — | **[+0,67; +1,58] p.p.** |
 
-**Decisão recomendada: publicar a variante B.**
+**Conclusão do exercício:** a amostra simulada apresenta diferença estatística entre A e B. Isso não é recomendação para publicar uma variante real.
 
-- O ganho é **estatisticamente significativo** (p < 0,0001, muito abaixo de 0,05) e o intervalo de confiança de 95% não toca o zero: o ganho mínimo plausível ainda é +0,67 p.p.
-- Com ~807 mil visitantes/ano, o ganho projetado é de **+R$ 1,86 milhão de receita por ano**.
+- Na amostra simulada, a diferença é **estatisticamente significativa** (p < 0,0001) e o intervalo de confiança de 95% não inclui zero. Como o efeito foi inserido pelo gerador, isso apenas confirma que o código recupera o sinal programado.
+- A extrapolação financeira é apenas ilustrativa e depende de hipóteses artificiais de tráfego, ticket e estabilidade; não representa previsão de receita.
 - O teste já tinha amostra suficiente: para detectar um efeito desse tamanho com 80% de poder, eram necessários ~7.805 visitantes por grupo — o experimento teve mais de 22 mil.
-- A conversão acumulada estabiliza no meio do experimento (gráfico 3), sinal de que **não houve novidade passageira** nem vazamento entre grupos.
+- O gráfico acumulado é descritivo. Não permite concluir ausência de efeito novidade, vazamento entre grupos ou validade operacional.
 
 ## 🧠 Método
 
-1. **Base sintética** (`gerar_dados.py`): 21 dias, ~2.200 visitantes/dia divididos entre A e B, com um efeito real embutido (+1,4 p.p. de conversão) para o teste ter o que encontrar.
+1. **Base sintética** (`gerar_dados.py`): 21 dias, ~2.200 visitantes/dia divididos entre A e B, com um efeito programado na simulação (+1,4 p.p. de conversão) para o teste ter o que encontrar.
 2. **Métrica primária:** conversão (pedidos ÷ visitantes). Métricas secundárias: ticket médio e receita por visitante (para garantir que a variante não ganha convertendo pedidos piores).
-3. **Teste z para duas proporções** (bilateral, α = 0,05), com erro padrão agrupado — o teste padrão de mercado para conversão.
+3. **Teste z para duas proporções** (bilateral, α = 0,05), com erro padrão agrupado — um teste z aproximado para duas proporções.
 4. **Intervalo de confiança de 95%** para o lift absoluto, sem agrupamento.
 5. **Poder estatístico:** cálculo do tamanho de amostra necessário com poder de 80%.
 6. **Impacto financeiro:** ganho de receita por visitante extrapolado para o volume anual.
@@ -57,7 +57,7 @@ python analise.py
 
 ## ⚠️ Sobre os dados
 
-Dados **sintéticos** (fictícios), gerados por script com seed fixa. Nenhuma empresa real foi usada. O objetivo é demonstrar o método de análise de experimentos, não um resultado comercial verdadeiro.
+Dados **sintéticos** (fictícios), gerados por script com seed fixa. Nenhuma empresa real foi usada. O objetivo é demonstrar o método de análise de experimentos, não estimar um efeito comercial verdadeiro.
 
 ## 🚀 Próximos passos
 
