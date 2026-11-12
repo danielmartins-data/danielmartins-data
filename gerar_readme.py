@@ -29,7 +29,7 @@ projetos = [
          tags=["Python", "SQL", "ETL", "HTML"], img="pipeline-etl-dashboard/imagens/dashboard.png"),
     dict(emoji="🧪", titulo="Teste A/B de conversão", pasta="analise-teste-ab",
          resumo="Exercício estatístico em dados sintéticos: teste z, p-valor, intervalo de confiança e poder estatístico. A diferença entre grupos foi definida na simulação.",
-         destaque=f"+{pct(r['lift_absoluto_pct'],2)} p.p. de conversão · p < 0,0001",
+         destaque=f"+{pct(r['lift_absoluto_pct'],2)} p.p. na base sintética · p < 0,0001",
          tags=["Estatística", "Python"], img="analise-teste-ab/graficos/conversao_por_grupo.png"),
     dict(emoji="🔄", titulo="Retenção de assinantes (coorte)", pasta="analise-cohort-retencao",
          resumo="Matriz de coorte em SQL, churn mensal e LTV por plano e canal de aquisição, com o viés das coortes recentes corrigido.",
@@ -161,7 +161,7 @@ readme = f"""<div align="center">
 
 <table>
 <tr>
-<td align="center" width="25%"><b>10</b><br><sub>projetos completos</sub></td>
+<td align="center" width="25%"><b>10</b><br><sub>projetos demonstrativos</sub></td>
 <td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
@@ -180,7 +180,7 @@ readme = f"""<div align="center">
 | 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
 | 🧰 **Ferramentas** | SQL · Python (pandas) · Power BI e DAX · Excel · R · Git/GitHub · GitHub Actions |
 | 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
-| ✅ **Qualidade** | **27 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
+| ✅ **Qualidade** | **27 testes automatizados** e CI executado em pull requests para main — os projetos rodam e as saídas são validadas |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
 
 ---
