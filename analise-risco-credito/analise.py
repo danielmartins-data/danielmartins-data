@@ -121,8 +121,10 @@ auc_regra, ks_regra = auc(y, regra.to_numpy(dtype=float)), ks(y, regra.to_numpy(
 # -------------------------- 5) Métricas no corte de 20% de maior risco
 def metricas_no_corte(real, score, fracao=0.20):
     n_corte = int(round(len(score) * fracao))
-    corte = np.sort(score)[::-1][n_corte - 1]
-    previsto = (score >= corte).astype(int)
+    ordem = np.argsort(-score, kind="stable")
+    selecionados = ordem[:n_corte]
+    previsto = np.zeros(len(score), dtype=int)
+    previsto[selecionados] = 1
     tp = int(((previsto == 1) & (real == 1)).sum())
     fp = int(((previsto == 1) & (real == 0)).sum())
     fn = int(((previsto == 0) & (real == 1)).sum())
