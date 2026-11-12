@@ -2,7 +2,7 @@
 
 Quem são os clientes que mais valem, quais estão esfriando e onde agir primeiro? Este projeto segmenta uma carteira comercial pela técnica **RFM** (Recência, Frequência e Valor) em **R** e prepara a base para o dashboard em **Tableau**.
 
-> ⚠️ **Os dados são sintéticos (fictícios).** As transações vêm do projeto [`painel-comercial-excel-powerbi`](../painel-comercial-excel-powerbi), e a soma por cliente bate com o realizado daquele painel (R$ 37,05 milhões).
+> ⚠️ **Os dados são sintéticos (fictícios).** `fato_transacoes.csv` e `dim_cliente.csv` são bases complementares versionadas no projeto [`painel-comercial-excel-powerbi`](../painel-comercial-excel-powerbi). A soma das transações concilia com o realizado do painel (R$ 37,05 milhões); os dois arquivos não são recriados pelo script `gerar_dados.py`.
 
 **Status:** script em R e bases prontos · versão equivalente em Python (`gerar_rfm.py`) para quem não tem R instalado · dashboard no Tableau Public em construção.
 
