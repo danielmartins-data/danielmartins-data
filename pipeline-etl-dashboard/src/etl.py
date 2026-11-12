@@ -114,7 +114,7 @@ vendas["nome"] = vendas["nome"].fillna("Cliente não identificado")
 # pedido sem cadastro de cliente não entra em ranking de cliente
 vendas["nome_cliente_valido"] = vendas["nome"].where(vendas["cliente_id"] != "", None)
 vendas["receita"] = (vendas["quantidade"] * vendas["preco_unitario"]).round(2)
-vendas["receita_liquida"] = (vendas["receita"] * (1 - 0.5 * vendas["devolucao"])).round(2)
+vendas["receita_liquida"] = (vendas["receita"] * (1 - 2 * vendas["devolucao"])).round(2)  # devolução integral do valor bruto
 vendas["mes"] = vendas["data"].dt.strftime("%Y-%m")
 
 # 2.9 metas
