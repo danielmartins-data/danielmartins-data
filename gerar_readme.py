@@ -128,7 +128,7 @@ readme = f"""<div align="center">
 <br><br>
 
 [![CI](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml)
-[![Testes](https://img.shields.io/badge/testes-27_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
+[![Testes](https://img.shields.io/badge/testes-28_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
 [![Projetos](https://img.shields.io/badge/portfólio-10_projetos-1f4e79?style=flat-square)](./COMO-AVALIAR.md)
 [![Status](https://img.shields.io/badge/Status-Aberto_a_oportunidades-2EA043?style=flat-square)](https://www.linkedin.com/in/danielfernandomartins)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-1f4e79?style=flat-square)](./LICENSE)
@@ -157,7 +157,7 @@ readme = f"""<div align="center">
 <table>
 <tr>
 <td align="center" width="25%"><b>10</b><br><sub>projetos demonstrativos</sub></td>
-<td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
+<td align="center" width="25%"><b>28</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
 </tr>
