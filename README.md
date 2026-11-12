@@ -92,7 +92,12 @@ Estes são os três projetos que melhor demonstram competências diretamente rel
 ## Experiência de negócio
 
 **Bradesco — 03/2000 a 08/2024 | 24 anos**
-Cargos exercidos: Gerente Assistente Pessoa Jurídica, Gerente Exclusive e Gerente Prime Digital.
+
+**Cargos exercidos ao longo da trajetória:**
+- Gerente Assistente Pessoa Jurídica
+- Gerente Exclusive
+- Gerente Prime Digital
+
 - Atuação em segmentos de pessoa jurídica, alta renda e relacionamento digital.
 - 185% de atingimento de meta por cinco meses consecutivos em carteira de 750 clientes.
 - Crescimento de 35% no volume de negócios da carteira em 12 meses.
