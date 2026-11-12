@@ -1,7 +1,8 @@
 """Garante que a segmentação RFM roda (em Python) e reproduz os números do README.
 
-O script oficial do projeto é em R. Este teste executa a versão equivalente em
-Python, para que o resultado seja validado mesmo em máquina sem R instalado.
+O script oficial do projeto é em R e também roda em um job dedicado do GitHub Actions.
+Este teste adicional executa a versão equivalente em Python para validar a paridade
+numérica mesmo em ambientes sem R instalado.
 """
 import os
 
