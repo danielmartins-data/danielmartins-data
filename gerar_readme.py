@@ -32,7 +32,7 @@ projetos = [
          destaque=f"+{pct(r['lift_absoluto_pct'],2)} p.p. na base sintética · p < 0,0001",
          tags=["Estatística", "Python"], img="analise-teste-ab/graficos/conversao_por_grupo.png"),
     dict(emoji="🔄", titulo="Retenção de assinantes (coorte)", pasta="analise-cohort-retencao",
-         resumo="Matriz de coorte em SQL, churn mensal e LTV por plano e canal de aquisição, com o viés das coortes recentes corrigido.",
+         resumo="Matriz de coorte em SQL com janelas aproximadas de 30 dias, churn descritivo e LTV simplificado por plano e canal.",
          destaque=f"{pct(coorte_m12)} de retenção no 12º mês",
          tags=["SQL", "Coorte", "LTV"], img="analise-cohort-retencao/graficos/cohort_retencao.png"),
     dict(emoji="🚀", titulo="Previsão de demanda", pasta="previsao-demanda",
@@ -40,8 +40,8 @@ projetos = [
          destaque=f"WAPE de {pct(prev.loc['baseline_sazonal','WAPE_pct'])} na base sintética · horizonte de 30 dias",
          tags=["Série temporal", "Python"], img="previsao-demanda/graficos/previsao_30dias.png"),
     dict(emoji="🧮", titulo="Score de risco de churn (modelo)", pasta="analise-risco-credito",
-         resumo="Regressão logística implementada do zero, validação cruzada 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.",
-         destaque="AUC 0,744 · 44% de acerto no top 20% da base",
+         resumo="Regressão logística implementada do zero, validação cruzada estratificada em 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.",
+         destaque="Métricas recalculadas na execução; dados sintéticos",
          tags=["Machine learning", "Estatística"], img="analise-risco-credito/graficos/curva_roc.png"),
     dict(emoji="🔁", titulo="Churn de clientes", pasta="analise-churn-clientes",
          resumo="Análise exploratória de fatores de churn e um score de risco explicável, com a lista de prioridade para o comercial.",
@@ -313,7 +313,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 
 | O que você ganha | Como isso aparece aqui |
 |---|---|
-| **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
+| **Alguém que entende o negócio antes do código** | 24 anos de experiência no mercado financeiro; cada projeto começa por uma pergunta de negócio e termina em recomendação |
 | **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
 | **Hábito de qualidade** | suite de testes automatizados e CI configurado para 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
