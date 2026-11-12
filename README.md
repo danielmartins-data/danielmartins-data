@@ -10,6 +10,19 @@ Profissional com **24 anos de experiência no mercado financeiro**, com trajetó
 
 ---
 
+## 🧭 Para quem está avaliando
+
+Organizei a navegação para facilitar uma avaliação objetiva, seja em recrutamento ou em liderança técnica.
+
+| Se você é recrutador(a) ou RH | Se você é gestor(a) de dados ou tech lead |
+|---|---|
+| **[Roteiro de 5 minutos](./COMO-AVALIAR.md)** — por onde começar e quais projetos priorizar. | **[Guia técnico de avaliação](./GUIA-TECNICO.md)** — arquitetura, decisões, testes e limitações que podem ser aprofundados em entrevista. |
+| **[Currículo](./CURRICULO.md)** — trajetória no mercado financeiro, resultados profissionais, formação e objetivo. | **[Código, dados e testes](./testes/)** — confira implementações, validações e saídas reproduzíveis. |
+| **[LinkedIn](https://www.linkedin.com/in/danielfernandomartins)** — histórico profissional e contato. | **[Como contribuir](./CONTRIBUTING.md)** — estrutura, convenção de commits e fluxo de pull request. |
+
+**Transparência:** as bases dos projetos são sintéticas e não representam resultados de empresas reais. Os resultados profissionais descritos no currículo são independentes das análises demonstrativas. As competências listadas abaixo são limitadas ao que está evidenciado por código, documentação ou testes neste repositório.
+
+---
 ## Projetos selecionados
 
 Estes são os três projetos que melhor demonstram competências diretamente relevantes para uma posição júnior em análise de dados. Os resultados numéricos dos projetos vêm de **bases sintéticas** e não representam resultados de empresas reais.
