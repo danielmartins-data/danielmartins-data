@@ -1,60 +1,86 @@
-# 👨‍💻 Daniel Fernando Martins · Analista de Dados
+# Daniel Fernando Martins
+**Analista de Dados Júnior | BI | Análise de Negócios**
 
-> Transformo dados em decisão comercial. 24 anos de mercado financeiro (Bradesco e Cielo) somados a SQL, Python, Power BI, Excel e R.
+E-mail: dfm21031983@gmail.com  
+LinkedIn: https://www.linkedin.com/in/danielfernandomartins  
+GitHub / Portfólio: https://github.com/danielmartins-data
 
-**Contato:** [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · dfm21031983@gmail.com · [GitHub](https://github.com/danielmartins-data)
+## RESUMO PROFISSIONAL
 
----
+Profissional com 24 anos de experiência no mercado financeiro, com trajetória de março de 2000 a agosto de 2024 no Bradesco, além de experiência na Cielo. Atuação em gestão de carteira, relacionamento com clientes, crédito, vendas, metas e retenção. Em transição para Análise de Dados, com formação em andamento em Análise e Desenvolvimento de Sistemas e projetos práticos em Python, pandas e SQL.
 
-## 🎯 Objetivo
+Combino conhecimento de negócio e experiência na interpretação de indicadores comerciais com competências práticas em análise exploratória, tratamento e validação de dados, consultas SQL e comunicação de resultados. Busco oportunidade como Analista de Dados Júnior, especialmente em áreas de negócios, crédito, operações, vendas ou Business Intelligence.
 
-Vaga de **Analista de Dados Júnior / BI**, com foco em negócios, vendas e finanças — unindo vivência de negócio a análise técnica.
+## COMPETÊNCIAS TÉCNICAS
 
-## 🧰 Stack
+- Análise de dados: análise exploratória, indicadores, segmentação, desempenho comercial, retenção e inadimplência.
+- Python: pandas, NumPy e Matplotlib para limpeza, transformação, análise e visualização de dados.
+- SQL: consultas analíticas em SQLite, JOINs, CTEs, agregações, CASE WHEN, subqueries e funções de janela.
+- ETL e qualidade de dados: tratamento de valores ausentes e duplicidades, validações e regras de consistência.
+- Estatística aplicada: fundamentos de teste A/B, análise de coortes, métricas de classificação e séries temporais em projetos demonstrativos.
+- Ferramentas: Excel avançado, Git, GitHub e GitHub Actions.
+- Conhecimentos em desenvolvimento: Power BI e DAX, R e fundamentos de Azure AI.
 
-| Área | Ferramentas |
-|---|---|
-| Linguagens | Python (pandas, numpy, matplotlib) · SQL (SQLite, MySQL, PostgreSQL) · R (base) |
-| BI e visualização | Power BI (modelo estrela, DAX) · Excel avançado · Tableau · HTML/SVG |
-| Dados | ETL, limpeza e validação de dados, análise exploratória, teste A/B, séries temporais, RFM/coortes |
-| Outros | Git e GitHub, GitHub Actions (CI), Power Automate/RPA, Azure AI Fundamentals (AI-900) |
+## PROJETOS DE ANÁLISE DE DADOS
 
-## 📂 Portfólio (código, dados e resultado em cada projeto)
+Projetos autorais desenvolvidos com dados sintéticos para demonstrar métodos e competências. Os resultados não representam indicadores de empresas reais.
 
-| Projeto | O que demonstra | Ferramentas |
-|---|---|---|
-| [Pipeline ETL + Dashboard](https://github.com/danielmartins-data/danielmartins-data/tree/main/pipeline-etl-dashboard) | Limpeza de dados "sujos" com log auditável, 7 regras de qualidade, SQL de negócio e dashboard executivo | Python, SQL, HTML |
-| [Retenção de assinantes (coorte)](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-cohort-retencao) | Matriz de coorte, churn mensal e LTV por plano e canal | SQL, Python |
-| [Teste A/B de conversão](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-teste-ab) | Teste z, intervalo de confiança, poder estatístico e impacto em receita | Python |
-| [Previsão de demanda](https://github.com/danielmartins-data/danielmartins-data/tree/main/previsao-demanda) | Holt-Winters vs baseline, validação temporal, MAE/MAPE/WAPE | Python |
-| [Score de risco de churn](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-risco-credito) | Regressão logística do zero, validação cruzada, AUC/KS e ganho acumulado | Python, estatística |
-| [Churn de clientes](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-churn-clientes) | Análise exploratória e score de risco explicável | Python |
-| [Inadimplência de crédito](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-inadimplencia-sql) | CTEs, window functions, safra e concentração de risco | SQL |
-| [Análise de vendas](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-vendas) | Limpeza, KPIs, sazonalidade e recomendação comercial | Python, SQL |
-| [Painel Comercial (Excel + Power BI)](https://github.com/danielmartins-data/danielmartins-data/tree/main/painel-comercial-excel-powerbi) | Modelo estrela, medidas DAX, painel por fórmula | Excel, Power BI |
-| [Segmentação RFM (R + Tableau)](https://github.com/danielmartins-data/danielmartins-data/tree/main/segmentacao-rfm-r-tableau) | Quintis, 7 segmentos e plano de ação | R, Tableau |
+**Pipeline ETL e qualidade de dados | Python, pandas e SQLite**
+- Construção de fluxo para limpeza, padronização e tratamento de dados operacionais.
+- Aplicação de regras de qualidade, registro de transformações e persistência em SQLite.
+- Geração de saídas analíticas e dashboard HTML, com testes automatizados.
+- Projeto: https://github.com/danielmartins-data/danielmartins-data/tree/portfolio/recruiter-ready/pipeline-etl-dashboard
 
-## 💼 Experiência
+**Análise de inadimplência | SQL**
+- Consultas para analisar inadimplência por produto, faixa de score, safra e concentração de exposição.
+- Aplicação de CTEs, agregações, CASE WHEN, subqueries e funções de janela.
+- Projeto: https://github.com/danielmartins-data/danielmartins-data/tree/portfolio/recruiter-ready/analise-inadimplencia-sql
 
-**Bradesco** — Gerente Exclusive
-- 185% de atingimento de meta por 5 meses seguidos em carteira de 750 clientes
-- +35% no volume de negócios da carteira em 12 meses
-- 96–97% de retenção de clientes estratégicos (Prime e Exclusive)
-- 214% da meta em campanha de consórcios
+**Análise de vendas | Python, pandas e SQL**
+- Tratamento de duplicidades e dados ausentes, preservando categorias não informadas para análise.
+- Construção de indicadores por período, produto, região e canal.
+- Elaboração de gráficos e recomendações comerciais a partir dos dados.
+- Projeto: https://github.com/danielmartins-data/danielmartins-data/tree/portfolio/recruiter-ready/analise-vendas
 
-**Cielo** — Gerente de Negócios
-- 118% de atingimento médio de metas
-- -14% na perda de clientes
+Portfólio completo: https://github.com/danielmartins-data
 
-## 🎓 Formação e certificações
+## EXPERIÊNCIA PROFISSIONAL
 
-- Análise e Desenvolvimento de Sistemas — Universidade São Judas (cursando)
-- Economia · Finanças · Gestão de Riscos e Compliance · Direito
-- Microsoft Azure AI Fundamentals (AI-900)
-- Power BI, análise de dados e data science (SENAI) · Modelagem e Visualização de Dados com Power BI · Excel Avançado
-- 19 cursos da Escola Virtual da Fundação Bradesco (169 h): Python, bancos de dados, modelagem de dados, Power BI, IA
-- ANBIMA CEA · CPA-20 · CPA-10
+**Bradesco | Março/2000 a Agosto/2024 | 24 anos de atuação**
 
-## 🗣️ Idiomas
+**Cargos exercidos ao longo da trajetória:**
+- Gerente Assistente Pessoa Jurídica
+- Gerente Exclusive
+- Gerente Prime Digital
 
-Português (nativo) · Inglês (avançado)
+- Atuação em diferentes segmentos e modelos de relacionamento bancário, com experiência em carteira de pessoa jurídica, atendimento de alta renda e relacionamento digital.
+- Gestão de carteira com aproximadamente 750 clientes, com acompanhamento de metas, indicadores comerciais, relacionamento e retenção.
+- Atingimento de 185% da meta durante cinco meses consecutivos.
+- Crescimento de 35% no volume de negócios da carteira em 12 meses.
+- Retenção de 96% a 97% dos clientes estratégicos.
+- Atingimento de 214% da meta em campanha de consórcios.
+
+**Cielo | Gerente de Negócios**
+- Gestão de relacionamento e desempenho comercial, com acompanhamento de metas e indicadores de clientes.
+- Atingimento médio de 118% das metas.
+- Redução de 14% na perda de clientes.
+
+## FORMAÇÃO ACADÊMICA
+
+**Análise e Desenvolvimento de Sistemas | Universidade São Judas**  
+Em andamento.
+
+## FORMAÇÃO COMPLEMENTAR E CERTIFICAÇÕES
+
+- Microsoft Azure AI Fundamentals (AI-900).
+- Certificações ANBIMA: CEA, CPA-20 e CPA-10.
+- Cursos em Python, bancos de dados, modelagem de dados, Power BI, Excel avançado e fundamentos de inteligência artificial.
+- Escola Virtual Fundação Bradesco: 19 cursos, totalizando 169 horas.
+- Conhecimentos complementares em Economia, Finanças, Gestão de Riscos e Compliance e Direito.
+
+## IDIOMAS
+
+- Português: nativo.
+- Inglês: avançado.
+
+Observação: os resultados comerciais descritos na experiência profissional referem-se à trajetória no Bradesco e na Cielo. Os projetos do portfólio utilizam bases sintéticas independentes e não representam resultados dessas instituições.

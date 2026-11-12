@@ -17,6 +17,10 @@ def test_pipeline_etl_e_dashboard(rodar_projeto):
     assert limpo["id_pedido"].is_unique, "não pode sobrar pedido duplicado"
     assert (limpo["quantidade"] > 0).all(), "quantidade negativa deve ser tratada"
     assert (limpo["preco_unitario"] > 0).all()
+    assert limpo["devolucao"].isin([0, 1]).all()
+    esperado_liquido = limpo["receita"] * (1 - 2 * limpo["devolucao"])
+    assert (esperado_liquido.round(2) == limpo["receita_liquida"]).all(), \
+        "devoluções simuladas devem estornar integralmente a receita bruta"
     assert limpo["produto"].nunique() == 5, "nomes de produto devem ser padronizados"
 
     qualidade = pd.read_csv(os.path.join(pasta, "dados/qualidade.csv"))

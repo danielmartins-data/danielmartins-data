@@ -43,8 +43,6 @@ FEATURES = ["poucos_produtos", "sem_app", "reclamacoes_12m", "cliente_novo", "sa
 X = df[FEATURES].to_numpy(dtype=float)
 y = df["churn"].to_numpy(dtype=float)
 
-media, desvio = X.mean(axis=0), X.std(axis=0) + 1e-9
-Xs = (X - media) / desvio
 
 
 # ------------------------------------- 2) Regressão logística do zero
@@ -107,8 +105,12 @@ def ks(real, prob):
 prob_cv = np.zeros(len(y))
 for dobra in folds_estratificados(y):
     treino = np.setdiff1d(np.arange(len(y)), dobra)
-    w, b = treinar(Xs[treino], y[treino])
-    prob_cv[dobra] = prever(Xs[dobra], w, b)
+    media_fold = X[treino].mean(axis=0)
+    desvio_fold = X[treino].std(axis=0) + 1e-9
+    X_treino = (X[treino] - media_fold) / desvio_fold
+    X_validacao = (X[dobra] - media_fold) / desvio_fold
+    w, b = treinar(X_treino, y[treino])
+    prob_cv[dobra] = prever(X_validacao, w, b)
 
 auc_cv, ks_cv = auc(y, prob_cv), ks(y, prob_cv)
 
@@ -119,8 +121,11 @@ auc_regra, ks_regra = auc(y, regra.to_numpy(dtype=float)), ks(y, regra.to_numpy(
 # -------------------------- 5) Métricas no corte de 20% de maior risco
 def metricas_no_corte(real, score, fracao=0.20):
     n_corte = int(round(len(score) * fracao))
-    corte = np.sort(score)[::-1][n_corte - 1]
-    previsto = (score >= corte).astype(int)
+    ordem = np.argsort(-score, kind="stable")
+    selecionados = ordem[:n_corte]
+    corte = float(score[selecionados[-1]])
+    previsto = np.zeros(len(score), dtype=int)
+    previsto[selecionados] = 1
     tp = int(((previsto == 1) & (real == 1)).sum())
     fp = int(((previsto == 1) & (real == 0)).sum())
     fn = int(((previsto == 0) & (real == 1)).sum())
@@ -144,7 +149,10 @@ print(comparacao.to_string(index=False))
 comparacao.to_csv("dados/comparacao_modelos.csv", index=False)
 
 # ------------------------------------------- 6) Modelo final + coeficientes
-w_final, b_final = treinar(Xs, y)
+media_final = X.mean(axis=0)
+desvio_final = X.std(axis=0) + 1e-9
+Xs_final = (X - media_final) / desvio_final
+w_final, b_final = treinar(Xs_final, y)
 coef = pd.DataFrame({"variavel": FEATURES, "coeficiente": np.round(w_final, 3),
                      "odds_ratio": np.round(np.exp(w_final), 2)}).sort_values("coeficiente", ascending=False)
 coef.to_csv("dados/coeficientes.csv", index=False)

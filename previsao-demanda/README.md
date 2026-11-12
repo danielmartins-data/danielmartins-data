@@ -11,9 +11,9 @@
 | Baseline sazonal (média do mesmo dia da semana, 8 semanas) | **55,8 pedidos** | **64,5** | **14,9%** | **15,6%** |
 | Holt-Winters (tendência + sazonalidade semanal) | 67,0 pedidos | 71,9 | 19,9% | 18,7% |
 
-**Leitura honesta:** neste histórico de 2 anos, o **baseline sazonal venceu** o modelo mais sofisticado. Isso é um resultado real de mercado — e é justamente o que um analista sênior quer saber antes de investir em complexidade. O Holt-Winters ainda não capturou o crescimento recente, então o baseline é o modelo escolhido para a operação.
+**Leitura honesta:** neste histórico de 2 anos, o **baseline sazonal venceu** o modelo mais sofisticado. Esse é o resultado observado na base sintética. Não representa desempenho em operação real. O Holt-Winters ainda não capturou o crescimento recente, então o baseline é o modelo escolhido para a operação.
 
-- Previsão dos próximos 30 dias: **~11.400 pedidos**, com intervalo de 95% de aproximadamente ±50 pedidos/dia.
+- Previsão dos próximos 30 dias: **~11.400 pedidos**, com uma faixa empírica aproximada baseada na dispersão recente dos resíduos; não é um intervalo preditivo calibrado.
 - A série tem **sazonalidade semanal forte** (sábado e domingo ~28% acima dos dias úteis) e **pico de fim de ano** — o planejamento de estoque e de escala deve seguir esse calendário, não a média do mês.
 - O erro médio de 15,6% (WAPE) é adequado para planejamento de curto prazo; para compras de longo prazo, o próximo passo é testar Prophet/SARIMA com efeito de feriado.
 
@@ -24,7 +24,7 @@
 3. **Validação temporal** (nunca aleatória em série temporal): treino até 30/11/2025, teste em dezembro/2025.
 4. **Parâmetros do Holt-Winters escolhidos por busca em grade** apenas na validação interna — o período de teste não é usado para ajustar nada.
 5. **Métricas de negócio**: MAE (pedidos), RMSE, MAPE e **WAPE** (a métrica certa quando há dias de baixo volume).
-6. **Intervalo de previsão de 95%** calculado a partir do desvio dos resíduos do próprio modelo.
+6. **Faixa empírica de incerteza** calculado a partir do desvio dos resíduos do próprio modelo.
 
 ## 📁 Estrutura
 

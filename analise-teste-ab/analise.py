@@ -46,7 +46,7 @@ p_a, p_b = x_a / n_a, x_b / n_b
 p_pool = (x_a + x_b) / (n_a + n_b)
 erro_padrao = math.sqrt(p_pool * (1 - p_pool) * (1 / n_a + 1 / n_b))
 z = (p_b - p_a) / erro_padrao
-p_valor = 2 * (1 - 0.5 * (1 + math.erf(abs(z) / math.sqrt(2))))   # cauda normal
+p_valor = math.erfc(abs(z) / math.sqrt(2))  # cauda normal bilateral, sem cancelamento numérico
 
 lift_abs = p_b - p_a
 lift_rel = lift_abs / p_a
@@ -70,7 +70,7 @@ resultado = pd.DataFrame([{
     "conversao_A_pct": round(p_a * 100, 2), "conversao_B_pct": round(p_b * 100, 2),
     "lift_absoluto_pct": round(lift_abs * 100, 2),
     "lift_relativo_pct": round(lift_rel * 100, 1),
-    "z": round(z, 3), "p_valor": round(p_valor, 5),
+    "z": round(z, 3), "p_valor": float(f"{p_valor:.12g}"),
     "ic95_lift_pct": f"[{ic_baixo * 100:.2f}; {ic_alto * 100:.2f}]",
     "significante_5pct": "sim" if p_valor < ALFA else "não",
     "amostra_necessaria_por_grupo": n_necessario,

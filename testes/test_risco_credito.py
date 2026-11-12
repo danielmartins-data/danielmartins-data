@@ -11,6 +11,7 @@ def test_modelo_de_risco_e_curva_de_ganho(rodar_projeto):
 
     comparacao = pd.read_csv(os.path.join(pasta, "dados/comparacao_modelos.csv")).set_index("modelo")
     assert len(comparacao) == 2, "compara regra de negócio com regressão logística"
+    assert (comparacao["ligacoes"] == 600).all(), "o corte deve selecionar exatamente 20% de 3.000 clientes"
 
     auc_logistica = comparacao.loc["Regressão logística (5 features)", "auc"]
     assert 0.5 < auc_logistica <= 1, "AUC deve ficar acima do aleatório"

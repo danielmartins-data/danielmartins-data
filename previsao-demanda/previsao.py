@@ -11,7 +11,7 @@ Métodos (só pandas, numpy e matplotlib — nada de caixa-preta):
    alpha, beta e gamma escolhidos por busca em grade na validação interna.
 3. Validação temporal: treina até 30/11/2025 e mede o erro em dezembro/2025.
 4. Métricas: MAE, RMSE, MAPE e WAPE (as duas últimas são as do negócio).
-5. Intervalo de previsão de 95% a partir do desvio dos resíduos.
+5. Faixa empírica aproximada a partir dos resíduos recentes (não calibrada como intervalo preditivo).
 
 Como rodar (a partir desta pasta): python previsao.py
 """
@@ -114,8 +114,8 @@ residuo_padrao = float(np.std(serie.iloc[-28:].to_numpy() - ajuste_hist))
 previsao = pd.DataFrame({
     "data": futuro,
     "previsao_pedidos": np.round(prev_final).astype(int),
-    "piso_95": np.round(prev_final - 1.96 * residuo_padrao).clip(min=0).astype(int),
-    "teto_95": np.round(prev_final + 1.96 * residuo_padrao).astype(int),
+    "limite_inferior_aprox": np.round(prev_final - 1.96 * residuo_padrao).clip(min=0).astype(int),
+    "limite_superior_aprox": np.round(prev_final + 1.96 * residuo_padrao).astype(int),
 })
 previsao.to_csv("dados/previsao_30dias.csv", index=False)
 print(f"\n== Próximos 30 dias == total previsto: {previsao.previsao_pedidos.sum():,} pedidos".replace(",", "."))
@@ -142,7 +142,7 @@ fig, ax = plt.subplots(figsize=(11, 4.2))
 hist_recente = serie.iloc[-90:]
 ax.plot(hist_recente.index, hist_recente.values, lw=1, color="#1f4e79", label="histórico")
 ax.plot(previsao.data, previsao.previsao_pedidos, lw=2, color="#d62728", label="previsão")
-ax.fill_between(previsao.data, previsao.piso_95, previsao.teto_95, color="#d62728", alpha=.18, label="intervalo 95%")
+ax.fill_between(previsao.data, previsao.limite_inferior_aprox, previsao.limite_superior_aprox, color="#d62728", alpha=.18, label="faixa empírica (não calibrada)")
 ax.set_title("Previsão dos próximos 30 dias"); ax.legend()
 plt.xticks(rotation=45)
 fig.tight_layout(); fig.savefig("graficos/previsao_30dias.png", dpi=150); plt.close()

@@ -2,7 +2,7 @@
 
 Cenário: um e-commerce testa uma nova página de checkout (variante B) contra a
 atual (controle A). Métricas: visita -> pedido (conversão) e receita.
-O efeito real da variante B está embutido na geração (lift de +1,4 p.p. na
+O efeito programado da variante B está embutido na geração (lift de +1,4 p.p. na
 conversão) para que o teste estatístico tenha o que encontrar.
 """
 import numpy as np
