@@ -80,6 +80,7 @@ Dados **sintéticos** (fictícios), gerados por script com seed fixa, incluindo 
 
 ## 🚀 Próximos passos
 
-- [ ] Orquestrar com GitHub Actions (rodar o ETL a cada push e publicar o dashboard)
-- [ ] Testes de contrato para cada regra de qualidade
+- [x] Executar ETL, regras de qualidade e geração do dashboard nos testes do GitHub Actions
+- [ ] Publicar o dashboard gerado como artefato do workflow ou GitHub Pages
+- [ ] Testes de contrato isolados para cada regra de qualidade
 - [ ] Versão do painel em Power BI conectada ao SQLite
