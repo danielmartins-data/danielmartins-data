@@ -123,6 +123,7 @@ def metricas_no_corte(real, score, fracao=0.20):
     n_corte = int(round(len(score) * fracao))
     ordem = np.argsort(-score, kind="stable")
     selecionados = ordem[:n_corte]
+    corte = float(score[selecionados[-1]])
     previsto = np.zeros(len(score), dtype=int)
     previsto[selecionados] = 1
     tp = int(((previsto == 1) & (real == 1)).sum())
