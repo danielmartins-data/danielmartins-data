@@ -136,7 +136,7 @@ print("\n== Regras de qualidade ==")
 print(qualidade.to_string(index=False))
 falhas = qualidade.loc[~qualidade["aprovada"], "regra"].tolist()
 if falhas:
-    print(f"ATENÇÃO: regras reprovadas -> {falhas}")
+    raise ValueError(f"Pipeline interrompido: regras de qualidade reprovadas -> {falhas}")
 
 # ------------------------------------------------------------------- 4) LOAD
 vendas = vendas.sort_values(["data", "id_pedido"]).reset_index(drop=True)
