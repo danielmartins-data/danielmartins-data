@@ -5,7 +5,7 @@
 <br><br>
 
 [![CI](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml)
-[![Testes](https://img.shields.io/badge/testes-11_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
+[![Testes](https://img.shields.io/badge/testes-27_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
 [![Projetos](https://img.shields.io/badge/portfólio-10_projetos-1f4e79?style=flat-square)](./COMO-AVALIAR.md)
 [![Status](https://img.shields.io/badge/Status-Aberto_a_oportunidades-2EA043?style=flat-square)](https://www.linkedin.com/in/danielfernandomartins)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-1f4e79?style=flat-square)](./LICENSE)
@@ -19,7 +19,7 @@
 **Transformo dados em decisão comercial.**
 24 anos de mercado financeiro (Bradesco e Cielo) aplicados em análise de dados e BI.
 
-<sub>🇬🇧 *Data Analyst with 24 years in financial services. SQL, Python, Power BI, Excel and R applied to sales, credit and customer analytics. Advanced English.*</sub>
+<sub>🇬🇧 *Financial-services professional with 24 years of business experience, transitioning into data analytics. Portfolio projects demonstrate SQL, Python, BI and customer analytics. Advanced English.*</sub>
 
 <br>
 
@@ -34,7 +34,7 @@
 <table>
 <tr>
 <td align="center" width="25%"><b>10</b><br><sub>projetos completos</sub></td>
-<td align="center" width="25%"><b>23</b><br><sub>testes automatizados</sub></td>
+<td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
 </tr>
@@ -50,9 +50,9 @@
 |---|---|
 | 🎯 **Busco** | Vaga de **Analista de Dados Júnior** ou BI, com foco em negócios, vendas e finanças |
 | 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
-| 🧰 **Ferramentas** | SQL · Python (pandas) · Power BI e DAX · Excel · R · Git/GitHub · GitHub Actions |
+| 🧰 **Ferramentas** | SQL (SQLite) · Python (pandas) · Excel · Power BI/DAX (modelagem e medidas documentadas) · R · Git/GitHub |
 | 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
-| ✅ **Qualidade** | **11 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
+| ✅ **Qualidade** | **27 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
 
 ---
@@ -108,7 +108,7 @@ Base “suja” do ERP: 7,6% das linhas tratadas e justificadas, 7 regras de qua
 
 Teste z implementado do zero: p-valor, intervalo de confiança, poder estatístico e o impacto do ganho em receita por ano.
 
-**+1,13% p.p. de conversão · p < 0,0001**
+**+1,13 p.p. na base sintética · p < 0,0001**
 
 <img src="https://img.shields.io/badge/Estatística-1f4e79?style=flat-square&labelColor=1f4e79" alt="Estatística"> <img src="https://img.shields.io/badge/Python-1f4e79?style=flat-square&labelColor=1f4e79" alt="Python">
 
@@ -133,7 +133,7 @@ Matriz de coorte em SQL, churn mensal e LTV por plano e canal de aquisição, co
 
 Holt-Winters contra baseline sazonal, validação temporal e MAE, MAPE e WAPE — inclusive quando o modelo simples ganha.
 
-**WAPE de 15,6% · 30 dias à frente**
+**WAPE de 15,6% na base sintética · horizonte de 30 dias**
 
 <img src="https://img.shields.io/badge/Série_temporal-1f4e79?style=flat-square&labelColor=1f4e79" alt="Série temporal"> <img src="https://img.shields.io/badge/Python-1f4e79?style=flat-square&labelColor=1f4e79" alt="Python">
 
@@ -146,7 +146,7 @@ Holt-Winters contra baseline sazonal, validação temporal e MAE, MAPE e WAPE �
 
 Regressão logística implementada do zero, validação cruzada 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.
 
-**AUC 0,744 · 44% de acerto no top 20% da base**
+**AUC 0,744 · 44% de concentração no top 20% da base**
 
 <img src="https://img.shields.io/badge/Machine_learning-1f4e79?style=flat-square&labelColor=1f4e79" alt="Machine learning"> <img src="https://img.shields.io/badge/Estatística-1f4e79?style=flat-square&labelColor=1f4e79" alt="Estatística">
 
@@ -194,7 +194,7 @@ Do CSV bruto à recomendação: limpeza, KPIs, sazonalidade e comparação entre
 
 ### 📈 Painel Comercial (Excel + Power BI)
 
-Painel por fórmula (SUMIFS, lista suspensa, formatação condicional) e modelo estrela com medidas DAX prontas.
+Painel funcional em Excel (SUMIFS, lista suspensa e formatação condicional); modelo estrela e medidas DAX documentados. Arquivo .pbix ainda não publicado.
 
 **Meta x realizado por produto**
 
@@ -330,7 +330,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 |---|---|
 | **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
 | **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
-| **Hábito de qualidade** | 23 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
+| **Hábito de qualidade** | 27 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
 | **Autonomia para aprender rápido** | 10 projetos construídos do zero, com método documentado e reproduzível |
 
