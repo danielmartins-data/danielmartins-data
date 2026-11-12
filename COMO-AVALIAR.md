@@ -12,7 +12,7 @@ Olá! Este repositório foi organizado para que você não precise procurar: cad
 | 1 min | [Pipeline ETL + Dashboard](pipeline-etl-dashboard/dashboard.html) | um dashboard HTML gerado por código, aberto direto no navegador |
 | 1 min | [Teste A/B](analise-teste-ab/README.md) | exercício estatístico em dados sintéticos, com p-valor e intervalo de confiança |
 | 1 min | [Retenção (coorte)](analise-cohort-retencao/README.md) | matriz de coorte, churn e LTV por segmento |
-| 1 min | [CI verde](https://github.com/danielmartins-data/danielmartins-data/actions) | 27 casos de teste na suíte atual; consulte Actions para a execução mais recente |
+| 1 min | [CI verde](https://github.com/danielmartins-data/danielmartins-data/actions) | 28 casos de teste na suíte atual; consulte Actions para a execução mais recente |
 
 ## ✅ O que está garantido por teste automatizado
 
