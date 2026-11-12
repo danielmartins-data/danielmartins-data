@@ -23,7 +23,7 @@
 
 1. **324 linhas sem quantidade ou preço** (7,6% da base) — exportação do ERP com campos vazios. Sem tratamento, a receita seria subestimada.
 2. **84 pedidos duplicados** (a exportação rodou duas vezes): sem deduplicar, a receita inflaria ~2%.
-3. **25 devoluções lançadas como quantidade negativa** — eram tratadas como "venda negativa" e derrubavam o ticket médio.
+3. **25 devoluções lançadas como quantidade negativa** — são identificadas e tratadas como estorno integral do valor bruto na receita líquida (hipótese explícita desta simulação).
 4. **8 grafias para 5 produtos** (`NOTEBOOK PRO 14`, `notebook pro 14`, …): o ranking de produto ficava fragmentado.
 5. **Datas em dois formatos** (`2025-03-14` e `14/03/2025`) na mesma coluna.
 6. **40 clientes duplicados** no cadastro e 6% de e-mails inválidos.
