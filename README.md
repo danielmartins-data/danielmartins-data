@@ -17,7 +17,7 @@
 [![Currículo](https://img.shields.io/badge/Curr%C3%ADculo-Baixar-1f4e79?style=for-the-badge&logo=readdotcv&logoColor=white)](./CURRICULO.md)
 
 **Transformo dados em decisão comercial.**
-24 anos de mercado financeiro (Bradesco e Cielo) aplicados em análise de dados e BI.
+24 anos de experiência no mercado financeiro (Bradesco e Cielo), em transição para análise de dados e BI.
 
 <sub>🇬🇧 *Financial-services professional with 24 years of business experience, transitioning into data analytics. Portfolio projects demonstrate SQL, Python, BI and customer analytics. Advanced English.*</sub>
 
@@ -33,7 +33,7 @@
 
 <table>
 <tr>
-<td align="center" width="25%"><b>10</b><br><sub>projetos completos</sub></td>
+<td align="center" width="25%"><b>10</b><br><sub>projetos demonstrativos</sub></td>
 <td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
@@ -52,7 +52,7 @@
 | 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
 | 🧰 **Ferramentas** | SQL (SQLite) · Python (pandas) · Excel · Power BI/DAX (modelagem e medidas documentadas) · R · Git/GitHub |
 | 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
-| ✅ **Qualidade** | **27 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
+| ✅ **Qualidade** | **27 testes automatizados** e CI executado em pull requests para main — os projetos rodam e as saídas são validadas |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
 
 ---
