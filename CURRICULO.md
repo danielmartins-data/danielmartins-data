@@ -1,6 +1,6 @@
 # 👨‍💻 Daniel Fernando Martins · Analista de Dados
 
-> Transformo dados em decisão comercial. 24 anos de mercado financeiro (Bradesco e Cielo) somados a SQL, Python, Power BI, Excel e R.
+> Profissional com 24 anos de experiência no mercado financeiro (Bradesco e Cielo), em transição para Análise de Dados. Projetos demonstram SQL/SQLite, Python/pandas e Excel; Power BI/DAX e Tableau estão documentados, com publicação pendente.
 
 **Contato:** [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · dfm21031983@gmail.com · [GitHub](https://github.com/danielmartins-data)
 
@@ -31,8 +31,8 @@ Vaga de **Analista de Dados Júnior / BI**, com foco em negócios, vendas e fina
 | [Churn de clientes](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-churn-clientes) | Análise exploratória e score de risco explicável | Python |
 | [Inadimplência de crédito](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-inadimplencia-sql) | CTEs, window functions, safra e concentração de risco | SQL |
 | [Análise de vendas](https://github.com/danielmartins-data/danielmartins-data/tree/main/analise-vendas) | Limpeza, KPIs, sazonalidade e recomendação comercial | Python, SQL |
-| [Painel Comercial (Excel + Power BI)](https://github.com/danielmartins-data/danielmartins-data/tree/main/painel-comercial-excel-powerbi) | Modelo estrela, medidas DAX, painel por fórmula | Excel, Power BI |
-| [Segmentação RFM (R + Tableau)](https://github.com/danielmartins-data/danielmartins-data/tree/main/segmentacao-rfm-r-tableau) | Quintis, 7 segmentos e plano de ação | R, Tableau |
+| [Painel Comercial (Excel + Power BI)](https://github.com/danielmartins-data/danielmartins-data/tree/main/painel-comercial-excel-powerbi) | Painel funcional em Excel; modelo estrela, medidas DAX e roteiro Power BI (sem .pbix publicado) | Excel, DAX |
+| [Segmentação RFM (R + Tableau)](https://github.com/danielmartins-data/danielmartins-data/tree/main/segmentacao-rfm-r-tableau) | Segmentação em R; roteiro de dashboard Tableau ainda não publicado | R |
 
 ## 💼 Experiência
 
