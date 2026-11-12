@@ -1,5 +1,10 @@
-"""Gera dados SINTÉTICOS (fictícios) de metas x realizado de uma equipe comercial (2025)
-e as tabelas no formato de modelo estrela para o Power BI. Seed fixa => reproduzível."""
+"""Gera dados SINTÉTICOS de metas x realizado e dimensões do fato comercial.
+
+Cria vendas_metas.csv, fato_vendas.csv, dim_gerente.csv, dim_produto.csv e
+dim_calendario.csv. Os arquivos fato_transacoes.csv e dim_cliente.csv são
+bases sintéticas complementares versionadas no repositório e compartilhadas
+com o projeto RFM; este script não os sobrescreve.
+Seed fixa => saídas geradas por este script são reproduzíveis."""
 import numpy as np
 import pandas as pd
 
