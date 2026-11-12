@@ -43,8 +43,6 @@ FEATURES = ["poucos_produtos", "sem_app", "reclamacoes_12m", "cliente_novo", "sa
 X = df[FEATURES].to_numpy(dtype=float)
 y = df["churn"].to_numpy(dtype=float)
 
-media, desvio = X.mean(axis=0), X.std(axis=0) + 1e-9
-Xs = (X - media) / desvio
 
 
 # ------------------------------------- 2) Regressão logística do zero
@@ -107,8 +105,12 @@ def ks(real, prob):
 prob_cv = np.zeros(len(y))
 for dobra in folds_estratificados(y):
     treino = np.setdiff1d(np.arange(len(y)), dobra)
-    w, b = treinar(Xs[treino], y[treino])
-    prob_cv[dobra] = prever(Xs[dobra], w, b)
+    media_fold = X[treino].mean(axis=0)
+    desvio_fold = X[treino].std(axis=0) + 1e-9
+    X_treino = (X[treino] - media_fold) / desvio_fold
+    X_validacao = (X[dobra] - media_fold) / desvio_fold
+    w, b = treinar(X_treino, y[treino])
+    prob_cv[dobra] = prever(X_validacao, w, b)
 
 auc_cv, ks_cv = auc(y, prob_cv), ks(y, prob_cv)
 
@@ -144,7 +146,10 @@ print(comparacao.to_string(index=False))
 comparacao.to_csv("dados/comparacao_modelos.csv", index=False)
 
 # ------------------------------------------- 6) Modelo final + coeficientes
-w_final, b_final = treinar(Xs, y)
+media_final = X.mean(axis=0)
+desvio_final = X.std(axis=0) + 1e-9
+Xs_final = (X - media_final) / desvio_final
+w_final, b_final = treinar(Xs_final, y)
 coef = pd.DataFrame({"variavel": FEATURES, "coeficiente": np.round(w_final, 3),
                      "odds_ratio": np.round(np.exp(w_final), 2)}).sort_values("coeficiente", ascending=False)
 coef.to_csv("dados/coeficientes.csv", index=False)
