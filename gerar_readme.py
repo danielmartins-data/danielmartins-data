@@ -24,7 +24,7 @@ coorte_m12 = float(coorte["12"].dropna().mean())
 # ---------- cartões de projeto ----------
 projetos = [
     dict(emoji="🏗️", titulo="Pipeline ETL + Dashboard", pasta="pipeline-etl-dashboard",
-         resumo="Base “suja” do ERP: 7,6% das linhas tratadas e justificadas, 7 regras de qualidade e um dashboard executivo gerado por código.",
+         resumo="Base sintética que simula exportação “suja” de ERP: 7,6% das linhas tratadas e justificadas, 7 regras de qualidade e dashboard HTML gerado por código.",
          destaque=f"{pct(kpi['atingimento_meta_pct'])} da meta · {brl(kpi['receita_total']/1e6,2)} mi de receita",
          tags=["Python", "SQL", "ETL", "HTML"], img="pipeline-etl-dashboard/imagens/dashboard.png"),
     dict(emoji="🧪", titulo="Teste A/B de conversão", pasta="analise-teste-ab",
