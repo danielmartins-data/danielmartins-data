@@ -9,10 +9,10 @@ Olá! Este repositório foi organizado para que você não precise procurar: cad
 | Tempo | O que abrir | O que você vai ver |
 |---|---|---|
 | 1 min | [README principal](README.md) | quem sou, stack e os 10 projetos com resultado em uma linha |
-| 1 min | [Pipeline ETL + Dashboard](pipeline-etl-dashboard/dashboard.html) | um painel real gerado por código, aberto direto no navegador |
-| 1 min | [Teste A/B](analise-teste-ab/README.md) | decisão de negócio com p-valor, intervalo de confiança e impacto em R$ |
+| 1 min | [Pipeline ETL + Dashboard](pipeline-etl-dashboard/dashboard.html) | um dashboard HTML gerado por código, aberto direto no navegador |
+| 1 min | [Teste A/B](analise-teste-ab/README.md) | exercício estatístico em dados sintéticos, com p-valor e intervalo de confiança |
 | 1 min | [Retenção (coorte)](analise-cohort-retencao/README.md) | matriz de coorte, churn e LTV por segmento |
-| 1 min | [CI verde](https://github.com/danielmartins-data/danielmartins-data/actions) | 11 testes automatizados rodando a cada push |
+| 1 min | [CI verde](https://github.com/danielmartins-data/danielmartins-data/actions) | 27 testes automatizados rodando a cada push |
 
 ## ✅ O que está garantido por teste automatizado
 
@@ -36,7 +36,7 @@ Não é só "código que roda na minha máquina": o GitHub Actions executa, a ca
 
 ## ⚠️ Transparência
 
-Todos os dados são **sintéticos (fictícios)**, gerados por script com seed fixa e sinalizados em cada README. Nenhuma informação de empresa real é usada. O objetivo é demonstrar método, não resultado comercial verdadeiro.
+Todos os dados são **sintéticos (fictícios)**, gerados por script com seed fixa e sinalizados em cada README. Nenhuma informação de empresa real é usada. O objetivo é demonstrar método, não resultado comercial verdadeiro. No teste A/B, a diferença entre grupos foi construída na geração dos dados; significância estatística nesse cenário não comprova efeito causal nem aumento real de conversão. Métricas de previsão e retenção também descrevem apenas as bases simuladas e suas hipóteses.
 
 ## 📬 Contato
 
