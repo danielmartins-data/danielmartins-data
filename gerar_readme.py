@@ -28,7 +28,7 @@ projetos = [
          destaque=f"{pct(kpi['atingimento_meta_pct'])} da meta · {brl(kpi['receita_total']/1e6,2)} mi de receita",
          tags=["Python", "SQL", "ETL", "HTML"], img="pipeline-etl-dashboard/imagens/dashboard.png"),
     dict(emoji="🧪", titulo="Teste A/B de conversão", pasta="analise-teste-ab",
-         resumo="Teste z implementado do zero: p-valor, intervalo de confiança, poder estatístico e o impacto do ganho em receita por ano.",
+         resumo="Exercício estatístico em dados sintéticos: teste z, p-valor, intervalo de confiança e poder estatístico. A diferença entre grupos foi definida na simulação.",
          destaque=f"+{pct(r['lift_absoluto_pct'],2)} p.p. de conversão · p < 0,0001",
          tags=["Estatística", "Python"], img="analise-teste-ab/graficos/conversao_por_grupo.png"),
     dict(emoji="🔄", titulo="Retenção de assinantes (coorte)", pasta="analise-cohort-retencao",
@@ -37,7 +37,7 @@ projetos = [
          tags=["SQL", "Coorte", "LTV"], img="analise-cohort-retencao/graficos/cohort_retencao.png"),
     dict(emoji="🚀", titulo="Previsão de demanda", pasta="previsao-demanda",
          resumo="Holt-Winters contra baseline sazonal, validação temporal e MAE, MAPE e WAPE — inclusive quando o modelo simples ganha.",
-         destaque=f"WAPE de {pct(prev.loc['baseline_sazonal','WAPE_pct'])} · 30 dias à frente",
+         destaque=f"WAPE de {pct(prev.loc['baseline_sazonal','WAPE_pct'])} na base sintética · horizonte de 30 dias",
          tags=["Série temporal", "Python"], img="previsao-demanda/graficos/previsao_30dias.png"),
     dict(emoji="🧮", titulo="Score de risco de churn (modelo)", pasta="analise-risco-credito",
          resumo="Regressão logística implementada do zero, validação cruzada 5 folds, AUC, KS e curva de ganho — comparada com a regra de negócio.",
@@ -56,7 +56,7 @@ projetos = [
          destaque="R$ 4,10 mi · ticket R$ 1.932",
          tags=["Python", "SQL"], img="analise-vendas/graficos/receita_mensal.png"),
     dict(emoji="📈", titulo="Painel Comercial (Excel + Power BI)", pasta="painel-comercial-excel-powerbi",
-         resumo="Painel por fórmula (SUMIFS, lista suspensa, formatação condicional) e modelo estrela com medidas DAX prontas.",
+         resumo="Painel funcional em Excel (SUMIFS, lista suspensa e formatação condicional); modelo estrela e medidas DAX documentados. Arquivo .pbix ainda não publicado.",
          destaque="Meta x realizado por produto",
          tags=["Excel", "Power BI", "DAX"], img="painel-comercial-excel-powerbi/imagens/painel_excel.png"),
     dict(emoji="🎯", titulo="Segmentação RFM (R + Tableau)", pasta="segmentacao-rfm-r-tableau",
@@ -133,7 +133,7 @@ readme = f"""<div align="center">
 <br><br>
 
 [![CI](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml/badge.svg)](https://github.com/danielmartins-data/danielmartins-data/actions/workflows/ci.yml)
-[![Testes](https://img.shields.io/badge/testes-11_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
+[![Testes](https://img.shields.io/badge/testes-27_pytest-2EA043?style=flat-square&logo=pytest&logoColor=white)](./testes)
 [![Projetos](https://img.shields.io/badge/portfólio-10_projetos-1f4e79?style=flat-square)](./COMO-AVALIAR.md)
 [![Status](https://img.shields.io/badge/Status-Aberto_a_oportunidades-2EA043?style=flat-square)](https://www.linkedin.com/in/danielfernandomartins)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-1f4e79?style=flat-square)](./LICENSE)
@@ -145,9 +145,9 @@ readme = f"""<div align="center">
 [![Currículo](https://img.shields.io/badge/Curr%C3%ADculo-Baixar-1f4e79?style=for-the-badge&logo=readdotcv&logoColor=white)](./CURRICULO.md)
 
 **Transformo dados em decisão comercial.**
-24 anos de mercado financeiro (Bradesco e Cielo) aplicados em análise de dados e BI.
+24 anos de experiência no mercado financeiro (Bradesco e Cielo), em transição para análise de dados e BI.
 
-<sub>🇬🇧 *Data Analyst with 24 years in financial services. SQL, Python, Power BI, Excel and R applied to sales, credit and customer analytics. Advanced English.*</sub>
+<sub>🇬🇧 *Financial-services professional with 24 years of business experience, transitioning into data analytics. Portfolio projects demonstrate SQL, Python, BI and customer analytics. Advanced English.*</sub>
 
 <br>
 
@@ -162,7 +162,7 @@ readme = f"""<div align="center">
 <table>
 <tr>
 <td align="center" width="25%"><b>10</b><br><sub>projetos completos</sub></td>
-<td align="center" width="25%"><b>23</b><br><sub>testes automatizados</sub></td>
+<td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
 </tr>
@@ -180,7 +180,7 @@ readme = f"""<div align="center">
 | 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
 | 🧰 **Ferramentas** | SQL · Python (pandas) · Power BI e DAX · Excel · R · Git/GitHub · GitHub Actions |
 | 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
-| ✅ **Qualidade** | **11 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
+| ✅ **Qualidade** | **27 testes automatizados** e CI verde a cada push — os projetos rodam e as saídas são validadas |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
 
 ---
@@ -332,7 +332,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 |---|---|
 | **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
 | **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
-| **Hábito de qualidade** | 23 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
+| **Hábito de qualidade** | 27 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
 | **Autonomia para aprender rápido** | 10 projetos construídos do zero, com método documentado e reproduzível |
 
