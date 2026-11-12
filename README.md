@@ -49,10 +49,10 @@
 | | |
 |---|---|
 | 🎯 **Busco** | Vaga de **Analista de Dados Júnior** ou BI, com foco em negócios, vendas e finanças |
-| 💡 **Diferencial** | 24 anos de mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
+| 💡 **Diferencial** | 24 anos de experiência no mercado financeiro: entendo a pergunta de negócio, a meta e o cliente — não só a ferramenta |
 | 🧰 **Ferramentas** | SQL (SQLite) · Python (pandas) · Excel · Power BI/DAX (modelagem e medidas documentadas) · R · Git/GitHub |
-| 📂 **Provas** | **10 projetos**, cada um com pergunta de negócio, resultado, método e execução reproduzível |
-| ✅ **Qualidade** | **27 testes automatizados** e CI executado em pull requests para main — os projetos rodam e as saídas são validadas |
+| 📂 **Provas** | **10 projetos demonstrativos**, com pergunta de negócio, método, documentação e instruções de execução |
+| ✅ **Qualidade** | Suite pytest e CI configurado para Python 3.10–3.12; quantidade e status atuais devem ser conferidos no Actions |
 | 📫 **Contato** | [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfm21031983@gmail.com](mailto:dfm21031983@gmail.com) |
 
 ---
@@ -252,32 +252,20 @@ O badge **CI** no topo mostra o resultado da última execução no GitHub Action
 
 ---
 
-## 🧰 Competências
+## 🧰 Ferramentas e evidências
 
-<div>
-
-<svg viewBox="0 0 620 216" role="img" aria-label="Competências por nível"><text x="0" y="20" font-size="12" fill="#33475b">SQL analítico</text><rect x="160" y="8" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="8" width="410" height="14" rx="4" fill="#1f4e79"/><text x="0" y="46" font-size="12" fill="#33475b">Python / pandas</text><rect x="160" y="34" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="34" width="410" height="14" rx="4" fill="#1f4e79"/><text x="0" y="72" font-size="12" fill="#33475b">Excel avançado</text><rect x="160" y="60" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="60" width="410" height="14" rx="4" fill="#1f4e79"/><text x="0" y="98" font-size="12" fill="#33475b">Power BI + DAX</text><rect x="160" y="86" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="86" width="328" height="14" rx="4" fill="#1f4e79"/><text x="0" y="124" font-size="12" fill="#33475b">Estatística aplicada</text><rect x="160" y="112" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="112" width="328" height="14" rx="4" fill="#1f4e79"/><text x="0" y="150" font-size="12" fill="#33475b">R</text><rect x="160" y="138" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="138" width="246" height="14" rx="4" fill="#1f4e79"/><text x="0" y="176" font-size="12" fill="#33475b">Tableau</text><rect x="160" y="164" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="164" width="246" height="14" rx="4" fill="#1f4e79"/><text x="0" y="202" font-size="12" fill="#33475b">Git / CI</text><rect x="160" y="190" width="410" height="14" rx="4" fill="#e8eef4"/><rect x="160" y="190" width="328" height="14" rx="4" fill="#1f4e79"/></svg>
-
-</div>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sqlite&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure_AI-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+- **Python / pandas:** ETL, análise exploratória, séries temporais e classificação em projetos reproduzíveis.
+- **SQL:** consultas SQLite com CTEs, funções de janela, agregações e análise de inadimplência.
+- **Excel:** painel funcional com fórmulas, filtros e formatação condicional.
+- **Power BI:** modelo estrela, medidas DAX e roteiro; arquivo `.pbix` ainda não publicado.
+- **R / Tableau:** script RFM e roteiro do Tableau; dashboard público ainda não publicado.
+- **Qualidade:** pytest e GitHub Actions; consulte o badge de CI para o resultado mais recente.
 
 ---
 
 ## 👋 Quem sou
 
-Analista de Dados com uma combinação pouco comum: **vivência real de negócio** (Bradesco e Cielo) e **formação técnica em dados e sistemas**. Conheço o outro lado da planilha: sei quais perguntas o gestor comercial precisa responder, quais indicadores movem a meta e como transformar uma análise em ação.
+Profissional do mercado financeiro em transição para análise de dados, com **vivência real de negócio** (Bradesco e Cielo) e **formação técnica em dados e sistemas**. Conheço o outro lado da planilha: sei quais perguntas o gestor comercial precisa responder, quais indicadores movem a meta e como transformar uma análise em ação.
 
 - 📊 Foco em **análise de dados, BI e automação** aplicados a negócios e finanças
 - 🎓 Cursando **Análise e Desenvolvimento de Sistemas** (Universidade São Judas); formado em **Economia, Finanças, Gestão de Riscos e Compliance e Direito**
@@ -330,9 +318,9 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 |---|---|
 | **Alguém que entende o negócio antes do código** | 24 anos em banco e adquirência; cada projeto começa por uma pergunta de negócio e termina em recomendação |
 | **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
-| **Hábito de qualidade** | 27 testes, CI em 3 versões de Python, licença, template de PR, política de dados |
+| **Hábito de qualidade** | suite de testes automatizados e CI configurado para 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
-| **Autonomia para aprender rápido** | 10 projetos construídos do zero, com método documentado e reproduzível |
+| **Autonomia para aprender rápido** | 10 projetos demonstrativos construídos, com método documentado e reproduzível |
 
 > *"Não tenho 5 anos de experiência em dados. Tenho 24 anos resolvendo problema de negócio com número — e agora sei programar, modelar e testar esse número. O que você vê neste repositório é o meu jeito de trabalhar, não uma vitrine de curso."*
 
