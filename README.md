@@ -305,7 +305,6 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 
 - [ ] Publicar o arquivo **.pbix** do painel comercial no Power BI (2 páginas: painel e carteira de clientes)
 - [ ] Publicar o dashboard RFM no **Tableau Public** e colocar o link no projeto
-- [ ] Teste automatizado da segmentação RFM executando o **R** no CI (hoje roda a versão Python equivalente)
 - [ ] Modelo de propensão a churn com curva ROC comparado ao score de regras
 
 ---
