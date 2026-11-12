@@ -7,7 +7,7 @@ GitHub / Portfólio: https://github.com/danielmartins-data
 
 ## RESUMO PROFISSIONAL
 
-Profissional com 24 anos de experiência no mercado financeiro, com trajetória no Bradesco e na Cielo, atuando em gestão de carteira, relacionamento com clientes, crédito, vendas, metas e retenção. Em transição para Análise de Dados, com formação em andamento em Análise e Desenvolvimento de Sistemas e projetos práticos em Python, pandas e SQL.
+Profissional com 24 anos de experiência no mercado financeiro, com trajetória de março de 2000 a agosto de 2024 no Bradesco, além de experiência na Cielo. Atuação em gestão de carteira, relacionamento com clientes, crédito, vendas, metas e retenção. Em transição para Análise de Dados, com formação em andamento em Análise e Desenvolvimento de Sistemas e projetos práticos em Python, pandas e SQL.
 
 Combino conhecimento de negócio e experiência na interpretação de indicadores comerciais com competências práticas em análise exploratória, tratamento e validação de dados, consultas SQL e comunicação de resultados. Busco oportunidade como Analista de Dados Júnior, especialmente em áreas de negócios, crédito, operações, vendas ou Business Intelligence.
 
@@ -46,8 +46,13 @@ Portfólio completo: https://github.com/danielmartins-data
 
 ## EXPERIÊNCIA PROFISSIONAL
 
-**Bradesco | 03/2000 a 08/2024 | 24 anos de atuação**
-**Cargos exercidos:** Gerente Assistente Pessoa Jurídica, Gerente Exclusive e Gerente Prime Digital.
+**Bradesco | Março/2000 a Agosto/2024 | 24 anos de atuação**
+
+**Cargos exercidos ao longo da trajetória:**
+- Gerente Assistente Pessoa Jurídica
+- Gerente Exclusive
+- Gerente Prime Digital
+
 - Atuação em diferentes segmentos e modelos de relacionamento bancário, com experiência em carteira de pessoa jurídica, atendimento de alta renda e relacionamento digital.
 - Gestão de carteira com aproximadamente 750 clientes, com acompanhamento de metas, indicadores comerciais, relacionamento e retenção.
 - Atingimento de 185% da meta durante cinco meses consecutivos.
@@ -62,7 +67,7 @@ Portfólio completo: https://github.com/danielmartins-data
 
 ## FORMAÇÃO ACADÊMICA
 
-**Análise e Desenvolvimento de Sistemas | Universidade São Judas**
+**Análise e Desenvolvimento de Sistemas | Universidade São Judas**  
 Em andamento.
 
 ## FORMAÇÃO COMPLEMENTAR E CERTIFICAÇÕES
