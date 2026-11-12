@@ -43,3 +43,18 @@ jobs:
 
   # O modelo antigo do GitHub falhava porque não havia testes: estes passos
   # confirmam que cada análise roda de ponta a ponta e gera suas saídas.
+
+  rfm_r:
+    name: Segmentação RFM (R base)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Executar análise RFM em R base
+        run: |
+          cd segmentacao-rfm-r-tableau
+          Rscript analise_rfm.R
+          test -s dados/rfm_clientes.csv
+          test -s dados/resumo_segmentos.csv
