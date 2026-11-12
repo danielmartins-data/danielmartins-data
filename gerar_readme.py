@@ -12,7 +12,7 @@ def num(v):
 def pct(v, casas=1):
     return f"{v:.{casas}f}".replace(".", ",") + "%"
 
-# ---------- dados reais dos projetos ----------
+# ---------- métricas derivadas das saídas sintéticas dos projetos ----------
 ab = json.load(open("analise-teste-ab/dados/resultado_teste.csv")) if False else None
 import pandas as pd
 r = pd.read_csv("analise-teste-ab/dados/resultado_teste.csv").iloc[0]
@@ -314,7 +314,7 @@ Entregas em gestão de carteiras e metas, que hoje sei medir, modelar e prever c
 | O que você ganha | Como isso aparece aqui |
 |---|---|
 | **Alguém que entende o negócio antes do código** | 24 anos de experiência no mercado financeiro; cada projeto começa por uma pergunta de negócio e termina em recomendação |
-| **Base técnica sólida e verificável** | SQL analítico, pandas, estatística aplicada, modelo do zero, Excel/Power BI/DAX, R |
+| **Base técnica verificável** | SQL analítico em SQLite, pandas, estatística aplicada, modelo de classificação, Excel e documentação de Power BI/DAX |
 | **Hábito de qualidade** | suite de testes automatizados e CI configurado para 3 versões de Python, licença, template de PR, política de dados |
 | **Comunicação com quem decide** | resumo executivo em todos os projetos, dashboard executivo e guias de leitura |
 | **Autonomia para aprender rápido** | 10 projetos demonstrativos construídos, com método documentado e reproduzível |
@@ -334,7 +334,7 @@ Aberto a oportunidades em **Análise de Dados, BI e áreas que unam negócio e d
 
 <sub>Repositório organizado com testes automatizados, CI e documentação — porque portfólio de dados também precisa de qualidade de dado.</sub>
 
-<sub>Licença MIT · dados 100% sintéticos · feito com Python, SQL, Excel, Power BI, R e GitHub Actions</sub>
+<sub>Licença MIT · dados 100% sintéticos · projetos em Python, SQL, Excel, DAX documentado, R e GitHub Actions</sub>
 
 </div>
 """
