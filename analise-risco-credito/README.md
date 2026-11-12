@@ -14,7 +14,7 @@ As métricas AUC, KS, precisão, recall e F1 são recalculadas a cada execução
 
 ## 🧠 Método
 
-1. **Base sintética reproduzível** (`gerar_dados.py`): 3.000 clientes, churn de 20,6%, com efeito real embutido em produtos, app, reclamações, tempo de casa e saldo.
+1. **Base sintética reproduzível** (`gerar_dados.py`): 3.000 clientes, churn de 20,6%, com relações programadas entre produtos, app, reclamações, tempo de casa e saldo; são associações definidas pelo gerador, não efeitos causais.
 2. **Regressão logística implementada do zero** (gradiente descendente + regularização L2). A padronização é ajustada dentro de cada fold para evitar vazamento de informação — sem `sklearn`.
 3. **Validação cruzada estratificada em 5 folds**: as probabilidades que aparecem nas métricas são de clientes fora do fold de treino. O modelo final é ajustado separadamente para produzir coeficientes.
 4. **Métricas de classificação**: AUC (Mann-Whitney, com empates), **KS** (a métrica que o mercado de crédito usa), precisão, recall, F1 e acurácia no corte de 20% da base.
