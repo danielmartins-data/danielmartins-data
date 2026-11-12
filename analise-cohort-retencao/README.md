@@ -27,8 +27,8 @@
 1. **Base sintética reproduzível** (`gerar_dados.py`, seed fixa): cada assinante tem plano, canal de aquisição, UF, data de entrada e data de saída — com risco de churn dependente de plano, canal e tempo de casa, para que exista um padrão real a ser descoberto.
 2. **SQL analítico** (`analise.py`, SQLite): uma CTE calcula a vida de cada cliente em dias desde o 1º dia do mês de entrada e uma grade cliente × mês mantém apenas os meses que o cliente já teve tempo de completar. Isso evita o viés clássico de a retenção "subir" nas coortes recentes.
 3. **Matriz de retenção** (cohort × mês) em CSV e heatmap — o formato que se pede em entrevista.
-4. **Recorte por plano e por canal**, com vida média em meses e churn mensal implícito (`1 ÷ vida média`).
-5. **LTV estimado** = mensalidade média × vida média, por segmento plano × canal (mínimo de 100 clientes para evitar ruído).
+4. **Recorte por plano e por canal**, com vida média em meses e uma aproximação de churn mensal (`1 ÷ vida média`), que não equivale a uma taxa de sobrevivência estimada por Kaplan–Meier.
+5. **LTV simplificado** = mensalidade média × vida média observada, por plano × canal (mínimo de 100 clientes). Não desconta margem, CAC, churn censurado ou valor do dinheiro no tempo.
 
 ## 📁 Estrutura
 
