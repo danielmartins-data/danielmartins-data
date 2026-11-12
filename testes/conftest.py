@@ -1,6 +1,5 @@
 """Configuração comum dos testes: cada projeto é executado na sua própria pasta."""
 import os
-import sys
 
 import pytest
 
@@ -18,13 +17,10 @@ def rodar_projeto(monkeypatch):
     def _rodar(pasta: str, script: str):
         caminho = os.path.join(RAIZ, pasta)
         monkeypatch.chdir(caminho)
-        sys.path.insert(0, caminho)
+        monkeypatch.syspath_prepend(caminho)
         with open(script, encoding="utf-8") as f:
             codigo = f.read()
-        try:
-            exec(compile(codigo, script, "exec"), {"__name__": "__main__"})
-        finally:
-            monkeypatch.undo()
+        exec(compile(codigo, script, "exec"), {"__name__": "__main__"})
         return caminho
 
     return _rodar
