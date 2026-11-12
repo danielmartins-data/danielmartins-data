@@ -7,7 +7,7 @@
 ## 🎯 Resumo executivo
 
 - **Painel em Excel feito por fórmula, não por print**: `SUMIFS` + lista suspensa de produto + formatação condicional. Muda o filtro, muda tudo.
-- **Modelo estrela para Power BI**: 2 tabelas fato (`fato_vendas`, `fato_transacoes`) e 3 dimensões (`dim_cliente`, `dim_produto`, `dim_calendario`), com medidas DAX prontas.
+- **Modelo para Power BI**: 2 tabelas fato (`fato_vendas`, `fato_transacoes`) e 4 dimensões (`dim_cliente`, `dim_gerente`, `dim_produto`, `dim_calendario`), com medidas DAX documentadas.
 - **A pergunta que o painel responde**: meta x realizado por mês, produto e gerente — e a carteira de clientes que sustenta esse resultado.
 
 **Cinco leituras que o painel entrega:**
@@ -20,7 +20,7 @@
 
 ## 🧠 Método
 
-1. **`gerar_dados.py`** cria o modelo estrela sintético (vendas, metas, clientes, produtos, calendário).
+1. **`gerar_dados.py`** gera `vendas_metas.csv`, `fato_vendas.csv`, `dim_gerente.csv`, `dim_produto.csv` e `dim_calendario.csv`. `fato_transacoes.csv` e `dim_cliente.csv` são bases sintéticas complementares versionadas no repositório e compartilhadas com o RFM; não são sobrescritas pelo gerador.
 2. **`criar_excel.py`** monta o `.xlsx` do zero com `openpyxl`: aba *Leia-me*, dados em Tabela, painel com `SUMIFS`, validação de dados (lista suspensa), formatação condicional e gráficos.
 3. **`powerbi/medidas.dax`** traz as medidas de meta, realizado, atingimento, ticket e YoY — prontas para colar no Power BI.
 4. **`powerbi/roteiro.md`** explica, passo a passo, como montar o modelo e o layout do dashboard.
