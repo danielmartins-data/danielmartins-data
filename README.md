@@ -34,7 +34,7 @@
 <table>
 <tr>
 <td align="center" width="25%"><b>10</b><br><sub>projetos demonstrativos</sub></td>
-<td align="center" width="25%"><b>27</b><br><sub>testes automatizados</sub></td>
+<td align="center" width="25%"><b>28</b><br><sub>testes automatizados</sub></td>
 <td align="center" width="25%"><b>3</b><br><sub>versões de Python no CI</sub></td>
 <td align="center" width="25%"><b>0</b><br><sub>dados reais expostos</sub></td>
 </tr>
