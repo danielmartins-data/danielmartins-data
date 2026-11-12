@@ -24,7 +24,7 @@
 3. **Validação temporal** (nunca aleatória em série temporal): treino até 30/11/2025, teste em dezembro/2025.
 4. **Parâmetros do Holt-Winters escolhidos por busca em grade** apenas na validação interna — o período de teste não é usado para ajustar nada.
 5. **Métricas de negócio**: MAE (pedidos), RMSE, MAPE e **WAPE** (a métrica certa quando há dias de baixo volume).
-6. **Intervalo de previsão de 95%** calculado a partir do desvio dos resíduos do próprio modelo.
+6. **Faixa empírica de incerteza** calculado a partir do desvio dos resíduos do próprio modelo.
 
 ## 📁 Estrutura
 
